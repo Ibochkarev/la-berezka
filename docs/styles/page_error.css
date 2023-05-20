@@ -1,13 +1,15 @@
 :root {
-  --color-dark-blue: #041e42;
-  --color-black: #3a3a3a;
-  --color-dark-gold: #c49a6c;
-  --color-light-gold: #efd6ba;
-  --color-grey: #acacac;
+  --color-dark: #1f1e20;
+  --color-sand: #d9c6a9;
+  --color-middle-sand: #fffbf2;
+  --color-light-sand: #d9c6a9;
+  --color-crayola: #d1d997;
+  --color-middle-crayola: #e8eccb;
+  --color-grey: #a7a7a7;
   --color-middle-grey: #e5e5e5;
   --color-light-grey: #f9f9f9;
   --color-white: #fff;
-  --color-red: #CE202F;
+  --color-light-white: rgba(255, 255, 255, 0.8);
 }
 
 :root {
@@ -62,195 +64,113 @@
   --a-borderRadius--def: var(--a-borderRadius--x4);
 }
 
+.font-h1-didona {
+  font-family: 'Didona', sans-serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 2.25rem;
+  text-transform: uppercase;
+}
+
+.font-h2-didona {
+  font-family: 'Didona', sans-serif;
+  font-size: 2.1875rem;
+  font-weight: 400;
+  line-height: 2.0625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.font-h3-didona {
+  font-family: 'Didona', sans-serif;
+  font-size: 1.625rem;
+  font-weight: 400;
+  line-height: 2.125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
 .font-h1 {
-  font-family: 'Lora';
-  font-size: 1.5rem;
-  font-weight: 500;
-  line-height: 1.5rem;
+  font-size: 1.75rem;
+  font-weight: 300;
+  line-height: 2.125rem;
 }
 
 .font-h2 {
-  font-family: 'Lora';
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.625rem;
+  letter-spacing: 0.01em;
+}
+
+.font-h2-medium {
   font-size: 1.375rem;
   font-weight: 500;
-  line-height: 1.5rem;
+  line-height: 1.875rem;
 }
 
-.font-h3 {
-  font-family: 'Lora';
-  font-size: 1.25rem;
-  font-weight: 500;
-  line-height: 1.5rem;
+.font-h2-light {
+  font-size: 0.9375rem;
+  font-weight: 300;
+  line-height: 1.625rem;
+  letter-spacing: 0.01em;
 }
 
-.font-h4 {
-  font-family: 'Lora';
-  font-size: 1.125rem;
-  font-weight: 500;
-  line-height: 1.375rem;
+.font-text-m {
+  font-size: 1.625rem;
+  font-weight: 300;
+  line-height: 2.1875rem;
 }
 
-.font-xl {
-  font-family: 'Lora';
-  font-size: 1rem;
-  line-height: 1.25rem;
-}
-
-.font-l {
-  font-size: 1rem;
-  line-height: 1.25rem;
-}
-
-.font-m {
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
-.font-s {
-  font-size: 0.625rem;
-  line-height: 0.875rem;
-}
-
-.font-xs {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
+.font-text-s {
+  font-size: 0.9375rem;
+  font-weight: 300;
+  line-height: 1.3125rem;
 }
 
 .font-button {
-  font-size: 0.75rem;
-  line-height: 0.875rem;
+  font-size: 0.9375rem;
+  font-weight: 300;
+  line-height: 1.625rem;
 }
 
 .font-menu {
-  font-family: 'Lora';
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
-.font-bold {
-  font-weight: 700;
-}
-
-.font-semibold {
-  font-weight: 600;
-}
-
-.font-medium {
-  font-weight: 500;
-}
-
-.font-regular {
-  font-weight: 400;
-}
-
-.font-light {
+  font-size: 1rem;
   font-weight: 300;
+  line-height: 1.25rem;
 }
 
-@media screen and (min-width: 1600px) {
-  .font-h1 {
-    font-size: 4.75rem;
+@media screen and (min-width: 1200px) {
+  .font-h1-didona {
+    font-size: 3.125rem;
     font-weight: 400;
-    line-height: 5.5rem;
+    line-height: 3.75rem;
+    letter-spacing: 0.01em;
+  }
+
+  .font-h1 {
+    font-size: 3.125rem;
+    line-height: 4.0625rem;
   }
 
   .font-h2 {
-    font-family: 'Lora';
-    font-size: 3rem;
-    line-height: 3.5rem;
-  }
-
-  .font-h3 {
-    font-size: 2.625rem;
-    line-height: 3.25rem;
-  }
-
-  .font-h4 {
-    font-size: 2.5rem;
-    font-weight: 400;
-    line-height: 3rem;
-  }
-
-  .font-xl {
-    font-size: 1.875rem;
-    line-height: 2.5rem;
-  }
-
-  .font-l {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
-  .font-m {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
-  .font-s {
-    font-size: 1rem;
-    line-height: 1.375rem;
-  }
-
-  .font-button {
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-
-  .font-menu {
-    font-size: 1rem;
-    line-height: 1.375rem;
-  }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1599px) {
-  .font-h1 {
-    font-size: 3rem;
-    line-height: 3rem;
-  }
-
-  .font-h2 {
-    font-size: 2.75rem;
-    line-height: 2.75rem;
-  }
-
-  .font-h3 {
-    font-size: 2.5rem;
-    line-height: 2.5rem;
-  }
-
-  .font-h4 {
-    font-size: 2.25rem;
-    line-height: 2.75rem;
-  }
-
-  .font-xl {
-    font-size: 1.5rem;
-    line-height: 1.875rem;
-  }
-
-  .font-l {
-    font-size: 1.3125rem;
-    line-height: 1.6875rem;
-  }
-
-  .font-m {
     font-size: 1.125rem;
-    line-height: 1.5rem;
+    line-height: 1.625rem;
   }
 
-  .font-s {
-    font-size: 0.9375rem;
-    line-height: 1.3125rem;
+  .font-h2-light {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+  }
+
+  .font-text-s {
+    font-size: 1.125rem;
+    line-height: 1.5625rem;
   }
 
   .font-button {
-    font-size: 0.875rem;
-    line-height: 1rem;
-  }
-
-  .font-menu {
-    font-size: 0.875rem;
-    line-height: 1rem;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
   }
 }
 

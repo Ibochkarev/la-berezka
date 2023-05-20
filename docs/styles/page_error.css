@@ -91,6 +91,7 @@
 }
 
 .font-h1 {
+  font-family: "Roboto Light", sans-serif;
   font-size: 1.75rem;
   font-weight: 300;
   line-height: 2.125rem;
@@ -104,12 +105,14 @@
 }
 
 .font-h2-medium {
+  font-family: "Roboto Medium", sans-serif;
   font-size: 1.375rem;
   font-weight: 500;
   line-height: 1.875rem;
 }
 
 .font-h2-light {
+  font-family: "Roboto Light", sans-serif;
   font-size: 0.9375rem;
   font-weight: 300;
   line-height: 1.625rem;
@@ -117,24 +120,28 @@
 }
 
 .font-text-m {
+  font-family: "Roboto Light", sans-serif;
   font-size: 1.625rem;
   font-weight: 300;
   line-height: 2.1875rem;
 }
 
 .font-text-s {
+  font-family: "Roboto Light", sans-serif;
   font-size: 0.9375rem;
   font-weight: 300;
   line-height: 1.3125rem;
 }
 
 .font-button {
+  font-family: "Roboto Light", sans-serif;
   font-size: 0.9375rem;
   font-weight: 300;
   line-height: 1.625rem;
 }
 
 .font-menu {
+  font-family: "Roboto Light", sans-serif;
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.25rem;

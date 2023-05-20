@@ -1,17 +1,19 @@
 .s-footer {
-  display: flex;
-  justify-content: center;
-  padding: rem(40) 0;
-  color: var(--color-white);
-  flex-direction: column;
-  background-color: var(--color-dark-blue);
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    padding: rem(33) rem(23) rem(48);
+    color: var(--color-white);
+    border-radius: rem(20);
+    flex-direction: column;
+    background-color: var(--color-dark);
+    gap: rem(54);
 
-  @media screen and (min-width: 1024px) and (max-width: 1439px) {
-    padding: rem(60) 0;
-  }
 
-  @media screen and (min-width: 1440px) {
-    padding: rem(80) 0;
+    @media (min-width: 1024px) {
+      padding: rem(74) rem(85) rem(48);
+      border-radius: 0;
+    }
   }
 
   .l-container {
@@ -20,41 +22,21 @@
 
   &__content {
     display: grid;
-    margin-bottom: rem(40);
-    gap: rem(16);
-    grid-template-columns: repeat(2, 1fr);
+    gap: rem(60);
+    grid-template-columns: repeat(1, 1fr);
 
-    @media (min-width: 768px) {
-      grid-template-columns: repeat(4, 1fr);
-      gap: rem(24);
+    @media (min-width: 600px) {
+      grid-template-columns: repeat(2, 1fr);
     }
 
     @media (min-width: 1024px) {
-      margin-bottom: rem(80);
-      gap: rem(32);
-    }
-
-    @media (min-width: 1600px) {
-      display: flex;
-      justify-content: space-between;
-      gap: rem(32);
-      flex-wrap:wrap;
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 
   &__column {
-    &--contacts {
-      display: flex;
-      flex-direction: column;
-      gap: rem(20);
-
-      @media (min-width: 360px) and (max-width: 767px) {
-        align-items: center;
-        justify-content: space-between;
-        flex-direction: row-reverse;
-      }
-
-      @media (max-width: 767px) {
+    @media (min-width: 700px) and (max-width: 1023px) {
+      &:nth-child(1) {
         grid-column: 1 / -1;
       }
     }
@@ -66,22 +48,11 @@
     img {
       width: 100%;
       height: auto;
-      max-width: rem(128);
-    }
-  }
+      max-width: rem(215);
 
-  &__phone {
-    white-space: nowrap;
-  }
-
-  &__title {
-    display: inline-block;
-    margin-bottom: rem(16);
-    text-transform: uppercase;
-    @include font-menu;
-
-    @media (min-width: 1024px) {
-      margin-bottom: rem(12);
+      @media (min-width: 1024px) {
+        max-width: rem(196);
+      }
     }
   }
 
@@ -102,6 +73,7 @@
 
     &-link {
       cursor: pointer;
+      text-transform: uppercase;
       transition-duration: 0.4s;
 
       @media (min-width: 1600px) {
@@ -109,7 +81,7 @@
       }
 
       &:hover {
-        color: var(--color-dark-gold);
+        color: var(--color-light-grey);
       }
 
       &.is-uppercase {
@@ -117,7 +89,26 @@
       }
 
       &.is-active {
-        color: var(--color-dark-gold);
+        color: var(--color-light-grey);
+      }
+    }
+  }
+
+  &__info {
+
+    &-item {
+      &:not(:last-child) {
+        margin-bottom: rem(40);
+      }
+
+      a {
+        cursor: pointer;
+        display: block;
+        transition-duration: 0.4s;
+
+        &:hover {
+          color: var(--color-light-grey);
+        }
       }
     }
   }

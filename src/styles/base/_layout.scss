@@ -12,16 +12,8 @@
       max-width: 94%;
     }
 
-    @media (min-width: 1366px) {
-      max-width: rem(1200);
-    }
-
-    @media (min-width: 1600px) {
-      max-width: rem(1440);
-    }
-
-    @media (min-width: 1920px) {
-      max-width: rem(1620);
+    @media (min-width: 1200px) {
+      max-width: rem(1240);
     }
   }
 

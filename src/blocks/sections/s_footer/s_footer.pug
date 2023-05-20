@@ -1,43 +1,8 @@
 -
-  var menuFooterAbout = [
-    {title: 'Приветствие основателя', href: '#'},
-    {title: 'Наше видение', href: '#'},
-    {title: 'Наши ценности', href: '#'},
-    {title: 'Сведения об образовательной организации', href: '#'},
-    {title: 'Карьера в Heritage', href: '#'},
-    {title: 'Тренинги для родителей', href: '#'},
-  ]
-  var menuFooterPrograms = [
-    {title: 'Международная программа', href: '#'},
-    {title: 'Российская программа', href: '#'},
-    {title: 'Детский сад', href: '#'},
-    {title: 'Начальная школа', href: '#'},
-    {title: 'Средняя школа', href: '#'},
-    {title: 'Смешанное обучение', href: '#'},
-    {title: 'Спортивное образование', href: '#'},
-    {title: 'Кембриджская аккредитация', href: '#'},
-    {title: 'Экзамены', href: '#'},
-  ]
-  var menuFooterParent = [
-    {title: 'Ценностное образование', href: '#'},
-    {title: 'Система Домов', href: '#'},
-    {title: 'Мышление роста', href: '#'},
-    {title: 'Безопасная среда', href: '#'},
-    {title: 'Дополнительная программа', href: '#'},
-    {title: 'Студенческое самоуправление', href: '#'},
-  ]
-  var menuFooterСampus = [
-    {title: 'Кампус Сокольники', href: '#'},
-    {title: 'Кампус Ленинский', href: '#'},
-    {title: 'Кампус Тюмень', href: '#'},
-    {title: 'La Berёzka', href: '#'},
-  ]
-  var menuFooterAdmission = [
-    {title: 'Стоимость', href: '#'},
-    {title: 'День открытых дверей (Тюмень)', href: '#'},
-    {title: 'День открытых дверей (Сокольники)', href: '#'},
-    {title: 'Блог', href: '#', bold: true},
-    {title: 'Контакты', href: '#', bold: true},
+  var menuFooter = [
+    {title: 'О нас', href: '#'},
+    {title: 'Как поступить', href: '#'},
+    {title: 'Программа', href: '#'},
   ]
 
 footer.s-footer
@@ -46,43 +11,19 @@ footer.s-footer
       .s-footer__content
         .s-footer__column
           .s-footer__logo
-            img(src="./img/global/logo.svg", alt="")
-          a.s-footer__phone.font-xl(href="+tel:88005551979") 8 (800) 555-19-79
+            picture
+              source(srcset="./img/global/footer-logo-desktop.svg" media="(min-width: 1024px)")
+              img(src="./img/global/footer-logo-mobile.svg", alt="")
         .s-footer__column
-          a.s-footer__title(href="") О школе
           ul.s-footer__menu
-            each item in menuFooterAbout
+            each item in menuFooter
               li.s-footer__menu-item
-                a.s-footer__menu-link.font-s.font-light(href= item.href)= item.title
+                a.s-footer__menu-link.font-h2-light(href= item.href)= item.title
         .s-footer__column
-          a.s-footer__title(href="") Программы
-          ul.s-footer__menu
-            each item in menuFooterPrograms
-              li.s-footer__menu-item
-                a.s-footer__menu-link.font-s.font-light(href= item.href)= item.title
-        .s-footer__column
-          a.s-footer__title(href="") Родителям
-          ul.s-footer__menu
-            each item in menuFooterParent
-              li.s-footer__menu-item
-                a.s-footer__menu-link.font-s.font-light(href= item.href)= item.title
-        .s-footer__column
-          a.s-footer__title(href="") Кампусы
-          ul.s-footer__menu
-            each item in menuFooterСampus
-              li.s-footer__menu-item
-                a.s-footer__menu-link.font-s.font-light(href= item.href)= item.title
-        .s-footer__column
-          a.s-footer__title(href="") Поступление
-          ul.s-footer__menu
-            each item in menuFooterAdmission
-              if item.bold === true
-                li.s-footer__menu-item
-                  a.s-footer__menu-link.font-menu.is-uppercase(href= item.href)= item.title
-              else
-                li.s-footer__menu-item
-                  a.s-footer__menu-link.font-s.font-light(href= item.href)= item.title
-      .s-footer__bottom.font-s.font-light
-        .s-footer__bottom-col © 2020-2023 Heritage International School
-        .s-footer__bottom-col
-          a(href="") Политика защиты персональных данных
+          .s-footer__info
+            .s-footer__info-item.font-text-s Москва, ул. 2-ая Звенигородская дом, 12 стр. 26
+            .s-footer__info-item.font-text-s Детский сад расположен на территории жилого комплекса  “LUCKY”
+            .s-footer__info-item.font-text-s
+              a(href="tel:+74993466710") +7 499 346 67 10
+              a(href="mailto:study@laberezka.com") study@laberezka.com
+      .s-footer__bottom.font-text-s © La Berёzka International Academy 2022

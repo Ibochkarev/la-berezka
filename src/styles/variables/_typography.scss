@@ -65,6 +65,7 @@
 }
 
 .font-h1 {
+  font-family: "Roboto Light", sans-serif;
   font-size: rem(28);
   font-weight: 300;
   line-height: rem(34);
@@ -76,6 +77,7 @@
 }
 
 @mixin font-h1 {
+  font-family: "Roboto Light", sans-serif;
   font-size: rem(28);
   font-weight: 300;
   line-height: rem(34);
@@ -111,18 +113,21 @@
 }
 
 .font-h2-medium {
+	font-family: "Roboto Medium", sans-serif;
   font-size: rem(22);
   font-weight: 500;
   line-height: rem(30);
 }
 
 @mixin font-h2-medium {
+	font-family: "Roboto Medium", sans-serif;
   font-size: rem(22);
   font-weight: 500;
   line-height: rem(30);
 }
 
 .font-h2-light {
+  font-family: "Roboto Light", sans-serif;
   font-size: rem(15);
   font-weight: 300;
   line-height: rem(26);
@@ -135,6 +140,7 @@
 }
 
 @mixin font-h2-light {
+  font-family: "Roboto Light", sans-serif;
   font-size: rem(15);
   font-weight: 300;
   line-height: rem(26);
@@ -147,18 +153,21 @@
 }
 
 .font-text-m {
+  font-family: "Roboto Light", sans-serif;
   font-size: rem(26);
   font-weight: 300;
   line-height: rem(35);
 }
 
 @mixin font-text-m {
+  font-family: "Roboto Light", sans-serif;
   font-size: rem(26);
   font-weight: 300;
   line-height: rem(35);
 }
 
 .font-text-s {
+  font-family: "Roboto Light", sans-serif;
   font-size: rem(15);
   font-weight: 300;
   line-height: rem(21);
@@ -170,6 +179,7 @@
 }
 
 @mixin font-text-s {
+  font-family: "Roboto Light", sans-serif;
   font-size: rem(15);
   font-weight: 300;
   line-height: rem(21);
@@ -181,6 +191,7 @@
 }
 
 .font-button {
+  font-family: "Roboto Light", sans-serif;
   font-size: rem(15);
   font-weight: 300;
   line-height: rem(26);
@@ -192,6 +203,7 @@
 }
 
 @mixin font-button {
+  font-family: "Roboto Light", sans-serif;
   font-size: rem(15);
   font-weight: 300;
   line-height: rem(26);
@@ -203,6 +215,7 @@
 }
 
 .font-menu {
+  font-family: "Roboto Light", sans-serif;
   font-size: rem(16);
   font-weight: 300;
   line-height: rem(20);

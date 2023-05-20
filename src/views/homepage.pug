@@ -2,48 +2,13 @@ extends layouts/default
 
 block variables
   - const title = "Главная страница проекта"
-  -
-    const mainSlidesData = [
-      {
-        type: 'video',
-        src: 'https://heritageschool.ru/assets/video/v3.mp4',
-        title: 'Добро пожаловать<br> в Кампус Сокольники',
-        text: 'Какой то текст',
-      },
-      {
-        type: 'image',
-        image: './img/demo/slider/1.jpeg',
-        title: '',
-        text: '',
-      },
-      {
-        type: 'image',
-        image: './img/demo/slider/2.jpeg',
-        title: 'Добро пожаловать<br> в Кампус Сокольники',
-        text: 'Какой то текст',
-      },
-      {
-        type: 'image',
-        image: './img/demo/slider/3.jpeg',
-        title: 'Слайдер 3 с заголовком',
-        text: '',
-      },
-    ]
 
 block append head
   link(rel="stylesheet" href="./styles/page_main.css")
 
 block content
-  +main_slider(mainSlidesData)
-  +m_quote_section('If a child cannot learn in the way we teach we must teach in a way the child can learn', './img/global/quote-bg-1.svg')
-  include ../blocks/sections/_main/s_international_school/s_international_school.pug
-  include ../blocks/sections/_main/s_campuses/s_campuses.pug
-  include ../blocks/sections/_main/s_advantages/s_advantages.pug
-  +m_quote_section('One school - two diplomas', './img/global/quote-bg-2.svg')
-  include ../blocks/sections/_main/s_training_program/s_training_program.pug
-  include ../blocks/sections/_main/s_admission/s_admission.pug
-  include ../blocks/sections/_main/s_vk_wall/s_vk_wall.pug
-  include ../blocks/sections/_main/s_blog_articles/s_blog_articles.pug
+  //- +main_slider(mainSlidesData)
+  //- include ../blocks/sections/_main/s_blog_articles/s_blog_articles.pug
 
 block append scripts
   script(defer src="./js/page_main.js")

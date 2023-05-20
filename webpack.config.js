@@ -20,7 +20,7 @@ module.exports = {
   },
   entry: {
     main: './src/js/index.js',
-    page_search: './src/js/page_search.js',
+    // page_search: './src/js/page_search.js',
   },
 
   output: {

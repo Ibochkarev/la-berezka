@@ -1,0 +1,75 @@
+.m-tabs {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: rem(12);
+
+  @media (min-width: 768px) {
+    gap:rem(20);
+  }
+
+  &__item {
+    position: relative;
+    padding: rem(16) rem(24) rem(16) rem(56);
+    background-color: var(--color-white);
+
+    @media (min-width: 1024px) {
+      padding: rem(16) rem(24) rem(16) rem(103);
+    }
+
+    &.is-open {
+      .m-tabs__item {
+        &-toggle {
+          background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21 29V20.5H29V18.5H21V10H19V18.5H11.5V20.5H19V29H21ZM39 20C39 30.4934 30.4934 39 20 39C9.50659 39 1 30.4934 1 20C1 9.50659 9.50659 1 20 1C30.4934 1 39 9.50659 39 20Z' stroke='%23041E42' stroke-width='2'/%3E%3C/svg%3E%0A");
+        }
+      }
+
+      .m-tabs__item-content {
+        margin-top: rem(8);
+
+        @media (min-width: 768px) {
+          margin-top: rem(12);
+        }
+      }
+    }
+
+    &-header {
+      cursor: pointer;
+      position: relative;
+      display: flex;
+      align-items: center;
+      transition: background-color 0.2s linear;
+      gap: rem(20);
+    }
+
+    &-toggle {
+      position: absolute;
+      top: 50%;
+      left: rem(-40);
+      width: rem(24);
+      height: rem(24);
+      transform: translateY(-50%);
+      transition: background-image 0.1s ease-in-out;
+      background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 18.5H11.5V20.5H20H29V18.5H20ZM39 20C39 30.4934 30.4934 39 20 39C9.50659 39 1 30.4934 1 20C1 9.50659 9.50659 1 20 1C30.4934 1 39 9.50659 39 20Z' stroke='%23041E42' stroke-width='2'/%3E%3C/svg%3E%0A");
+      background-repeat: no-repeat;
+      background-size: contain;
+      content: '';
+
+      @media (min-width: 1024px) {
+        left: rem(-79);
+        width: rem(40);
+        height: rem(40);
+      }
+    }
+
+    &-title {
+      color: var(--color-dark-blue);
+    }
+
+    &-content {
+      overflow: hidden;
+      max-height: 0;
+      color: var(--color-black);
+      transition: max-height 0.1s ease-in-out;
+    }
+  }
+}

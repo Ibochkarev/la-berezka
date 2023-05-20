@@ -1,0 +1,136 @@
+.s-footer {
+  display: flex;
+  justify-content: center;
+  padding: rem(40) 0;
+  color: var(--color-white);
+  flex-direction: column;
+  background-color: var(--color-dark-blue);
+
+  @media screen and (min-width: 1024px) and (max-width: 1439px) {
+    padding: rem(60) 0;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding: rem(80) 0;
+  }
+
+  .l-container {
+    margin: 0 auto;
+  }
+
+  &__content {
+    display: grid;
+    margin-bottom: rem(40);
+    gap: rem(16);
+    grid-template-columns: repeat(2, 1fr);
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(4, 1fr);
+      gap: rem(24);
+    }
+
+    @media (min-width: 1024px) {
+      margin-bottom: rem(80);
+      gap: rem(32);
+    }
+
+    @media (min-width: 1600px) {
+      display: flex;
+      justify-content: space-between;
+      gap: rem(32);
+      flex-wrap:wrap;
+    }
+  }
+
+  &__column {
+    &--contacts {
+      display: flex;
+      flex-direction: column;
+      gap: rem(20);
+
+      @media (min-width: 360px) and (max-width: 767px) {
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+      }
+
+      @media (max-width: 767px) {
+        grid-column: 1 / -1;
+      }
+    }
+  }
+
+  &__logo {
+    flex: none;
+
+    img {
+      width: 100%;
+      height: auto;
+      max-width: rem(128);
+    }
+  }
+
+  &__phone {
+    white-space: nowrap;
+  }
+
+  &__title {
+    display: inline-block;
+    margin-bottom: rem(16);
+    text-transform: uppercase;
+    @include font-menu;
+
+    @media (min-width: 1024px) {
+      margin-bottom: rem(12);
+    }
+  }
+
+  &__menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    &-item {
+      &:not(:last-child) {
+        margin-bottom: rem(16);
+
+        @media (min-width: 1024px) {
+          margin-bottom: rem(12);
+        }
+      }
+    }
+
+    &-link {
+      cursor: pointer;
+      transition-duration: 0.4s;
+
+      @media (min-width: 1600px) {
+        white-space: nowrap;
+      }
+
+      &:hover {
+        color: var(--color-dark-gold);
+      }
+
+      &.is-uppercase {
+        text-transform: uppercase;
+      }
+
+      &.is-active {
+        color: var(--color-dark-gold);
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    gap: rem(16);
+
+    @media (min-width: 768px) {
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+  }
+}

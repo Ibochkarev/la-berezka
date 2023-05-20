@@ -1,0 +1,125 @@
+.m-universal-content {
+  &__title {
+    margin-top: 0;
+    text-align: center;
+    color: var(--color-dark-blue);
+  }
+
+  &__text {
+    max-width: rem(1120);
+    margin: 0 auto;
+    font-weight: 300;
+    @include font-m;
+
+    @media screen and (max-width: 600px) {
+      table {
+        border: 0;
+      }
+
+      table thead {
+        overflow: hidden;
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        padding: 0;
+        border: none;
+        clip: rect(0 0 0 0);
+      }
+
+      table tr {
+        display: block;
+        margin-bottom: .625em;
+        border-bottom: 3px solid #ddd;
+      }
+
+      table td {
+        display: block;
+        text-align: right;
+        border-bottom: 1px solid #ddd;
+      }
+
+      table td::before {
+        font-weight: bold;
+        text-transform: uppercase;
+        /*
+        * aria-label has no advantage, it won't be read inside a table
+        content: attr(aria-label);
+        */
+        content: attr(data-label);
+        float: left;
+      }
+
+      table td:last-child {
+        border-bottom: 0;
+      }
+    }
+
+    h2 {
+      @include font-h2;
+    }
+
+    h3 {
+      @include font-h3;
+    }
+
+    h4 {
+      @include font-h4;
+    }
+
+    ul, ol {
+      @include font-m;
+      margin-left: 0;
+      padding-left: rem(20);
+    }
+
+    b, strong {
+      font-family: 'Lora';
+      font-weight: 700;
+      color: var(--color-black);
+    }
+
+    a {
+      cursor: pointer;
+      text-decoration: underline;
+      color: var(--color-dark-gold);
+      transition-duration: 0.4s;
+
+      &:is(:hover, :focus) {
+        color: var(--color-dark-blue);
+      }
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    table {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      border: rem(1) solid #ccc;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+
+    table tr {
+      padding: .35em;
+      border: 1px solid #ddd;
+      background-color: #f8f8f8;
+    }
+
+    table th,
+    table td {
+      padding: .625em;
+      text-align: center;
+    }
+
+    table th {
+      font-size: .85em;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+    }
+  }
+}

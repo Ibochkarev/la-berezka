@@ -1,0 +1,38 @@
+.swiper-pagination {
+  position: relative;
+  top: 0 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &-bullet {
+    cursor: pointer;
+    display: block;
+    width: rem(20);
+    height: rem(4);
+    margin: 0 rem(5) !important;
+    background: var(--color-grey);
+    border: 0;
+    border-radius: 0;
+    opacity: 1;
+    transform: none !important;
+    transition: 0.5s all ease;
+    flex: none;
+
+    @media (min-width: 768px) {
+      width: rem(34);
+      height: rem(6);
+    }
+
+    &:hover {
+      cursor: pointer;
+      background: var(--color-dark-blue);
+    }
+
+    &-active,
+    &-active-main {
+      cursor: default;
+      background: var(--color-dark-blue);
+    }
+  }
+}

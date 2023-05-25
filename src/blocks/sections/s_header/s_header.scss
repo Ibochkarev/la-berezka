@@ -144,6 +144,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    gap: rem(10);
 
     &-item {
       cursor: pointer;
@@ -166,6 +167,7 @@
       }
 
       &--languages {
+        width: auto;
         @media (max-width: 768px) {
           display: none;
         }
@@ -263,7 +265,6 @@
   display: none;
   width: 100%;
   height: 100%;
-  padding:0.5%;
   color: var(--color-white);
   background-color: var(--color-dark);
 
@@ -345,7 +346,90 @@
   }
 }
 
-@-webkit-keyframes zoomIn {
+.m-modal-search {
+  overflow: auto;
+  z-index: 15;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: auto;
+  background-color: var(--color-white);
+
+  &.is-show {
+    display: block;
+  }
+
+  &__close {
+    cursor: pointer;
+    position: absolute;
+    top: rem(20);
+    right: rem(20);
+    border: 0;
+    background-color: transparent;
+
+    svg {
+      fill: var(--color-dark);
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: rem(126);
+    padding: rem(44) rem(20);
+
+    @media (min-width: 768px) {
+      min-height: rem(230);
+    }
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: rem(370);
+    gap: rem(5);
+
+    &-label {
+      width: 100%;
+      flex: none;
+    }
+
+    &-input {
+      width: 100%;
+      height: rem(30);
+      color: var(--color-dark);
+      border: 0;
+      border-bottom: 1px solid var(--color-dark);
+      outline: 0;
+      @include font-text-s;
+
+      &::placeholder {
+        color: var(--color-grey);
+        @include font-text-s;
+      }
+    }
+  }
+
+  &__button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: rem(20);
+    height: rem(20);
+    flex: none;
+
+    svg {
+      font-size: rem(20);
+    }
+  }
+}
+
+@keyframes zoomIn {
   from {
     opacity: 0;
     -webkit-transform: scale3d(.3, .3, .3);

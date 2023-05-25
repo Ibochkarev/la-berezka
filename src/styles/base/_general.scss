@@ -145,7 +145,7 @@ section {
   z-index: 100;
   cursor: pointer;
   position: fixed;
-  bottom: 0;
+  bottom: rem(30);
   right: rem(30);
   display: flex;
   align-items: center;

@@ -35,13 +35,10 @@ html(lang="ru")
 
     meta(name="format-detection" content="telephone=no")
 
-    link(rel="preload", href="fonts/Lora/lora-v32-cyrillic_latin-500.woff2", as="font", type="font/woff2", crossorigin)
-    link(rel="preload", href="fonts/Lora/lora-v32-cyrillic_latin-600.woff2", as="font", type="font/woff2", crossorigin)
-    link(rel="preload", href="fonts/Lora/lora-v32-cyrillic_latin-700.woff2", as="font", type="font/woff2", crossorigin)
-    link(rel="preload", href="fonts/Lora/lora-v32-cyrillic_latin-regular.woff2", as="font", type="font/woff2", crossorigin)
-    link(rel="preload", href="fonts/HelveticaNeueCyr/HelveticaNeueCyr-Light.woff2", as="font", type="font/woff2", crossorigin)
-    link(rel="preload", href="fonts/HelveticaNeueCyr/HelveticaNeueCyr-Medium.woff2", as="font", type="font/woff2", crossorigin)
-    link(rel="preload", href="fonts/HelveticaNeueCyr/HelveticaNeueCyr-Roman.woff2", as="font", type="font/woff2", crossorigin)
+    link(rel="preload", href="fonts/didona/didona.woff2", as="font", type="font/woff2", crossorigin)
+    link(rel="preload", href="fonts/roboto-light/roboto-light.woff2", as="font", type="font/woff2", crossorigin)
+    link(rel="preload", href="fonts/roboto-medium/roboto-medium.woff2", as="font", type="font/woff2", crossorigin)
+    link(rel="preload", href="fonts/roboto-regular/roboto-regular.woff2", as="font", type="font/woff2", crossorigin)
     link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css")
 
     block head
@@ -56,6 +53,7 @@ html(lang="ru")
         block content
 
       include ../../blocks/sections/s_footer/s_footer.pug
+      include ../../blocks/components/m_cookies/m_cookies.pug
       button.scrollToTopBtn(type="button")
         <svg width="15" height="18" viewBox="0 0 15 18" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M7.5 18.001L7.5 9.50098L7.5 1.00098M7.5 1.00098L1 7.50098M7.5 1.00098L14 7.50098" stroke="white"/>
@@ -63,4 +61,5 @@ html(lang="ru")
 
     block scripts
       script(defer src="./js/main.js?v=" + pDate())
+      script(defer src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js")
       script(defer src="./js/vendor.js?v=" + pDate())

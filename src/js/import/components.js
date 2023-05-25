@@ -6,3 +6,4 @@ Fancybox.defaults.autoFocus = false;
 Fancybox.bind()
 
 import '%components%/m_main_slider/m_main_slider'
+import '%components%/m_cookies/m_cookies.js'

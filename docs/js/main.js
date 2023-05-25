@@ -155,6 +155,17 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/blocks/components/m_cookies/m_cookies.js":
+/*!******************************************************!*\
+  !*** ./src/blocks/components/m_cookies/m_cookies.js ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("window.addEventListener('load', function () {\n  if (!Cookies.get('acceptCookies')) {\n    document.querySelector('.m-cookies').classList.add('is-show');\n  }\n  document.querySelector('.m-cookies__button').addEventListener('click', function () {\n    document.querySelector('.m-cookies').classList.remove('is-show');\n    setTimeout(function () {\n      Cookies.set('acceptCookies', 'true', {\n        expires: 7,\n        path: '/'\n      });\n    });\n  });\n}, false);\n\n//# sourceURL=webpack:///./src/blocks/components/m_cookies/m_cookies.js?");
+
+/***/ }),
+
 /***/ "./src/blocks/components/m_main_slider/m_main_slider.js":
 /*!**************************************************************!*\
   !*** ./src/blocks/components/m_main_slider/m_main_slider.js ***!
@@ -198,7 +209,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var swip
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vanilla_lazyload__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vanilla-lazyload */ \"./node_modules/vanilla-lazyload/dist/lazyload.min.js\");\n/* harmony import */ var vanilla_lazyload__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vanilla_lazyload__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _fancyapps_ui_dist_fancybox_fancybox_esm_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @fancyapps/ui/dist/fancybox/fancybox.esm.js */ \"./node_modules/@fancyapps/ui/dist/fancybox/fancybox.esm.js\");\n/* harmony import */ var _components_m_main_slider_m_main_slider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %components%/m_main_slider/m_main_slider */ \"./src/blocks/components/m_main_slider/m_main_slider.js\");\n\nvar lazyLoadInstance = new vanilla_lazyload__WEBPACK_IMPORTED_MODULE_0___default.a({});\n\nwindow.Fancybox = _fancyapps_ui_dist_fancybox_fancybox_esm_js__WEBPACK_IMPORTED_MODULE_1__[\"Fancybox\"];\n_fancyapps_ui_dist_fancybox_fancybox_esm_js__WEBPACK_IMPORTED_MODULE_1__[\"Fancybox\"].defaults.autoFocus = false;\n_fancyapps_ui_dist_fancybox_fancybox_esm_js__WEBPACK_IMPORTED_MODULE_1__[\"Fancybox\"].bind();\n\n\n//# sourceURL=webpack:///./src/js/import/components.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var vanilla_lazyload__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vanilla-lazyload */ \"./node_modules/vanilla-lazyload/dist/lazyload.min.js\");\n/* harmony import */ var vanilla_lazyload__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vanilla_lazyload__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _fancyapps_ui_dist_fancybox_fancybox_esm_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @fancyapps/ui/dist/fancybox/fancybox.esm.js */ \"./node_modules/@fancyapps/ui/dist/fancybox/fancybox.esm.js\");\n/* harmony import */ var _components_m_main_slider_m_main_slider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %components%/m_main_slider/m_main_slider */ \"./src/blocks/components/m_main_slider/m_main_slider.js\");\n/* harmony import */ var _components_m_cookies_m_cookies_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! %components%/m_cookies/m_cookies.js */ \"./src/blocks/components/m_cookies/m_cookies.js\");\n/* harmony import */ var _components_m_cookies_m_cookies_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_components_m_cookies_m_cookies_js__WEBPACK_IMPORTED_MODULE_3__);\n\nvar lazyLoadInstance = new vanilla_lazyload__WEBPACK_IMPORTED_MODULE_0___default.a({});\n\nwindow.Fancybox = _fancyapps_ui_dist_fancybox_fancybox_esm_js__WEBPACK_IMPORTED_MODULE_1__[\"Fancybox\"];\n_fancyapps_ui_dist_fancybox_fancybox_esm_js__WEBPACK_IMPORTED_MODULE_1__[\"Fancybox\"].defaults.autoFocus = false;\n_fancyapps_ui_dist_fancybox_fancybox_esm_js__WEBPACK_IMPORTED_MODULE_1__[\"Fancybox\"].bind();\n\n\n\n//# sourceURL=webpack:///./src/js/import/components.js?");
 
 /***/ }),
 

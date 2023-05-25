@@ -1,4 +1,11 @@
 .s-error {
+  &__wrapper {
+    @media screen and (min-width: 1440px) {
+      padding-top: rem(70);
+      padding-bottom: rem(70);
+    }
+  }
+
   &__inner {
     display: grid;
     padding: rem(60) rem(30);

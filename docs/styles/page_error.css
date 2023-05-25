@@ -248,6 +248,13 @@ h5 {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  .s-error__wrapper {
+    padding-top: 4.375rem;
+    padding-bottom: 4.375rem;
+  }
+}
+
 @media screen {
   .px-0 {
     padding-right: 0;

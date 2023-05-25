@@ -92,7 +92,7 @@
   &__text {
     overflow: hidden;
     display: -webkit-box;
-    color: var(--color-black);
+    color: var(--color-dark);
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
   }
@@ -127,7 +127,7 @@
   }
 
   &__date {
-    color: var(--color-black);
+    color: var(--color-dark);
   }
 
   &__more {

@@ -1,0 +1,35 @@
+.s-about-team {
+  &__card {
+    &-photo {
+      margin-bottom: rem(40);
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &-name {
+      margin-bottom: rem(20);
+    }
+
+    &-position {
+      margin-bottom: rem(20);
+      color: var(--color-grey);
+    }
+
+    &-description {
+      margin-bottom: rem(40);
+    }
+
+    &-logo {
+      margin-bottom: rem(40);
+
+      img {
+        width: 100%;
+        height: auto;
+        max-width: rem(305);
+      }
+    }
+  }
+}

@@ -6,33 +6,35 @@
 
   &__wrapper {
     overflow: hidden;
-    padding: rem(40) 0;
+    padding-top: rem(60);
+    padding-bottom: rem(60);
 
     @media screen and (min-width: 1024px) and (max-width: 1439px) {
-      padding: rem(80) 0;
+      padding-top: rem(80);
+      padding-bottom: rem(80);
     }
 
     @media screen and (min-width: 1440px) {
-      padding: rem(110) 0;
+      padding-top: rem(110);
+      padding-bottom: rem(110);
     }
   }
 
+  &__headline {
+    margin-bottom: rem(50);
+  }
+
   &__title {
-    margin: 0 auto rem(24);
-    text-align: center;
-    color: var(--color-dark-blue);
+    margin: 0;
+  }
 
-    @media (min-width: 768px) {
-      margin: 0 auto rem(40);
-    }
+  &__subtitle {
+    margin-top: rem(15);
+  }
 
-    @media screen and (min-width: 1024px) and (max-width: 1439px) {
-      margin: 0 auto rem(60);
-    }
-
-    @media screen and (min-width: 1440px) {
-      margin: 0 auto rem(80);
-    }
+  &__introtext {
+    max-width: rem(760);
+    margin-bottom: rem(50);
   }
 
   &--full &__wrapper {

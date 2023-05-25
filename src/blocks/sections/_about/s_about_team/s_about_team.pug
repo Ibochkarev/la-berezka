@@ -1,0 +1,44 @@
+-
+  const team = [
+    {
+      photo: './img/s-about-team/PH-Ildar.jpg',
+      name: 'Ildar nafikov',
+      position: 'Cо-автор проекта La Berёzka<br> Основатель Heritage Education Group',
+      description: '<p>Более чем 10-летний опыт работы в международном образовании, под руководством Мр Ильдара открывается уже восьмой кампус в России и СНГ.</p><p>«Если ребёнок не может учиться так, как мы обучаем, мы должны обучать так, как ребёнок может учиться. Вот почему для нас так важно объединиться в одну команду, чтобы учиться друг у друга и непрерывно становиться лучше в том, что мы делаем.»</p>',
+      logo: './img/s-about-team/heg.svg',
+      note: 'Современная независимая международная компания, которая обеспечивает образование высокого класса в России.'
+    },
+    {
+      photo: './img/s-about-team/PH-Alain.jpg',
+      name: 'Alain Roland',
+      position: 'Со-автор проекта La Berёzka<br>Основатель Avenue42',
+      description: '<p>Более 10 лет в образовании. Опыт открытия школы La preschool des Batignolles в Париже, Exupéry International School в Риге, французского детского сада в Лапино, Москва.</p><p>"From Paris to Riga and back to Moscow our educational solutions are part of a world-class international environment of all cultural and academic backgrounds."</p>',
+      logo: './img/s-about-team/avenue42.svg',
+      note: 'Realize your vision to build thriving World-Class schools for students to become thoughtful and imaginative global leaders'
+    },
+    {
+      photo: './img/s-about-team/PH-Nico.jpg',
+      name: 'Nicolas Mathieu',
+      position: 'Со-автор проекта La Berёzka<br>Основатель Avenue42',
+      description: '<p>Более 10 лет в образовании. Опыт открытия школы La preschool des Batignolles в Париже, Exupéry International School в Риге, французского детского сада в Лапино, Москва.</p><p>"Our main goal is to immerse the child in the natural process of learning from an early age, instill in him a love of learning and a desire to go to school with joy."</p>',
+      logo: '',
+      note: ''
+    },
+  ]
+
++section('s-about-team', 'О команде', 'LA BERЁZKA', 'Эксперты в области международного образования, визионеры и авторы проекта. Мы собрали замечательную команду в La Berёzka', false)
+  .s-about-team__slider.swiper-container
+    .swiper-wrapper
+      each item in team
+        .swiper-slide
+          .s-about-team__card
+            .s-about-team__card-photo
+              img(src=item.photo, alt="")
+            .s-about-team__card-name.font-h2=item.name
+            .s-about-team__card-position.font-text-s!=item.position
+            .s-about-team__card-description.font-text-s!=item.description
+            if item.logo
+              .s-about-team__card-logo
+                img(src=item.logo alt="")
+            if item.note
+              .s-about-team__card-note.font-text-s!=item.note

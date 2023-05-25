@@ -1,0 +1,16 @@
+.s-about-change-world {
+  background-color: var(--color-middle-sand);
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: rem(110);
+    right: 0;
+    content: "";
+    background-image: url('../img/s-about-change-world/bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: rem(600);
+    height: rem(600);
+  }
+}

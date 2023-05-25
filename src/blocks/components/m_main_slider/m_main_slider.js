@@ -1,5 +1,5 @@
-import { Swiper, Pagination, Navigation, Lazy, EffectFade } from 'swiper'
-Swiper.use([Pagination, Navigation, Lazy, EffectFade])
+import { Swiper, Pagination, Navigation, EffectFade } from 'swiper'
+Swiper.use([Pagination, Navigation, EffectFade])
 
 window.addEventListener(
   'load',

@@ -1491,8 +1491,8 @@ section {
   z-index: 100;
   cursor: pointer;
   position: fixed;
-  bottom: 1.875rem;
   right: 1.875rem;
+  bottom: 1.875rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1507,6 +1507,8 @@ section {
   color: var(--color-white);
   border: none;
   border-radius: 50%;
+  -webkit-box-shadow: 0 0 0.5rem 0 rgba(255, 255, 255, 0.65);
+  box-shadow: 0 0 0.5rem 0 rgba(255, 255, 255, 0.65);
   opacity: 0;
   -webkit-transform: translateY(100px);
   -ms-transform: translateY(100px);

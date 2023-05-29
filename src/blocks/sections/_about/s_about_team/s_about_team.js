@@ -7,11 +7,12 @@ window.addEventListener(
     const teamSlider = new Swiper(`.s-about-team__slider`, {
       slidesPerView: 1,
       navigation: {
-        nextEl: '.s-about-team__slider__button-next',
-        prevEl: '.s-about-team__slider__button-prev',
+        nextEl: '.s-about-team__button-next',
+        prevEl: '.s-about-team__button-prev',
       },
       resistance: true,
       resistanceRatio: 1,
+      spaceBetween: 16,
       autoHeight: true,
       grabCursor: true,
       breakpoints: {

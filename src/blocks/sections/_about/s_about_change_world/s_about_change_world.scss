@@ -1,16 +1,64 @@
 .s-about-change-world {
-  background-color: var(--color-middle-sand);
+  overflow: hidden;
   position: relative;
+  background-color: var(--color-middle-sand);
 
   &::before {
+    z-index: -1;
     position: absolute;
     top: rem(110);
     right: 0;
+    width: rem(600);
+    height: rem(600);
     content: "";
     background-image: url('../img/s-about-change-world/bg.png');
     background-repeat: no-repeat;
     background-size: contain;
-    width: rem(600);
-    height: rem(600);
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+    @media (min-width: 768px) {
+      gap: rem(40);
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (min-width: 1200px) {
+      gap: rem(85);
+    }
+  }
+
+  &__column {
+    img {
+      width: 100%;
+      height: auto;
+      max-width: rem(440);
+    }
+
+    &--one {
+      display: none;
+
+      @media (min-width: 768px) {
+        display: block;
+      }
+    }
+
+    &--two {
+      display: none;
+      margin-top: rem(70);
+
+      @media (min-width: 768px) {
+        display: block;
+      }
+    }
+
+    &--three {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: rem(140);
+    }
   }
 }

@@ -1,11 +1,13 @@
 .s-about-team {
   &__card {
+
     &-photo {
       margin-bottom: rem(40);
 
       img {
         width: 100%;
         height: auto;
+        max-width: rem(400);
       }
     }
 
@@ -29,6 +31,49 @@
         width: 100%;
         height: auto;
         max-width: rem(305);
+      }
+    }
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+    margin-bottom: rem(16);
+    gap: rem(10);
+
+    @media (min-width: 830px) {
+      display: none;
+    }
+  }
+
+  &__button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: rem(47);
+    height: rem(47);
+    border: rem(1) solid var(--color-dark);
+    border-radius: 100%;
+    background-color: var(--color-dark);
+    outline: none;
+    box-shadow: none;
+
+    svg {
+      width: rem(17);
+      height: auto;
+
+      path {
+        stroke: var(--color-white);
+      }
+    }
+
+    &.swiper-button-disabled {
+      cursor: default;
+      background-color: var(--color-white);
+
+      path {
+        stroke: var(--color-dark);
       }
     }
   }

@@ -36,3 +36,49 @@
     }
   }
 }
+
+
+.swiper {
+  &-controls {
+    display: flex;
+    align-items: center;
+    margin-bottom: rem(16);
+    gap: rem(10);
+
+    @media (min-width: 1024px) {
+      margin-bottom: rem(32);
+    }
+  }
+
+  &-button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: rem(47);
+    height: rem(47);
+    border: rem(1) solid var(--color-dark);
+    border-radius: 100%;
+    box-shadow: none;
+    background-color: var(--color-dark);
+    outline: none;
+
+    svg {
+      width: rem(17);
+      height: auto;
+
+      path {
+        stroke: var(--color-white);
+      }
+    }
+
+    &.swiper-button-disabled {
+      cursor: default;
+      background-color: var(--color-white);
+
+      path {
+        stroke: var(--color-dark);
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.s-blog-articles {
+  .swiper-controls {
+    justify-content: flex-end;
+  }
+
+  &__card {
+    &-image {
+      margin-bottom: rem(16);
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &-title {
+      max-width: rem(430);
+      margin-bottom: rem(10);
+      text-transform: uppercase;
+    }
+
+    &-text {
+      max-width: rem(480);
+    }
+
+  }
+}

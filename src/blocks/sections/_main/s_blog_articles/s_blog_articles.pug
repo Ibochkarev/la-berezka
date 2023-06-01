@@ -1,0 +1,41 @@
+-
+  const articles = [
+    {
+      image: './img/s-blog-articles/1.jpg',
+      title: 'Как французские операторы запускают школу в Москве',
+      text: 'Интервью со-авторов проекта La Berёzka Алена Ролана и Николя Фабрис Матье для EdDesign',
+    },
+    {
+      image: './img/s-blog-articles/2.jpg',
+      title: 'Как французские операторы запускают школу в Москве',
+      text: 'Интервью со-авторов проекта La Berёzka Алена Ролана и Николя Фабрис Матье для EdDesign',
+    },
+    {
+      image: './img/s-blog-articles/1.jpg',
+      title: 'Как французские операторы запускают школу в Москве',
+      text: 'Интервью со-авторов проекта La Berёzka Алена Ролана и Николя Фабрис Матье для EdDesign',
+    },
+  ]
+
+
++section('s-blog-articles', 'Актуальные', 'новости', '', false)
+  .s-blog-articles__slider.swiper-container
+    .swiper-controls
+      button.swiper-button.swiper-button--prev.s-blog-articles__button-prev(type="button")
+        <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 7.20691L9.5 7.20691L1 7.20691M1 7.20691L7.5 13.7069M1 7.20691L7.5 0.706909" stroke="#1F1E20"/>
+        </svg>
+      button.swiper-button.swiper-button--next.s-blog-articles__button-next(type="button")
+        <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 7.20691L8.5 7.20691L17 7.20691M17 7.20691L10.5 0.706909M17 7.20691L10.5 13.7069" stroke="white"/>
+        </svg>
+
+
+    .swiper-wrapper
+      each item in articles
+        .swiper-slide
+          .s-blog-articles__card
+            .s-blog-articles__card-image
+              img(src=item.image, alt="")
+            .s-blog-articles__card-title.font-h2= item.title
+            .s-blog-articles__card-text.font-text-s= item.text

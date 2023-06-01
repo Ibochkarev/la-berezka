@@ -5,7 +5,23 @@
     padding-left: 0;
   }
 
+  &::after {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: rem(550);
+    height: rem(360);
+    content: '';
+    background-image: url("data:image/svg+xml,%3Csvg width='549' height='357' viewBox='0 0 549 357' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='225.501' y='141.63' width='210.551' height='24.5803' fill='%23D9C6A9' fill-opacity='0.15'/%3E%3Crect x='170' width='379' height='53' fill='%23D9C6A9' fill-opacity='0.15'/%3E%3Crect y='344.125' width='499.592' height='12.8754' fill='%23D9C6A9' fill-opacity='0.15'/%3E%3Crect x='308.975' y='266.872' width='190.617' height='30.4328' fill='%23D9C6A9' fill-opacity='0.15'/%3E%3C/svg%3E%0A");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
   &__info {
+    max-width: 89%;
+    margin: 0 auto rem(40);
+
     @media (min-width: 768px) {
       max-width: rem(1240);
       margin: 0 auto rem(50);

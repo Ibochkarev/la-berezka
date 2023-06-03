@@ -4,7 +4,7 @@
       photo: './img/s-about-team/PH-Ildar.jpg',
       name: 'Ildar nafikov',
       position: 'Cо-автор проекта La Berёzka<br> Основатель Heritage Education Group',
-      description: '<p>Более чем 10-летний опыт работы в международном образовании, под руководством Мр Ильдара открывается уже восьмой кампус в России и СНГ.</p><p>«Если ребёнок не может учиться так, как мы обучаем, мы должны обучать так, как ребёнок может учиться. Вот почему для нас так важно объединиться в одну команду, чтобы учиться друг у друга и непрерывно становиться лучше в том, что мы делаем.»</p>',
+      description: '<p>Более чем 10-летний опыт работы в международном образовании, под руководством Мр Ильдара открывается уже восьмой кампус в России и СНГ.</p><p>"Если ребёнок не может учиться так, как мы обучаем, мы должны обучать так, как ребёнок может учиться. Вот почему для нас так важно объединиться в одну команду, чтобы учиться друг у друга и непрерывно становиться лучше в том, что мы делаем."</p>',
       logo: './img/s-about-team/heg.svg',
       note: 'Современная независимая международная компания, которая обеспечивает образование высокого класса в России.'
     },
@@ -41,15 +41,17 @@
 
     .swiper-wrapper
       each item in team
-        .swiper-slide
+        .swiper-slide.s-about-team__slide
           .s-about-team__card
-            .s-about-team__card-photo
-              img(src=item.photo, alt="")
-            .s-about-team__card-name.font-h2=item.name
-            .s-about-team__card-position.font-text-s!=item.position
-            .s-about-team__card-description.font-text-s!=item.description
-            if item.logo
-              .s-about-team__card-logo
-                img(src=item.logo alt="")
-            if item.note
-              .s-about-team__card-note.font-text-s!=item.note
+            .s-about-team__card-top
+              .s-about-team__card-photo
+                img(src=item.photo, alt="")
+              .s-about-team__card-name.font-h2=item.name
+              .s-about-team__card-position.font-text-s!=item.position
+              .s-about-team__card-description.font-text-s!=item.description
+            .s-about-team__card-bottom
+              if item.logo
+                .s-about-team__card-logo
+                  img(src=item.logo alt="")
+              if item.note
+                .s-about-team__card-note.font-text-s!=item.note

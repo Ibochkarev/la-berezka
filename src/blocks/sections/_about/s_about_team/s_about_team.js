@@ -13,7 +13,7 @@ window.addEventListener(
       resistance: true,
       resistanceRatio: 1,
       spaceBetween: 16,
-      autoHeight: true,
+      // autoHeight: true,
       grabCursor: true,
       breakpoints: {
         500: {

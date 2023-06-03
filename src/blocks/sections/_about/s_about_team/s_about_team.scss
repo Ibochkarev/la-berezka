@@ -1,5 +1,14 @@
 .s-about-team {
+  &__slide {
+    height: initial;
+  }
+
   &__card {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    flex-direction: column;
+
     &-photo {
       margin-bottom: rem(40);
 
@@ -24,12 +33,12 @@
     }
 
     &-logo {
-      margin-bottom: rem(40);
+      margin-bottom: rem(28);
 
       img {
-        width: 100%;
-        height: auto;
-        max-width: rem(305);
+        width: auto;
+        height: 100%;
+        max-height: rem(52);
       }
     }
   }

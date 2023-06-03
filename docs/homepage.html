@@ -30,7 +30,7 @@
     <link rel="preload" href="fonts/roboto-medium/roboto-medium.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/roboto-regular/roboto-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
-    <link rel="stylesheet" href="styles/global.css?v=1685786331458">
+    <link rel="stylesheet" href="styles/global.css?v=1685788140414">
     <link rel="stylesheet" href="./styles/page_main.css">
   </head>
   <body>
@@ -205,7 +205,7 @@
           <div class="m-section__wrapper l-container s-main-contact__wrapper">
             <div class="m-section__introtext font-text-s">Мы всегда рады встрече и с удовольствием подробнее расскажем вам о детском саде La Berёzka</div>
             <div class="s-main-contact__content">
-              <div class="s-main-contact__map"></div>
+              <div class="s-main-contact__map"><iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A701bbafd5b6fd8186137f63a2b70082bacc63c8817e6f8ce6c4b14cb31f9fdd7&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe></div>
               <div class="s-main-contact__block">
                 <h2 class="s-main-contact__title font-h2-didona">Оставить заявку</h2>
                 <div class="s-main-contact__info font-text-s">
@@ -213,7 +213,13 @@
                   <div class="s-main-contact__info-item">Детский сад расположен на территории жилого комплекса  “LUCKY”</div>
                   <div class="s-main-contact__info-item"><a href="tel:+74993466710">+7 499 346 67 10</a><a href="mailto:study@laberezka.com">study@laberezka.com</a></div>
                 </div>
-                <div class="s-main-contact__socials"><a class="s-main-contact__social" href=""></a><a class="s-main-contact__social" href=""></a></div>
+                <div class="s-main-contact__socials"><a class="s-main-contact__social" href="">
+                    <svg class="ico ico-mono-ic-tg">
+                      <use xlink:href="./img/sprite-mono.svg#ico-mono-ic-tg"></use>
+                    </svg></a><a class="s-main-contact__social" href="">
+                    <svg class="ico ico-mono-ic-whatsapp">
+                      <use xlink:href="./img/sprite-mono.svg#ico-mono-ic-whatsapp"></use>
+                    </svg></a></div>
                 <form class="s-main-contact__form" action="">
                   <label class="s-main-contact__form-label">
                     <input class="s-main-contact__form-input" type="text" placeholder="Контактный телефон">
@@ -221,7 +227,7 @@
                   <label class="s-main-contact__form-label">
                     <input class="s-main-contact__form-input" type="text" placeholder="Ваш E-mail">
                   </label>
-                  <button class="s-main-contact__button" type="submit">Отправить</button>
+                  <button class="s-main-contact__form-button" type="submit">Отправить</button>
                 </form>
               </div>
             </div>
@@ -270,9 +276,9 @@
 </svg>
       </button>
     </div>
-    <script defer src="./js/main.js?v=1685786331459"></script>
+    <script defer src="./js/main.js?v=1685788140415"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
-    <script defer src="./js/vendor.js?v=1685786331459"></script>
+    <script defer src="./js/vendor.js?v=1685788140415"></script>
     <script defer src="./js/page_main.js"></script>
   </body>
 </html>

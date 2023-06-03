@@ -1,6 +1,7 @@
 +section('s-main-contact', '', '', 'Мы всегда рады встрече и с удовольствием подробнее расскажем вам о детском саде La Berёzka', false)
   .s-main-contact__content
     .s-main-contact__map
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A701bbafd5b6fd8186137f63a2b70082bacc63c8817e6f8ce6c4b14cb31f9fdd7&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
     .s-main-contact__block
       h2.s-main-contact__title.font-h2-didona Оставить заявку
       .s-main-contact__info.font-text-s
@@ -11,10 +12,12 @@
           a(href="mailto:study@laberezka.com") study@laberezka.com
       .s-main-contact__socials
         a.s-main-contact__social(href="")
+          +svgMono("ic-tg")
         a.s-main-contact__social(href="")
+          +svgMono("ic-whatsapp")
       form.s-main-contact__form(action="")
         label.s-main-contact__form-label
           input.s-main-contact__form-input(type="text" placeholder="Контактный телефон")
         label.s-main-contact__form-label
           input.s-main-contact__form-input(type="text" placeholder="Ваш E-mail")
-        button.s-main-contact__button(type="submit") Отправить
+        button.s-main-contact__form-button(type="submit") Отправить

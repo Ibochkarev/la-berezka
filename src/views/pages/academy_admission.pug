@@ -1,0 +1,14 @@
+extends ../layouts/default
+
+block variables
+  - const title = "Прием в Академию"
+
+block append head
+  link(rel="stylesheet" href="./styles/page_academy_admission.css")
+
+block content
+  include ../../blocks/sections/_academy_admission/s_peculiarities/s_peculiarities.pug
+  include ../../blocks/sections/s_main_contact/s_main_contact.pug
+
+//- block append scripts
+//-   script(defer src="./js/page_academy_admission.js")

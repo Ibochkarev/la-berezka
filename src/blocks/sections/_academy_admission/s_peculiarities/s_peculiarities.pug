@@ -1,0 +1,47 @@
+-
+  const peculiarities = [
+    {
+      icon: './img/s-peculiarities/reserve.svg',
+      text: 'Собственный ресторан с обучающей кухней'
+    },
+    {
+      icon: './img/s-peculiarities/profile-user.svg',
+      text: 'Два учителя и один ассистент на группу'
+    },
+    {
+      icon: './img/s-peculiarities/clock.svg',
+      text: 'Учебный день с 08:30 до 18:00'
+    },
+    {
+      icon: './img/s-peculiarities/mobile.svg',
+      text: 'Устройства для каждого ученика, начиная с Year 1​'
+    },
+    {
+      icon: './img/s-peculiarities/glass.svg',
+      text: 'Поддержка психолога, логопеда и врача​'
+    },
+    {
+      icon: './img/s-peculiarities/video.svg',
+      text: 'Закрытая охраняемая территория'
+    },
+    {
+      icon: './img/s-peculiarities/house.svg',
+      text: 'Комфортная и современная обстановка'
+    },
+    {
+      icon: './img/s-peculiarities/brush.svg',
+      text: 'Дополнительные занятия в секциях'
+    },
+    {
+      icon: './img/s-peculiarities/teacher.svg',
+      text: 'Возраст детей 2 - 7 лет​, до 14 детей в группе '
+    },
+  ]
+
++section('s-peculiarities', 'Особенности детского сада', 'LA BERЁZKA', 'Мы создаём комфортную и безопасную среду, в которой каждый ребёнок будет иметь возможность развиваться на 360°', false)
+  .s-peculiarities__list
+    each item in peculiarities
+      .s-peculiarities__card
+        .s-peculiarities__card-icon
+          img(src= item.icon, alt="")
+        .s-peculiarities__card-text.font-text-s!= item.text

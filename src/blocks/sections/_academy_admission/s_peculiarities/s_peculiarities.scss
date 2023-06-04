@@ -1,0 +1,41 @@
+.s-peculiarities {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: rem(10);
+
+    @media (min-width: 575px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: rem(20);
+    }
+
+    @media (min-width: 992px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__card {
+    display: flex;
+    align-items: center;
+    padding: rem(20);
+    background: var(--color-white);
+    border-radius: rem(10);
+    box-shadow: 0 rem(1) rem(15) rgba(34, 34, 34, 0.03);
+    gap: rem(20);
+
+    @media (min-width: 1024px) {
+      padding: rem(32);
+    }
+
+    &-icon {
+      img {
+        width: rem(48);
+        height: auto;
+
+        @media (min-width: 768px) {
+          width: rem(60);
+        }
+      }
+    }
+  }
+}

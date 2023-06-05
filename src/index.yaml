@@ -2,11 +2,11 @@ ProjectTitle: LA BERЁZKA
 
 PageList:
   - file: homepage.html
-    ready: 40
+    ready: 70
   - file: about.html
     ready: 100
   - file: academy_admission.html
-    ready: 30
+    ready: 80
   - file: program.html
     ready: 40
   - file: 404.html

@@ -2341,7 +2341,6 @@ section {
   justify-content: center;
   padding: 2.0625rem 1.4375rem 3rem;
   color: var(--color-white);
-  border-radius: 1.25rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;

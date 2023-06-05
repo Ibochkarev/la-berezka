@@ -1,0 +1,33 @@
+-
+  const listEducationProgram = [
+    {
+      image: './img/s-author-program/4c.jpg',
+    },
+    {
+      image: './img/s-author-program/ac.jpg',
+    },
+    {
+      image: './img/s-author-program/li.jpg',
+    },
+    {
+      image: './img/s-author-program/pe.jpg',
+    },
+    {
+      image: './img/s-author-program/rp.jpg',
+    },
+    {
+      image: './img/s-author-program/sr.jpg',
+    },
+    {
+      image: './img/s-author-program/be.jpg',
+    },
+  ]
+
++section('s-author-program', 'Авторская', 'образовательная программа', 'Что и как изучают в международном детском саду La Berёzka?', false)
+  .s-author-program__list
+    .s-author-program__info
+      .s-author-program__info-title.font-h2 Обучение через сторителлинг
+      .s-author-program__info-text.font-text-s Дети погружаются в истории и, играя, изучают новое.
+    each item in listEducationProgram
+      .s-author-program__card
+        img(src=item.image, alt="")

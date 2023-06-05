@@ -8,6 +8,6 @@ PageList:
   - file: academy_admission.html
     ready: 80
   - file: program.html
-    ready: 40
+    ready: 60
   - file: 404.html
     ready: 100

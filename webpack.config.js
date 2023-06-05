@@ -22,6 +22,7 @@ module.exports = {
     main: './src/js/index.js',
     page_main: './src/js/page_main.js',
     page_about: './src/js/page_about.js',
+    page_program: './src/js/page_program.js',
   },
 
   output: {

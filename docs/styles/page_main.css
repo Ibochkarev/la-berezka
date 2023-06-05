@@ -580,13 +580,17 @@ h5 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
     gap: 2.5rem;
-    -ms-grid-columns: (1fr)[3];
-    grid-template-columns: repeat(3, 1fr);
   }
 
   .s-main-standards__column--one {
@@ -611,7 +615,7 @@ h5 {
   .s-main-standards__column--three {
     width: 100%;
     width: 19.6875rem;
-    margin-top: 7.5rem;
+    margin-top: 11.25rem;
   }
 
   .s-main-standards__text {
@@ -652,16 +656,16 @@ h5 {
   }
 
   .s-main-standards::after {
+    top: 8.75rem;
     width: 15.75rem;
     height: 0.8125rem;
-    top: 8.75rem;
   }
 
   .s-main-standards__inner::after {
-    width: 15.75rem;
-    height: 1.875rem;
     top: 5.625rem;
     right: 3.75rem;
+    width: 15.75rem;
+    height: 1.875rem;
   }
 
   .s-main-standards__text {

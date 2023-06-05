@@ -272,6 +272,71 @@ h5 {
   object-fit: cover;
 }
 
+.s-program-age-ratio__table {
+  display: none;
+}
+
+.s-program-age-ratio__table-title {
+  text-transform: uppercase;
+}
+
+.s-program-age-ratio__table-header {
+  overflow: hidden;
+  height: 6.375rem;
+  border-radius: 30px;
+  background-color: var(--color-middle-crayola);
+}
+
+.s-program-age-ratio__table-header tr {
+  border: 0.0625rem solid var(--color-crayola);
+}
+
+.s-program-age-ratio__table-header td {
+  border-top: 0;
+  border-right: 0.0625rem solid var(--color-crayola);
+}
+
+.s-program-age-ratio__table-header td:first-child {
+  border-left: 0;
+  border-top-left-radius: 0.25rem;
+}
+
+.s-program-age-ratio__table-header td:last-child {
+  border-right: 0;
+  border-top-right-radius: 0.25rem;
+}
+
+.s-program-age-ratio__table-line {
+  border-top: 0.0625rem solid var(--color-crayola);
+  font-family: "Roboto Light", sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 300;
+  line-height: 1.3125rem;
+}
+
+.s-program-age-ratio__table-line.is-first {
+  border-top: 0;
+}
+
+.s-program-age-ratio__table-line td {
+  border-left: 0.0625rem solid var(--color-crayola);
+  border-right: 0.0625rem solid var(--color-crayola);
+}
+
+.s-program-age-ratio__table-line td:first-child {
+  border-left: 0;
+  border-top-left-radius: 0.25rem;
+}
+
+.s-program-age-ratio__table-line td:last-child {
+  border-right: 0;
+  border-top-right-radius: 0.25rem;
+}
+
+.s-program-age-ratio__table-line td.is-last {
+  border-right: 0;
+}
+
 .s-one-day {
   background-color: var(--color-middle-sand);
 }
@@ -514,6 +579,18 @@ h5 {
     margin-bottom: 2rem;
   }
 
+  .s-program-age-ratio__table {
+    display: block;
+  }
+
+  .s-program-age-ratio__table table {
+    width: 100%;
+    text-align: center;
+    -webkit-box-shadow: 0 0.0625rem 0.9375rem rgba(34, 34, 34, 0.03);
+    box-shadow: 0 0.0625rem 0.9375rem rgba(34, 34, 34, 0.03);
+    vertical-align: middle;
+  }
+
   .s-one-day__list .m-info-card::before {
     height: 0.75rem;
   }
@@ -729,6 +806,11 @@ h5 {
     font-weight: 400;
     line-height: 3.75rem;
     letter-spacing: 0.01em;
+  }
+
+  .s-program-age-ratio__table-line {
+    font-size: 1.125rem;
+    line-height: 1.5625rem;
   }
 }
 

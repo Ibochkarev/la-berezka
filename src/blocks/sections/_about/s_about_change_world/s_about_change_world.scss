@@ -17,13 +17,18 @@
   }
 
   &__inner {
-    display: grid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     gap: rem(20);
-    grid-template-columns: repeat(1, 1fr);
+    flex-direction: column;
 
     @media (min-width: 768px) {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      flex-direction: row;
       gap: rem(40);
-      grid-template-columns: repeat(3, 1fr);
     }
 
     @media (min-width: 1200px) {
@@ -42,9 +47,18 @@
       }
     }
 
+    &--one {
+      @media (min-width: 768px) {
+        width: 100%;
+        width: rem(315);
+      }
+    }
+
     &--two {
       @media (min-width: 768px) {
         display: block;
+        width: 100%;
+        width: rem(440);
         margin-top: rem(70);
       }
     }
@@ -55,6 +69,8 @@
       justify-content: center;
 
       @media (min-width: 768px) {
+        width: 100%;
+        width: rem(315);
         margin-top: rem(140);
       }
     }

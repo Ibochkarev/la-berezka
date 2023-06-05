@@ -27,9 +27,9 @@
     background-color: var(--color-dark);
 
     @media (min-width: 1024px) {
+      top: rem(140);
       width: rem(252);
       height: rem(13);
-      top: rem(140);
     }
   }
 
@@ -43,9 +43,10 @@
 
     @media (min-width: 768px) {
       display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
       flex-direction: row;
       gap: rem(40);
-      grid-template-columns: repeat(3, 1fr);
     }
 
     @media (min-width: 1200px) {
@@ -63,10 +64,10 @@
       background-color: var(--color-dark);
 
       @media (min-width: 1024px) {
-        width: rem(252);
-        height: rem(30);
         top: rem(90);
         right: rem(60);
+        width: rem(252);
+        height: rem(30);
       }
     }
   }
@@ -110,7 +111,7 @@
       @media (min-width: 768px) {
         width: 100%;
         width: rem(315);
-        margin-top: rem(120);
+        margin-top: rem(180);
       }
     }
   }

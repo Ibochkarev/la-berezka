@@ -1,0 +1,13 @@
+extends ../layouts/default
+
+block variables
+  - const title = "Учебная программа"
+
+block append head
+  link(rel="stylesheet" href="./styles/page_program.css")
+
+block content
+  include ../../blocks/sections/_program/s_one_day/s_one_day.pug
+
+//- block append scripts
+//-   script(defer src="./js/page_program.js")

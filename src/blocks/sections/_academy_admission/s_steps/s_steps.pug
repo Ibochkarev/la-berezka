@@ -1,0 +1,25 @@
+-
+  const steps = [
+    {
+      icon: './img/s-steps/personalcard.svg',
+      title: 'Назначить<br> встречу',
+      text: 'Свяжитесь с нами, и мы вместе выберем удобную для вас дату и время для индивидуальной презентации международного детского сада'
+    },
+    {
+      icon: './img/s-steps/message-favorite.svg',
+      title: 'Пройти интервью с психологом',
+      text: 'По завершению вы получите полноценный отчет и оценку готовности ребёнка посещать La Berёzka'
+    },
+    {
+      icon: './img/s-steps/task-square.svg',
+      title: 'Заключить<br> договор',
+      text: 'Наши специалисты проконсультируют о необходимых документах'
+    }
+  ]
+
++section('s-steps', 'Как поступить в La Berёzka', 'за 3 шага', '', false)
+  .s-steps__list
+    each step in steps
+      +m_info_card(step.icon, step.title, '', step.text)
+    a.s-steps__button(href="")
+      .s-steps__button-label Написать нам в WhatsApp

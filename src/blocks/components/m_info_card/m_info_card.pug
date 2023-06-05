@@ -1,0 +1,14 @@
+mixin m_info_card(icon, title, subtitle, text, list)
+  .m-info-card
+    .m-info-card__wrapper
+      if icon
+        .m-info-card__icon
+          img(src=icon, alt="")
+      if subtitle
+        .m-info-card__subtitle.font-text-s!=subtitle
+      .m-info-card__title.font-h2!=title
+      .m-info-card__text.font-text-s!=text
+      if list
+        ul.m-info-card__list.font-text-s
+          each item in list
+            li!=item.title

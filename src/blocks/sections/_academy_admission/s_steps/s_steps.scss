@@ -1,0 +1,119 @@
+.s-steps {
+  background-color: var(--color-middle-sand);
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: rem(20);
+
+    @media (min-width: 575px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 992px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .m-info-card {
+      &::before {
+        position: absolute;
+        height: rem(9);
+        content: '';
+        background-color: var(--color-dark);
+
+        @media (min-width: 768px) {
+          height: rem(12);
+        }
+      }
+
+      &::after {
+        position: absolute;
+        height: rem(9);
+        content: '';
+        background-color: var(--color-dark);
+
+        @media (min-width: 768px) {
+          top: rem(12);
+        }
+      }
+
+      &:nth-child(1) {
+        &::after {
+          top: rem(25);
+          right: 0;
+          width: rem(149);
+        }
+      }
+
+      &:nth-child(2) {
+        &::after {
+          top: rem(25);
+          left: 0;
+          width: rem(77);
+        }
+
+        &::before {
+          right: 0;
+          bottom: rem(32);
+          width: rem(77);
+        }
+      }
+
+      &:nth-child(3) {
+        &::after {
+          top: rem(25);
+          right: 0;
+          width: rem(77);
+        }
+
+        &::before {
+          @media (min-width: 768px) {
+            left: 0;
+            bottom: rem(55);
+            width: rem(115);
+          }
+        }
+      }
+    }
+  }
+
+  &__button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: rem(40) rem(60);
+    text-align: center;
+    background: var(--color-dark);
+    border-radius: rem(10);
+    box-shadow: 0 rem(1) rem(15) rgba(34, 34, 34, 0.03);
+
+    &::before {
+      position: absolute;
+      top: rem(15);
+      left: 0;
+      width: rem(75);
+      height: rem(9);
+      content: '';
+      background-color: var(--color-dark);
+
+      @media (min-width: 768px) {
+        top: rem(25);
+        width: rem(137);
+        height: rem(13);
+        background-color: var(--color-white);
+      }
+    }
+
+    &-label {
+      text-transform: uppercase;
+      color: var(--color-white);
+    }
+  }
+
+  .m-info-card {
+    @media (max-width: 768px) {
+      background: var(--color-crayola);
+    }
+  }
+}

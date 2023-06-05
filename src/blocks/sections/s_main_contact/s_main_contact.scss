@@ -92,6 +92,11 @@
       border: 0;
       border-bottom: rem(1) solid #000;
       outline: none;
+      @include font-text-s;
+
+      &::placeholder {
+        @include font-text-s;
+      }
     }
 
     &-button {

@@ -2,11 +2,15 @@ extends ../layouts/default
 
 block variables
   - const title = "Прием в Академию"
+  - const introTitle = "Приём"
+  - const introSubtitle = "в академию"
+  - const introText = "Мы стремимся повышать стандарты образования, создавая школы с международной средой, современной инфраструктурой и дизайном. В LA BERЁZKA мы меняем подход к образованию и жизненную философию, чтобы каждый ребёнок мог развить свой потенциал и становиться лучше каждый день."
 
 block append head
   link(rel="stylesheet" href="./styles/page_academy_admission.css")
 
 block content
+  include ../../blocks/sections/s_intro/s_intro.pug
   include ../../blocks/sections/_academy_admission/s_about_the_leader/s_about_the_leader.pug
   include ../../blocks/sections/_academy_admission/s_steps/s_steps.pug
   include ../../blocks/sections/_academy_admission/s_peculiarities/s_peculiarities.pug

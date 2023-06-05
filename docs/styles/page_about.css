@@ -155,15 +155,15 @@ h5 {
   line-height: 1.25rem;
 }
 
-.s-about-intro {
+.s-intro {
   background-color: var(--color-white);
 }
 
-.s-about-intro__wrapper {
+.s-intro__wrapper {
   padding: 0;
 }
 
-.s-about-intro__content {
+.s-intro__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -175,15 +175,15 @@ h5 {
   background-position: right center;
 }
 
-.s-about-intro__info {
+.s-intro__info {
   max-width: 46.875rem;
 }
 
-.s-about-intro__title {
+.s-intro__title {
   margin-bottom: 1.875rem;
 }
 
-.s-about-intro__title h1 {
+.s-intro__title h1 {
   margin-bottom: 0.625rem;
 }
 
@@ -307,15 +307,15 @@ h5 {
 }
 
 @media (min-width: 1024px) {
-  .s-about-intro {
+  .s-intro {
     height: 44rem;
   }
 
-  .s-about-intro__content {
+  .s-intro__content {
     height: 44rem;
   }
 
-  .s-about-intro__title {
+  .s-intro__title {
     margin-bottom: 3.125rem;
   }
 }
@@ -361,7 +361,7 @@ h5 {
 }
 
 @media (max-width: 1023px) {
-  .s-about-intro__content {
+  .s-intro__content {
     background-image: none !important;
   }
 }

@@ -155,6 +155,38 @@ h5 {
   line-height: 1.25rem;
 }
 
+.s-intro {
+  background-color: var(--color-white);
+}
+
+.s-intro__wrapper {
+  padding: 0;
+}
+
+.s-intro__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 32rem;
+  background-size: cover;
+  background-position: right center;
+}
+
+.s-intro__info {
+  max-width: 46.875rem;
+}
+
+.s-intro__title {
+  margin-bottom: 1.875rem;
+}
+
+.s-intro__title h1 {
+  margin-bottom: 0.625rem;
+}
+
 .s-environment__title {
   margin: 0;
 }
@@ -641,6 +673,18 @@ h5 {
 }
 
 @media (min-width: 1024px) {
+  .s-intro {
+    height: 44rem;
+  }
+
+  .s-intro__content {
+    height: 44rem;
+  }
+
+  .s-intro__title {
+    margin-bottom: 3.125rem;
+  }
+
   .s-one-day__list {
     -ms-grid-columns: (1fr)[4];
     grid-template-columns: repeat(4, 1fr);
@@ -685,6 +729,12 @@ h5 {
     font-weight: 400;
     line-height: 3.75rem;
     letter-spacing: 0.01em;
+  }
+}
+
+@media (max-width: 1023px) {
+  .s-intro__content {
+    background-image: none !important;
   }
 }
 

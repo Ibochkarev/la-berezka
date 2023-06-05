@@ -2,11 +2,15 @@ extends ../layouts/default
 
 block variables
   - const title = "Учебная программа"
+  - const introTitle = "Учебная"
+  - const introSubtitle = "программа"
+  - const introText = "Мы стремимся повышать стандарты образования, создавая школы с международной средой, современной инфраструктурой и дизайном. В LA BERЁZKA мы меняем подход к образованию и жизненную философию, чтобы каждый ребёнок мог развить свой потенциал и становиться лучше каждый день."
 
 block append head
   link(rel="stylesheet" href="./styles/page_program.css")
 
 block content
+  include ../../blocks/sections/s_intro/s_intro.pug
   include ../../blocks/sections/_program/s_environment/s_environment.pug
   include ../../blocks/sections/_program/s_author_program/s_author_program.pug
   include ../../blocks/sections/_program/s_one_day/s_one_day.pug

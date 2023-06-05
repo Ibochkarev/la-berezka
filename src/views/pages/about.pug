@@ -2,12 +2,15 @@ extends ../layouts/default
 
 block variables
   - const title = "О команде"
+  - const introTitle = "О команде"
+  - const introSubtitle = "LA BERЁZKA"
+  - const introText = "Мы стремимся повышать стандарты образования, создавая школы с международной средой, современной инфраструктурой и дизайном. В LA BERЁZKA мы меняем подход к образованию и жизненную философию, чтобы каждый ребёнок мог развить свой потенциал и становиться лучше каждый день."
 
 block append head
   link(rel="stylesheet" href="./styles/page_about.css")
 
 block content
-  include ../../blocks/sections/_about/s_about_intro/s_about_intro.pug
+  include ../../blocks/sections/s_intro/s_intro.pug
   include ../../blocks/sections/_about/s_about_change_world/s_about_change_world.pug
   include ../../blocks/sections/_about/s_about_team/s_about_team.pug
 

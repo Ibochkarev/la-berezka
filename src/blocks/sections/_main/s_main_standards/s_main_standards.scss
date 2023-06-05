@@ -1,0 +1,130 @@
+.s-main-standards {
+  overflow: hidden;
+  position: relative;
+
+  &::before {
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: rem(347);
+    height: rem(280);
+    transform: translateY(-50%);
+    content: "";
+    background-image: url('../img/s-about-change-world/bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &::after {
+    z-index: -1;
+    position: absolute;
+    top: rem(160);
+    right: 0;
+    width: rem(150);
+    height: rem(2);
+    content: "";
+    background-color: var(--color-dark);
+
+    @media (min-width: 1024px) {
+      width: rem(252);
+      height: rem(13);
+      top: rem(140);
+    }
+  }
+
+  &__inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: rem(20);
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+      display: flex;
+      flex-direction: row;
+      gap: rem(40);
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (min-width: 1200px) {
+      gap: rem(85);
+    }
+
+    &::after {
+      z-index: -1;
+      position: absolute;
+      top: rem(160);
+      right: 0;
+      width: rem(150);
+      height: rem(2);
+      content: "";
+      background-color: var(--color-dark);
+
+      @media (min-width: 1024px) {
+        width: rem(252);
+        height: rem(30);
+        top: rem(90);
+        right: rem(60);
+      }
+    }
+  }
+
+  &__column {
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-width: rem(440);
+      margin: 0 auto;
+
+      @media (max-width: 767px) {
+        border-radius: rem(20);
+      }
+    }
+
+    &--one {
+      @media (min-width: 768px) {
+        display: flex;
+        width: 100%;
+        width: rem(315);
+        flex-direction: column-reverse;
+      }
+    }
+
+    &--two {
+      @media (min-width: 768px) {
+        display: block;
+        width: 100%;
+        width: rem(440);
+        margin-top: rem(70);
+      }
+    }
+
+    &--three {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @media (min-width: 768px) {
+        width: 100%;
+        width: rem(315);
+        margin-top: rem(120);
+      }
+    }
+  }
+
+  &__text {
+    margin-bottom: rem(40);
+
+    @media (min-width: 768px) {
+      margin-top: rem(30);
+      margin-bottom: 0;
+    }
+
+    @media (min-width: 1024px) {
+      margin-top: rem(110);
+    }
+  }
+}

@@ -84,6 +84,8 @@
 
     @media (min-width: 768px) {
       margin-bottom: rem(60);
+      font-size: rem(38);
+      line-height: rem(50);
     }
 
     @media (min-width: 1200px) {
@@ -133,6 +135,7 @@
     width: 100%;
     height: rem(80);
     max-width: rem(350);
+    margin-bottom: rem(60);
     text-transform: uppercase;
     color: var(--color-white);
     border: 0;
@@ -140,6 +143,7 @@
 
     @media (min-width: 768px) {
       max-width: rem(266);
+      margin-bottom: 0;
     }
 
     @include font-h2;

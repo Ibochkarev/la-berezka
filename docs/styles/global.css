@@ -1356,34 +1356,34 @@ button.swiper-pagination-bullet {
 }
 
 @font-face {
-  font-family: "Roboto Light";
-  font-weight: normal;
-  src: url("../fonts/roboto-light/roboto-light.woff") format("woff"), url("../fonts/roboto-light/roboto-light.woff2") format("woff2");
+  font-family: "Roboto";
+  font-weight: 300;
+  src: url("../fonts/roboto-light/roboto-light.woff") format("woff"), url("../fonts/roboto-light/roboto-light.woff2?#iefix") format("woff2");
   /* Modern Browsers */
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Roboto Medium";
-  font-weight: normal;
-  src: url("../fonts/roboto-medium/roboto-medium.woff") format("woff"), url("../fonts/roboto-medium/roboto-medium.woff2") format("woff2");
+  font-family: "Roboto";
+  font-weight: 500;
+  src: url("../fonts/roboto-medium/roboto-medium.woff") format("woff"), url("../fonts/roboto-medium/roboto-medium.woff2?#iefix") format("woff2");
   /* Modern Browsers */
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Roboto Regular";
-  font-weight: normal;
-  src: url("../fonts/roboto-regular/roboto-regular.woff") format("woff"), url("../fonts/roboto-regular/roboto-regular.woff2") format("woff2");
+  font-family: "Roboto";
+  font-weight: 400;
+  src: url("../fonts/roboto-regular/roboto-regular.woff") format("woff"), url("../fonts/roboto-regular/roboto-regular.woff2?#iefix") format("woff2");
   /* Modern Browsers */
   font-style: normal;
   font-display: swap;
 }
 
 body {
-  font-family: "Roboto Regular", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   color: var(--color-dark);
@@ -1718,7 +1718,7 @@ section {
   bottom: 1.25rem;
   display: none;
   width: 100%;
-  max-width: 38.125rem;
+  max-width: 34.375rem;
   z-index: 1;
 }
 
@@ -1728,7 +1728,7 @@ section {
 
 .m-cookies__wrapper {
   padding: 1.25rem;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   background-color: var(--color-white);
 }
 
@@ -2762,6 +2762,10 @@ section {
   .m-cookies {
     right: 2.1875rem;
     bottom: 2.1875rem;
+  }
+
+  .m-cookies__wrapper {
+    padding: 1.875rem;
   }
 
   .s-main-contact__map {

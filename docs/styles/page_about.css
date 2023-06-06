@@ -179,11 +179,11 @@ h5 {
   max-width: 46.875rem;
 }
 
-.s-intro__title {
+.s-intro__headline {
   margin-bottom: 1.875rem;
 }
 
-.s-intro__title h1 {
+.s-intro__title {
   margin-bottom: 0.625rem;
 }
 
@@ -344,7 +344,7 @@ h5 {
     height: 44rem;
   }
 
-  .s-intro__title {
+  .s-intro__headline {
     margin-bottom: 3.125rem;
   }
 }

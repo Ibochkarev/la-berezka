@@ -1,7 +1,7 @@
 +section('s-intro', '', '', '', false)
   .s-intro__content(style="background-image: url('./img/intro/intro_bg_about.png')")
     .s-intro__info
-      .s-intro__title
-        h1.font-h1!= introTitle
-        span.font-h1-didona!= introSubtitle
+      .s-intro__headline
+        h1.s-intro__title.font-h1!= introTitle
+        span.s-intro__subtitle.font-h1-didona!= introSubtitle
       .s-intro__description.font-text-s!= introText

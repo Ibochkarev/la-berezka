@@ -166,3 +166,29 @@ section {
     transform: translateY(0);
   }
 }
+
+
+.link-animation {
+  transition: background-size .3s;
+  letter-spacing: rem(0.17);
+  background-image: linear-gradient(currentcolor, currentcolor);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 100% rem(1);
+  white-space: nowrap;
+
+  &:hover {
+    background-position: left bottom;
+    animation: .5s animLinkHover;
+  }
+}
+
+@keyframes animLinkHover {
+  0% {
+    background-size: 0% rem(1);
+  }
+
+  100% {
+    background-size: 100% rem(1);
+  }
+}

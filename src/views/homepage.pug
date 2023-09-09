@@ -4,16 +4,10 @@ block variables
   - const title = "Главная страница проекта"
 
 block append head
-  link(rel="stylesheet" href="./styles/page_main.css")
+  link(rel="stylesheet" href="./styles/page_homepage.css")
 
 block content
-  include ../blocks/sections/_main/s_main_intro/s_main_intro.pug
-  include ../blocks/sections/_main/s_main_standards/s_main_standards.pug
-  include ../blocks/sections/_main/s_main_advantages/s_main_advantages.pug
-  include ../blocks/sections/_main/s_main_video/s_main_video.pug
-  include ../blocks/sections/_main/s_blog_articles/s_blog_articles.pug
-  include ../blocks/sections/_main/s_main_infoblock/s_main_infoblock.pug
-  include ../blocks/sections/s_main_contact/s_main_contact.pug
+  include ../blocks/sections/_main/s_meets_education/s_meets_education.pug
 
 block append scripts
-  script(defer src="./js/page_main.js")
+  script(defer src="./js/page_homepage.js")

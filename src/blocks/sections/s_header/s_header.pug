@@ -1,65 +1,68 @@
 -
   var headerMenu = [
-    { title: 'Об академии', link: '#', active: true },
-    { title: 'Как поступить', link: '#' },
-    { title: 'Программа', link: '#' },
+    { title: 'State of Mind', link: '#', active: true },
+    { title: 'Explore', link: '#' },
+    { title: 'Our Team', link: '#' },
   ]
 
 header.s-header
   .l-container.s-header__wrapper
     a.s-header__logo(href="")
-      img.s-header__logo-image(src="./img/global/logo.svg", alt="")
+      img.s-header__logo-image(src="./img/global/logo-header.svg", alt="")
 
     nav.s-header__nav
       ul.s-header__navigation
         each itemMenu in headerMenu
           li.s-header__navigation-item
-            a.s-header__navigation-link.font-menu(href=itemMenu.link, aria-label=itemMenu.title, title=itemMenu.title, class={'is-active' : itemMenu.active})
+            a.s-header__navigation-link(href=itemMenu.link, aria-label=itemMenu.title, title=itemMenu.title, class={'is-active' : itemMenu.active})
               span= itemMenu.title
         li.s-header__navigation-item
-          a.s-header__navigation-link.s-header__navigation-link--phone.font-menu(href="tel:+74993017266") +7 499 301 72 66
+          a.s-header__navigation-link(href="#") SAVVA’s
+            +svgMono("legacy")
+        li.s-header__navigation-item.s-header__navigation-item--request
+          a.s-header__navigation-link(href="#") Request Invitation
     .s-header__right-col
       a.s-header__request(href="") Request Invitation
       .s-header__actions
         //- a.s-header__actions-item.s-header__actions-lk(href="#" aria-label="Поиск" title="Личный кабинет")
-          +svgMono("ic-lk")
+          //- +svgMono("ic-lk")
         //- a.s-header__actions-item.s-header__actions-search(href="#" aria-label="Поиск" title="Поиск")
         //-   +svgMono("ic-search")
-        .s-header__actions-item.s-header__actions-item--languages
-          .s-header__languages
-            a.s-header__language.is-active(href="#" aria-label="English" title="English") en
-            a.s-header__language(href="#" aria-label="Russian" title="Russian") ru
+        //- .s-header__actions-item.s-header__actions-item--languages
+        .s-header__languages
+          a.s-header__language.is-active(href="#" aria-label="English" title="English") en
+          a.s-header__language(href="#" aria-label="Russian" title="Russian") ru
         button.s-header__actions-item.s-header__burger(type="button" aria-label="Меню" title="Меню")
           +svgMono("ic-menu")
 
-.m-modal-menu
-  .m-modal-menu__wrapper.animated.zoomIn
-    button.m-modal-menu__close(type="button")
-      +svgMono("ic-close")
-    .m-modal-menu__content
-      .m-modal-menu__header
-        a.m-modal-menu__logo(href="/")
-          img(src="./img/global/footer-logo-mobile.svg", alt="")
-      .m-modal-menu__info
-        nav.m-modal-menu__nav
-          ul.m-modal-menu__navigation
-            each itemMenu in headerMenu
-              li.m-modal-menu__navigation-item
-                a.m-modal-menu__navigation-link.font-menu(href=itemMenu.link, aria-label=itemMenu.title, title=itemMenu.title, class={'is-active' : itemMenu.active})
-                  span= itemMenu.title
-        .m-modal-menu__info-item.font-text-s Москва, ул. 2-ая Звенигородская дом, 12 стр. 26
-        .m-modal-menu__info-item.font-text-s Детский сад расположен на территории жилого комплекса  “LUCKY”
-        .m-modal-menu__info-item.font-text-s
-          a(href="tel:+74993466710") +7 499 346 67 10
-          a(href="mailto:study@laberezka.com") study@laberezka.com
+//- .m-modal-menu
+//-   .m-modal-menu__wrapper.animated.zoomIn
+//-     button.m-modal-menu__close(type="button")
+//-       +svgMono("ic-close")
+//-     .m-modal-menu__content
+//-       .m-modal-menu__header
+//-         a.m-modal-menu__logo(href="/")
+//-           img(src="./img/global/footer-logo-mobile.svg", alt="")
+//-       .m-modal-menu__info
+//-         nav.m-modal-menu__nav
+//-           ul.m-modal-menu__navigation
+//-             each itemMenu in headerMenu
+//-               li.m-modal-menu__navigation-item
+//-                 a.m-modal-menu__navigation-link.font-menu(href=itemMenu.link, aria-label=itemMenu.title, title=itemMenu.title, class={'is-active' : itemMenu.active})
+//-                   span= itemMenu.title
+//-         .m-modal-menu__info-item.font-text-s Москва, ул. 2-ая Звенигородская дом, 12 стр. 26
+//-         .m-modal-menu__info-item.font-text-s Детский сад расположен на территории жилого комплекса  “LUCKY”
+//-         .m-modal-menu__info-item.font-text-s
+//-           a(href="tel:+74993466710") +7 499 346 67 10
+//-           a(href="mailto:study@laberezka.com") study@laberezka.com
 
-.m-modal-search
-  .m-modal-search__wrapper.animated.zoomIn
-    button.m-modal-search__close(type="button")
-      +svgMono("ic-close")
-    .m-modal-search__content
-      form.m-modal-search__form(action="")
-        label.m-modal-search__form-label(for="")
-          input.m-modal-search__form-input(type="text", placeholder="Введите ваш запрос")
-        .m-modal-search__button
-          +svgMono("ic-search")
+//- .m-modal-search
+//-   .m-modal-search__wrapper.animated.zoomIn
+//-     button.m-modal-search__close(type="button")
+//-       +svgMono("ic-close")
+//-     .m-modal-search__content
+//-       form.m-modal-search__form(action="")
+//-         label.m-modal-search__form-label(for="")
+//-           input.m-modal-search__form-input(type="text", placeholder="Введите ваш запрос")
+//-         .m-modal-search__button
+//-           +svgMono("ic-search")

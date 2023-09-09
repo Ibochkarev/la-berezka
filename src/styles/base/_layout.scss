@@ -5,14 +5,14 @@
     max-width: 89%;
     margin-right: auto;
     margin-left: auto;
-    padding-right: calc(var(--gutter-x) * 0.5);
-    padding-left: calc(var(--gutter-x) * 0.5);
+    padding-right: calc(var(--gutter-x) * 1);
+    padding-left: calc(var(--gutter-x) * 1);
 
     @media (min-width: 768px) {
       max-width: 94%;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 1336px) {
       max-width: rem(1240);
     }
   }

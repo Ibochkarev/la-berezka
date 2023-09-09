@@ -1,12 +1,13 @@
 mixin section(className=false, titleSection=title, subTitleSection=subTitle, introtext, wide=false)
   section.m-section(class=className, class={'m-section--full' : wide})&attributes(attributes)
-    .m-section__wrapper.l-container(class=`${className}__wrapper`)
-      if titleSection
-        .m-section__headline
-          h1.m-section__title.font-h1!= titleSection
-          if subTitleSection
-            p.m-section__subtitle.font-h1-didona!= subTitleSection
-      if introtext
-        .m-section__introtext.font-text-s!= introtext
-      if block
-        block
+    .l-container
+      .m-section__wrapper(class=`${className}__wrapper`)
+        if titleSection
+          .m-section__headline
+            h1.m-section__title.font-h1!= titleSection
+            if subTitleSection
+              p.m-section__subtitle.font-h1-didona!= subTitleSection
+        if introtext
+          .m-section__introtext.font-text-s!= introtext
+        if block
+          block

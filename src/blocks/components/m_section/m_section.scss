@@ -6,17 +6,12 @@
 
   &__wrapper {
     overflow: hidden;
-    padding-top: rem(60);
-    padding-bottom: rem(60);
+    padding-top: rem(30);
+    padding-bottom: rem(30);
 
-    @media screen and (min-width: 1024px) and (max-width: 1439px) {
-      padding-top: rem(80);
-      padding-bottom: rem(80);
-    }
-
-    @media screen and (min-width: 1440px) {
-      padding-top: rem(102);
-      padding-bottom: rem(102);
+    @media (min-width: 992px) {
+      padding-top: rem(60);
+      padding-bottom: rem(60);
     }
   }
 

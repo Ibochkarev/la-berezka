@@ -1741,8 +1741,8 @@ section {
 
 .m-section__wrapper {
   overflow: hidden;
-  padding-top: 3.75rem;
-  padding-bottom: 3.75rem;
+  padding-top: 1.875rem;
+  padding-bottom: 1.875rem;
 }
 
 .m-section__headline {
@@ -2934,6 +2934,11 @@ section {
 }
 
 @media (min-width: 992px) {
+  .m-section__wrapper {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+  }
+
   .m-cookies {
     right: 2.1875rem;
     bottom: 2.1875rem;
@@ -3180,13 +3185,6 @@ section {
   }
 }
 
-@media screen and (min-width: 1440px) {
-  .m-section__wrapper {
-    padding-top: 6.375rem;
-    padding-bottom: 6.375rem;
-  }
-}
-
 @media (max-width: 1189px) {
   .s-header__navigation {
     overflow: visible;
@@ -3208,13 +3206,6 @@ section {
 @media (max-width: 768px) {
   .s-header__actions-item--languages {
     display: none;
-  }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
-  .m-section__wrapper {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
   }
 }
 

@@ -281,12 +281,32 @@ h5 {
   display: block;
 }
 
+.s-meets-education__wrapper {
+  overflow: visible;
+}
+
+.s-meets-education__slider {
+  overflow: hidden;
+}
+
+.s-meets-education__slide {
+  height: auto;
+}
+
 .s-meets-education__item {
   text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .s-meets-education__item-image {
   margin-bottom: 0.625rem;
+}
+
+.s-meets-education__item-image img {
+  width: 100%;
+  max-width: 20.8125rem;
+  margin: 0 auto;
 }
 
 .s-meets-education__item-alt {
@@ -314,6 +334,24 @@ h5 {
   font-size: 0.875rem;
   font-weight: 300;
   line-height: 1.375rem;
+}
+
+.s-meets-education__button {
+  background: transparent;
+  border: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.s-meets-education__button-prev {
+  left: 0;
+}
+
+.s-meets-education__button-next {
+  right: 0;
 }
 
 .s-breath__wrapper {
@@ -351,6 +389,18 @@ h5 {
 }
 
 @media (min-width: 600px) {
+  .s-meets-education__slider {
+    margin: 0 -1.25rem;
+  }
+
+  .s-meets-education__slide:not(:last-child) {
+    border-right: 0.04688rem solid var(--color-dark);
+  }
+
+  .s-meets-education__item {
+    padding: 1rem 1.25rem 0;
+  }
+
   .s-breath__wrapper {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
@@ -418,6 +468,14 @@ h5 {
   .s-main-intro__button {
     max-width: 16.625rem;
     margin-bottom: 0;
+  }
+
+  .s-meets-education__slider {
+    padding: 0 -1.875rem;
+  }
+
+  .s-meets-education__item {
+    padding: 1rem 1.875rem 0;
   }
 
   .s-meets-education__item-alt {
@@ -530,6 +588,14 @@ h5 {
 
   .s-main-intro__title {
     margin-bottom: 6.25rem;
+  }
+
+  .s-meets-education__slider {
+    padding: 0 -3.75rem;
+  }
+
+  .s-meets-education__item {
+    padding: 1rem 3.75rem 0;
   }
 }
 

@@ -1,9 +1,59 @@
 .s-meets-education {
+  &__wrapper {
+    overflow: visible;
+  }
+
+  &__slider {
+    overflow: hidden;
+
+    @media (min-width: 600px) {
+      margin: 0 rem(-20);
+    }
+
+    @media (min-width: 768px) {
+      padding: 0 rem(-30);
+    }
+
+    @media (min-width: 1200px) {
+      padding: 0 rem(-60);
+    }
+  }
+
+  &__slide {
+    height: auto;
+
+    &:not(:last-child) {
+      @media (min-width: 600px) {
+        border-right: rem(0.75) solid var(--color-dark);
+      }
+    }
+  }
+
   &__item {
     text-align: center;
+    padding-left: rem(16);
+    padding-right: rem(16);
+
+    @media (min-width: 600px) {
+      padding: rem(16) rem(20) 0;
+    }
+
+    @media (min-width: 768px) {
+      padding: rem(16) rem(30) 0;
+    }
+
+    @media (min-width: 1200px) {
+      padding: rem(16) rem(60) 0;
+    }
 
     &-image {
       margin-bottom: rem(10);
+
+      img {
+        width: 100%;
+        max-width: rem(333);
+        margin: 0 auto;
+      }
     }
 
     &-alt {
@@ -42,6 +92,22 @@
         line-height: rem(20);
         letter-spacing: rem(0.12);
       }
+    }
+  }
+
+  &__button {
+    background: transparent;
+    border: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    &-prev {
+      left: 0;
+    }
+
+    &-next {
+      right: 0;
     }
   }
 }

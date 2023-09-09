@@ -2383,6 +2383,7 @@ section {
 
 .s-footer {
   position: relative;
+  margin-top: 3.75rem;
   color: var(--color-white);
   background-color: var(--color-dark);
 }

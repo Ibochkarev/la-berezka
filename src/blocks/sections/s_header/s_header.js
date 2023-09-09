@@ -4,7 +4,7 @@ Swiper.use([Pagination, Navigation])
 
 let header = document.querySelector('.s-header'),
   headerBurger = document.querySelector('.s-header__burger'),
-  headerSearchButton = document.querySelector('.s-header__actions-search'),
+  // headerSearchButton = document.querySelector('.s-header__actions-search'),
   mobileModalMenuClose = document.querySelector('.m-modal-menu__close'),
   mobileModalSearchClose = document.querySelector('.m-modal-search__close'),
   headerNavigation = document.querySelector('.m-modal-menu'),
@@ -26,11 +26,11 @@ document.addEventListener('DOMContentLoaded', function () {
   })
 
   // Открытие/Закрытие модалки поиска по клику на кнопку поиска
-  headerSearchButton.addEventListener('click', () => {
-    mobileModalSearch.classList.toggle('is-show')
-    backdrop.classList.toggle('is-active')
-    bodyBlock.classList.toggle('is-blocked')
-  })
+  // headerSearchButton.addEventListener('click', () => {
+  //   mobileModalSearch.classList.toggle('is-show')
+  //   backdrop.classList.toggle('is-active')
+  //   bodyBlock.classList.toggle('is-blocked')
+  // })
 
   mobileModalSearchClose.addEventListener('click', () => {
     mobileModalSearch.classList.toggle('is-show')

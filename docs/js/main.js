@@ -162,7 +162,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("window.addEventListener('load', function () {\n  if (!Cookies.get('acceptCookies')) {\n    document.querySelector('.m-cookies').classList.add('is-show');\n  }\n  document.querySelector('.m-cookies__button').addEventListener('click', function () {\n    document.querySelector('.m-cookies').classList.remove('is-show');\n    setTimeout(function () {\n      Cookies.set('acceptCookies', 'true', {\n        expires: 7,\n        path: '/'\n      });\n    });\n  });\n}, false);\n\n//# sourceURL=webpack:///./src/blocks/components/m_cookies/m_cookies.js?");
+eval("window.addEventListener('load', function () {\n  if (!Cookies.get('acceptCookies')) {\n    document.querySelector('.m-cookies').classList.add('is-show');\n  }\n  document.querySelector('.m-cookies__button--agree').addEventListener('click', function () {\n    document.querySelector('.m-cookies').classList.remove('is-show');\n    setTimeout(function () {\n      Cookies.set('acceptCookies', 'true', {\n        expires: 7,\n        path: '/'\n      });\n    });\n  });\n}, false);\n\n//# sourceURL=webpack:///./src/blocks/components/m_cookies/m_cookies.js?");
 
 /***/ }),
 

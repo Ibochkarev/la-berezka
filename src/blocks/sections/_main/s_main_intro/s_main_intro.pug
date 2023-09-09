@@ -1,12 +1,21 @@
-+section('s-main-intro', '', '', '', false)
-  .s-main-intro__content
-    .s-main-intro__info
-      .s-main-intro__logo
-        img(src="./img/s-main-intro/logo.svg", alt="")
-      .s-main-intro__title Открыт набор на<br> 2023 - 2024 учебный год
-      .s-main-intro__text Наша миссия повышать стандарты образования, создавая школы с международной средой, современной инфраструктурой и дизайном
-      .s-main-intro__image
-        img(src="./img/s-main-intro/image-mobile.jpg", alt="")
-      button.s-main-intro__button(type="button" data-fancybox data-src="#request") Подать заявку
-    .s-main-intro__bg
-      img(src="./img/s-main-intro/image.png", alt="")
+.s-main-intro
+  .s-main-intro__slider.swiper-container
+    .swiper-wrapper
+      .swiper-slide.s-main-intro__slide
+        .s-main-intro__content
+          picture
+            source(media="(min-width: 600px)", srcset="./img/intro/banner.jpg")
+            img.s-main-intro__image(src="./img/intro/banner.jpg")
+          .l-container
+            .s-main-intro__info
+              .s-main-intro__title A State of Mind Academy
+              .s-main-intro__text Where Inspiration Meets Education
+      .swiper-slide.s-main-intro__slide
+        .s-main-intro__content
+          picture
+            source(media="(min-width: 600px)", srcset="./img/intro/banner.jpg")
+            img.s-main-intro__image(src="./img/intro/banner.jpg")
+          .l-container
+            .s-main-intro__info
+              .s-main-intro__title A State of Mind Academy - 2 slide
+              .s-main-intro__text Where Inspiration Meets Education - 2 slide

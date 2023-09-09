@@ -30,9 +30,9 @@
   }
 
   &__item {
-    text-align: center;
-    padding-left: rem(16);
     padding-right: rem(16);
+    padding-left: rem(16);
+    text-align: center;
 
     @media (min-width: 600px) {
       padding: rem(16) rem(20) 0;
@@ -53,6 +53,12 @@
         width: 100%;
         max-width: rem(333);
         margin: 0 auto;
+        transition: 1s;
+        filter: grayscale(1);
+
+        &:hover {
+          filter: grayscale(0);
+        }
       }
     }
 
@@ -96,10 +102,10 @@
   }
 
   &__button {
-    background: transparent;
-    border: 0;
     position: absolute;
     top: 50%;
+    background: transparent;
+    border: 0;
     transform: translateY(-50%);
 
     &-prev {

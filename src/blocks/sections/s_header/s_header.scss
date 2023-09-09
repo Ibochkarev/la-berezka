@@ -6,11 +6,7 @@
   @include tr('all');
 
   &__wrapper {
-    height: rem(78);
-
-    @media (min-width: 1190px) {
-      height: rem(93);
-    }
+    height: rem(80);
   }
 
   &__burger {

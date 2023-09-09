@@ -15,13 +15,13 @@
     }
 
     @media screen and (min-width: 1440px) {
-      padding-top: rem(110);
-      padding-bottom: rem(110);
+      padding-top: rem(102);
+      padding-bottom: rem(102);
     }
   }
 
   &__headline {
-    margin-bottom: rem(50);
+    margin-bottom: rem(30);
   }
 
   &__title {
@@ -29,7 +29,7 @@
   }
 
   &__subtitle {
-    margin-top: rem(15);
+    margin: 0;
   }
 
   &__introtext {

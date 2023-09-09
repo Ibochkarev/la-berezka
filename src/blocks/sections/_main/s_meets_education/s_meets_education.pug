@@ -1,0 +1,40 @@
+-
+  const meetsItems = [
+    {
+      image: "",
+      alt: "Pushkin Museum",
+      title: "CULTURE",
+      text: "In the realm of Culture, we strive to broaden learners' perspectives, deepening their understanding of history, literature, and societies, while fostering intercultural appreciation and embracing the world's diverse cultural heritage.",
+    },
+    {
+      image: "",
+      alt: "La Berёzka Books with the author's curriculum and illustrations",
+      title: "EDUCATION",
+      text: "Our academy transcends traditional teaching methods by cultivating an entrepreneurial mindset, through hands-on experiences, collaborative projects, and real-world challenges, we nurture their problem-solving abilities, resilience, and adaptability.",
+    },
+    {
+      image: "",
+      alt: "Vera Mamontova in the Painting by V. Serov ‘Girl with Peaches’",
+      title: "ART",
+      text: "In the Arts, we provide a platform for creativity and the development of talent, equipping students with the skills needed to thrive in creative and economically demanding fields.",
+    },
+    {
+      image: "",
+      alt: "",
+      title: "",
+      text: "",
+    },
+  ]
+
++section("s-meets-education", "Where Inspiration", "meets education", "Our academy transcends traditional teaching methods by cultivating an entrepreneurial mindset, through hands-on experiences, collaborative projects, and real-world challenges, we nurture their problem-solving abilities, resilience, and adaptability. Our goal is to prepare students not only for academic excellence but also for the ever-evolving demands of the entrepreneurial landscape.", false)
+  .s-meets-education__slider
+    .swiper-wrapper
+      each meet in meetsItems
+        .swiper-slide
+          .s-meets-education__item
+            .s-meets-education__item-image
+              img(src=meet.image, alt="")
+            .s-meets-education__item-alt=meet.alt
+            .s-meets-education__item-title=meet.title
+            .s-meets-education__item-text=meet.text
+

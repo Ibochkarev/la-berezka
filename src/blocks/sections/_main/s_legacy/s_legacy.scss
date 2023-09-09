@@ -1,0 +1,41 @@
+.s-legacy {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+    @media (min-width: 800px) {
+      gap: rem(54);
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .m-section__introtext {
+    margin-bottom: 0;
+  }
+
+  &__cover {
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: rem(10);
+    }
+  }
+
+  &__text {
+    &--desktop {
+      display: none;
+
+      @media (min-width: 800px) {
+        display: block;
+      }
+    }
+
+    &--mobile {
+      display: block;
+
+      @media (min-width: 800px) {
+        display: none;
+      }
+    }
+  }
+}

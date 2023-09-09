@@ -1,0 +1,47 @@
+.s-meets-education {
+  &__item {
+    text-align: center;
+
+    &-image {
+      margin-bottom: rem(10);
+    }
+
+    &-alt {
+      margin-bottom: rem(30);
+      font-family: 'Playfair Display', serif;
+      font-size: rem(11);
+      font-weight: 400;
+      line-height: rem(20);
+      color: var(--color-grey);
+      font-style: italic;
+      letter-spacing: rem(0.11);
+
+
+      @media (min-width: 768px) {
+        margin-bottom: rem(20);
+      }
+    }
+
+    &-title {
+      margin-bottom: rem(20);
+      @include font-h1-didona;
+
+      @media (min-width: 768px) {
+        @include font-h3-didona;
+      }
+    }
+
+    &-text {
+      font-family: "Roboto", sans-serif;
+      font-size: rem(14);
+      font-weight: 300;
+      line-height: rem(22);
+
+      @media (min-width: 768px) {
+        font-size: rem(12);
+        line-height: rem(20);
+        letter-spacing: rem(0.12);
+      }
+    }
+  }
+}

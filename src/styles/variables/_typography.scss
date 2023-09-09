@@ -69,26 +69,26 @@ h1, h2, h3, h4, h5 {
 }
 
 .font-h1 {
-  font-family: "Roboto Light", sans-serif;
-  font-size: rem(28);
-  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  font-size: rem(22);
+  font-weight: 100;
   line-height: rem(34);
 
   @media screen and (min-width: 1200px) {
-    font-size: rem(50);
-    line-height: rem(65);
+    font-size: rem(42);
+    line-height: rem(54);
   }
 }
 
 @mixin font-h1 {
-  font-family: "Roboto Light", sans-serif;
-  font-size: rem(28);
-  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  font-size: rem(22);
+  font-weight: 100;
   line-height: rem(34);
 
   @media screen and (min-width: 1200px) {
-    font-size: rem(50);
-    line-height: rem(65);
+    font-size: rem(42);
+    line-height: rem(54);
   }
 }
 
@@ -171,13 +171,13 @@ h1, h2, h3, h4, h5 {
 }
 
 .font-text-s {
-  font-family: "Roboto Light", sans-serif;
-  font-size: rem(15);
+  font-family: "Roboto", sans-serif;
+  font-size: rem(14);
   font-weight: 300;
-  line-height: rem(21);
+  line-height: rem(22);
 
   @media screen and (min-width: 1200px) {
-    font-size: rem(18);
+    font-size: rem(17);
     line-height: rem(25);
   }
 }

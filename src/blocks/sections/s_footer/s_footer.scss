@@ -16,7 +16,7 @@
     }
 
     @media (min-width: 1200px) {
-      padding: rem(50) rem(110);
+      padding: rem(50) rem(110) rem(50) rem(30);
     }
   }
 
@@ -60,6 +60,7 @@
 
     @media (min-width: 768px) {
       margin-bottom: rem(48);
+      padding-top: rem(16);
       flex-wrap: nowrap;
     }
 

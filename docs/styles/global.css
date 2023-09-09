@@ -1868,8 +1868,8 @@ section {
 .s-header {
   z-index: 12;
   position: relative;
-  -webkit-box-shadow: 0 0.1875rem 0.875rem rgba(34, 34, 34, 0.1);
-  box-shadow: 0 0.1875rem 0.875rem rgba(34, 34, 34, 0.1);
+  -webkit-box-shadow: 0 0.1875rem 0.875rem rgba(34, 34, 34, 0.2);
+  box-shadow: 0 0.1875rem 0.875rem rgba(34, 34, 34, 0.2);
   background-color: var(--color-white);
   -webkit-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;

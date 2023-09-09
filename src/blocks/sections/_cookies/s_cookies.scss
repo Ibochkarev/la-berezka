@@ -1,0 +1,17 @@
+.s-cookies {
+  &__text {
+    max-width: rem(635);
+    font-size: rem(14);
+    font-weight: 300;
+    line-height: rem(18);
+
+    @media (min-width: 992px) {
+      font-size: rem(17);
+      line-height: rem(25);
+    }
+
+    h2 {
+      @include font-h2;
+    }
+  }
+}

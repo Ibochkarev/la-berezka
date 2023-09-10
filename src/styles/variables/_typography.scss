@@ -10,10 +10,10 @@ h1, h2, h3, h4, h5 {
   text-transform: uppercase;
 
   @media screen and (min-width: 1200px) {
-    font-size: rem(50);
+    font-size: rem(40);
     font-weight: 400;
-    line-height: rem(60);
-    letter-spacing: 0.01em;
+    line-height: rem(48);
+    letter-spacing: rem(0.4);
   }
 }
 
@@ -25,10 +25,10 @@ h1, h2, h3, h4, h5 {
   text-transform: uppercase;
 
   @media screen and (min-width: 1200px) {
-    font-size: rem(50);
+    font-size: rem(40);
     font-weight: 400;
-    line-height: rem(60);
-    letter-spacing: 0.01em;
+    line-height: rem(48);
+    letter-spacing: rem(0.4);
   }
 }
 

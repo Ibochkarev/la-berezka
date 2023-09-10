@@ -3,6 +3,8 @@ ProjectTitle: LA BERЁZKA
 PageList:
   - file: homepage.html
     ready: 100
+  - file: team.html
+    ready: 30
   - file: cookies.html
     ready: 100
   - file: main.html

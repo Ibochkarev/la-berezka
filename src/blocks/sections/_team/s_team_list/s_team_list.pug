@@ -1,0 +1,42 @@
+-
+  const teamItems = [
+    {
+      photo: './img/s-team-list/alain-roland.jpg',
+      info: 'From Paris to Riga and back to Moscow our educational solutions are part of a world-class international environment of all cultural and academic backgrounds.',
+      name: 'ALAIN ROLAND',
+      position: 'Co-author of the La Berёzka Project, Avenue42 Founder',
+      text: 'More than 10 years in education. Experience in opening La preschool des Batignolles in Paris, Exupéry International School in Riga, French kindergarten in Lapino, Moscow.'
+    }
+  ]
+
++section('s-team-list', '', '', '', false)
+  .s-team-list__slider.swiper-container
+    button.s-team-list__button.s-team-list__button-prev(type="button")
+      <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M18 6.96606L9.5 6.96606L1 6.96606M1 6.96606L7.5 13.4661M1 6.96606L7.5 0.466064" stroke="#1F1E20"/>
+      </svg>
+    button.s-team-list__button.s-team-list__button-next(type="button")
+      <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M-5.68248e-07 6.96606L8.5 6.96607L17 6.96607M17 6.96607L10.5 0.466065M17 6.96607L10.5 13.4661" stroke="#1F1E20"/>
+      </svg>
+    .swiper-wrapper
+      each item in teamItems
+        .swiper-slide.s-team-list__slide
+          .s-team-list__item
+            .s-team-list__item-photo
+              img(src=item.photo, alt="")
+            .s-team-list__item-info=item.info
+            .s-team-list__item-content
+              .s-team-list__item-name.font-h2=item.name
+              .s-team-list__item-position=item.position
+              .s-team-list__item-text=item.text
+
+        .swiper-slide.s-team-list__slide
+          .s-team-list__item
+            .s-team-list__item-photo
+              img(src=item.photo, alt="")
+            .s-team-list__item-info=item.info
+            .s-team-list__item-content
+              .s-team-list__item-name.font-h2=item.name
+              .s-team-list__item-position=item.position
+              .s-team-list__item-text=item.text

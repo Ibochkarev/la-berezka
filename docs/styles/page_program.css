@@ -770,10 +770,10 @@ h5 {
 
 @media screen and (min-width: 1200px) {
   .font-h1-didona {
-    font-size: 3.125rem;
+    font-size: 2.5rem;
     font-weight: 400;
-    line-height: 3.75rem;
-    letter-spacing: 0.01em;
+    line-height: 3rem;
+    letter-spacing: 0.025rem;
   }
 
   .font-h1 {
@@ -802,10 +802,10 @@ h5 {
   }
 
   .s-environment__title span {
-    font-size: 3.125rem;
+    font-size: 2.5rem;
     font-weight: 400;
-    line-height: 3.75rem;
-    letter-spacing: 0.01em;
+    line-height: 3rem;
+    letter-spacing: 0.025rem;
   }
 
   .s-program-age-ratio__table-line {

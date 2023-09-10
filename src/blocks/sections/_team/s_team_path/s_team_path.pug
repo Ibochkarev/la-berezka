@@ -1,0 +1,29 @@
+-
+  const path = [
+    {
+      year: 2010,
+      text: 'In the realm of educational excellence, a tale unfolds with Alain Roland and Nicolas Mathieu as their journey began in 2010 at the esteemed "Chat Botté" school in Lapino. '
+    },
+    {
+      year: 2015,
+      text: 'In 2015, they launched the Exupery International preschool in Riga, Latvia, with a new Russian investor. The project was so impressive that it became the best in the country and a source of pride for the whole team.'
+    },
+    {
+      year: '2022, Moscow ',
+      text: 'Meanwhile, another project was developing in Russia in parallel. Having gained experience since 2015 in opening and developing international schools in Russia and Uzbekistan, Ildar Nafikov and his team in 2020 created a new brand — Heritage School, which today provides world-class education to children from 3 to 18 years old in Moscow and Tyumen, developing its network in Russia and CIS countries.'
+    },
+  ]
+
++section("s-team-path", "The Path of the Academy's Creation", "From France to Moscow & back", '<p>In the realm of educational excellence, a tale unfolds with Alain Roland and Nicolas Mathieu as their journey began in 2010 at the esteemed "Chat Botté" school in Lapino. Their resolute dedication shaped this educational institution into a beacon of distinction, earning it the esteemed status as a benchmark in Rublovka.</p><p>In 2015, they launched the Exupery International preschool in Riga, Latvia, with a new Russian investor. In 2020, they had the idea of creating an international school in Moscow and finally found the ideal location in the lively Krasnaya Presnya district, in the Lucky residential complex. Thanks to their chance meeting with Ildar Nafikov, founder of Heritage International School, they formed a partnership and began their collective adventure.</p>', false)
+  .s-team-path__list
+    each item in path
+      .s-team-path__item
+        .s-team-path__item-year= item.year
+        .s-team-path__item-text= item.text
+  .s-team-path__current
+    img.s-team-path__bg(src="./img/s-team-path/map.png", alt="")
+    .s-team-path__info
+      .s-team-path__info-image
+        img(src="./img/s-team-path/team.jpg", alt="")
+        span La Berёzka Team 2023
+      .s-team-path__info-text The La Berёzka project is preparing to open schools abroad — in Monaco, Florida (USA) and other places where people who would like to give their children the best of Russian culture combined with a promising.

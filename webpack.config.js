@@ -24,6 +24,7 @@ module.exports = {
     // page_about: './src/js/page_about.js',
     // page_program: './src/js/page_program.js',
     page_homepage: './src/js/page_homepage.js',
+    page_team: './src/js/page_team.js',
   },
 
   output: {

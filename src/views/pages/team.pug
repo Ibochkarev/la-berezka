@@ -1,0 +1,14 @@
+extends ../layouts/default
+
+block variables
+  - const title = "О команде"
+
+block append head
+  link(rel="stylesheet" href="./styles/page_team.css")
+
+block content
+  include ../../blocks/sections/_team/s_team_list/s_team_list.pug
+  include ../../blocks/sections/_team/s_team_path/s_team_path.pug
+
+block append scripts
+  script(defer src="./js/page_team.js")

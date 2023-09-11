@@ -64,6 +64,10 @@
     &--more {
       margin-right: rem(10);
       background-color: var(--color-light-grey);
+
+      &:hover {
+        background: var(--d-9-c-6-a-9, #F3E7D5);
+      }
     }
 
     &--agree {

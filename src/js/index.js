@@ -5,7 +5,7 @@ const scrollToTopBtn = document.querySelector('.scrollToTopBtn'),
   rootElement = document.documentElement
 
 function handleScroll() {
-  var scrollTotal = rootElement.scrollHeight - rootElement.clientHeight
+  let scrollTotal = rootElement.scrollHeight - rootElement.clientHeight
   if (rootElement.scrollTop / scrollTotal > 0.15) {
     scrollToTopBtn.classList.add('is-active')
   } else {

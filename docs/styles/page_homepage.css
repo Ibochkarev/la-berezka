@@ -310,6 +310,12 @@ h5 {
   right: 0;
 }
 
+.s-breath {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 249, 240, 0.8)), to(rgba(255, 255, 255, 0)));
+  background: -o-linear-gradient(top, rgba(255, 249, 240, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(180deg, rgba(255, 249, 240, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
 .s-breath__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;

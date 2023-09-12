@@ -155,6 +155,53 @@ h5 {
   line-height: 1.25rem;
 }
 
+.s-page-intro__wrapper {
+  position: relative;
+}
+
+.s-page-intro__content {
+  position: absolute;
+  top: 0;
+  max-width: 89%;
+  margin: 0 auto;
+}
+
+.s-page-intro__image {
+  width: 100%;
+  height: 100%;
+  max-height: calc(100vh - 80px);
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: right;
+  object-position: right;
+}
+
+.s-page-intro__info {
+  max-width: 70%;
+  padding: 2.9375rem 0;
+}
+
+.s-page-intro__title {
+  margin: 0 0 0.3125rem;
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.3125rem;
+}
+
+.s-page-intro__text {
+  margin: 0 0 1.5rem;
+  font-family: 'Didona', sans-serif;
+  font-size: 1.375rem;
+  line-height: 1.375rem;
+  text-transform: uppercase;
+}
+
+.s-page-intro__introtext {
+  font-size: 0.75rem;
+  font-weight: 300;
+  line-height: 1.125rem;
+}
+
 .s-team-list__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -353,7 +400,26 @@ h5 {
   text-align: center;
 }
 
+@media (min-width: 475px) {
+  .s-page-intro__info {
+    max-width: 80%;
+  }
+}
+
 @media (min-width: 768px) {
+  .s-page-intro__content {
+    max-width: 94%;
+  }
+
+  .s-page-intro__info {
+    padding: 5.625rem 0;
+  }
+
+  .s-page-intro__introtext {
+    font-size: 1.0625rem;
+    line-height: 1.5625rem;
+  }
+
   .s-team-list__item-photo {
     width: 22.125rem;
     margin-bottom: 0;
@@ -437,6 +503,21 @@ h5 {
   }
 }
 
+@media (min-width: 992px) {
+  .s-page-intro__title {
+    font-size: 2.625rem;
+    font-weight: 100;
+    line-height: 3.375rem;
+  }
+
+  .s-page-intro__text {
+    margin: 0 0 2.5rem;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    letter-spacing: 0.0275rem;
+  }
+}
+
 @media (min-width: 1024px) {
   .s-team-path__list {
     gap: 4.625rem;
@@ -474,6 +555,19 @@ h5 {
   .font-button {
     font-size: 1.125rem;
     line-height: 1.625rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .s-page-intro__info {
+    max-width: 43.75rem;
+    padding: 9.1875rem 0;
+  }
+}
+
+@media (min-width: 1336px) {
+  .s-page-intro__content {
+    max-width: 77.5rem;
   }
 }
 

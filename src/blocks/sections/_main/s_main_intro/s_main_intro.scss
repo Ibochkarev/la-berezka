@@ -1,28 +1,24 @@
 .s-main-intro {
-  &__slide {
-    height: auto;
+  &__wrapper {
+    position: relative;
   }
 
   &__content {
-    position: relative;
-    height: rem(460);
-    max-width: rem(1440);
+    position: absolute;
+    top: 0;
+    max-width: 89%;
     margin: 0 auto;
-    background-repeat: no-repeat;
-    background-position: top right;
-    background-size: cover;
 
-    @media (min-width: 1024px) {
-      height: rem(650);
+    @media (min-width: 768px) {
+      max-width: 94%;
     }
 
     @media (min-width: 1336px) {
-      height: rem(800);
+      max-width: rem(1240);
     }
   }
 
   &__image {
-    position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -30,9 +26,7 @@
   }
 
   &__info {
-    position: relative;
     padding: rem(47) 0;
-    max-width: 70%;
 
     @media (min-width: 475px) {
       padding: rem(90) 0;

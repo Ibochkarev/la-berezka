@@ -155,18 +155,6 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/blocks/sections/_main/s_main_intro/s_main_intro.js":
-/*!****************************************************************!*\
-  !*** ./src/blocks/sections/_main/s_main_intro/s_main_intro.js ***!
-  \****************************************************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ \"./node_modules/swiper/swiper.esm.js\");\n\nswiper__WEBPACK_IMPORTED_MODULE_0__[\"Swiper\"].use([swiper__WEBPACK_IMPORTED_MODULE_0__[\"EffectFade\"], swiper__WEBPACK_IMPORTED_MODULE_0__[\"Autoplay\"]]);\nwindow.addEventListener('load', function () {\n  var introSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__[\"Swiper\"](\".s-main-intro__slider\", {\n    loop: true,\n    slidesPerView: 1,\n    effect: 'fade',\n    resistance: true,\n    resistanceRatio: 1,\n    grabCursor: true,\n    autoplay: {\n      delay: 5000,\n      disableOnInteraction: false\n    }\n  });\n}, false);\n\n//# sourceURL=webpack:///./src/blocks/sections/_main/s_main_intro/s_main_intro.js?");
-
-/***/ }),
-
 /***/ "./src/blocks/sections/_main/s_meets_education/s_meets_education.js":
 /*!**************************************************************************!*\
   !*** ./src/blocks/sections/_main/s_meets_education/s_meets_education.js ***!
@@ -187,7 +175,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var swip
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sections_main_s_main_intro_s_main_intro__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! %sections%/_main/s_main_intro/s_main_intro */ \"./src/blocks/sections/_main/s_main_intro/s_main_intro.js\");\n/* harmony import */ var _sections_main_s_meets_education_s_meets_education__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! %sections%/_main/s_meets_education/s_meets_education */ \"./src/blocks/sections/_main/s_meets_education/s_meets_education.js\");\n\n\n\n//# sourceURL=webpack:///./src/js/page_homepage.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sections_main_s_meets_education_s_meets_education__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! %sections%/_main/s_meets_education/s_meets_education */ \"./src/blocks/sections/_main/s_meets_education/s_meets_education.js\");\n// import '%sections%/_main/s_main_intro/s_main_intro'\n\n\n//# sourceURL=webpack:///./src/js/page_homepage.js?");
 
 /***/ })
 

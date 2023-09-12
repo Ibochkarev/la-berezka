@@ -1,21 +1,10 @@
-.s-main-intro
-  .s-main-intro__slider.swiper-container
-    .swiper-wrapper
-      .swiper-slide.s-main-intro__slide
-        .s-main-intro__content
-          picture
-            source(media="(min-width: 600px)", srcset="./img/intro/banner.jpg")
-            img.s-main-intro__image(src="./img/intro/banner.jpg")
-          .l-container
-            .s-main-intro__info
-              .s-main-intro__title A State of Mind Academy
-              .s-main-intro__text Where Inspiration Meets Education
-      .swiper-slide.s-main-intro__slide
-        .s-main-intro__content
-          picture
-            source(media="(min-width: 600px)", srcset="./img/intro/banner.jpg")
-            img.s-main-intro__image(src="./img/intro/banner.jpg")
-          .l-container
-            .s-main-intro__info
-              .s-main-intro__title A State of Mind Academy - 2 slide
-              .s-main-intro__text Where Inspiration Meets Education - 2 slide
+section.s-main-intro
+  .s-main-intro__wrapper
+    picture
+      source(media="(min-width: 600px)", srcset="./img/intro/banner.jpg")
+      img.s-main-intro__image(src="./img/intro/banner.jpg")
+    .l-container
+      .s-main-intro__content
+        .s-main-intro__info
+          h1.s-main-intro__title A State of Mind Academy
+          .s-main-intro__text Where Inspiration Meets Education

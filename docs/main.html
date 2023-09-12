@@ -32,7 +32,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
-    <link rel="stylesheet" href="styles/global.css?v=1694418203670">
+    <link rel="stylesheet" href="styles/global.css?v=1694493501401">
     <link rel="stylesheet" href="./styles/page_main.css">
   </head>
   <body>
@@ -65,38 +65,21 @@
       </header>
       <main class="l-main__content">
         <div class="backdrop"></div>
-        <div class="s-main-intro">
-          <div class="s-main-intro__slider swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide s-main-intro__slide">
-                <div class="s-main-intro__content">
-                  <picture>
-                    <source media="(min-width: 600px)" srcset="./img/intro/banner.jpg"><img class="s-main-intro__image" src="./img/intro/banner.jpg">
-                  </picture>
-                  <div class="l-container">
-                    <div class="s-main-intro__info">
-                      <div class="s-main-intro__title">A State of Mind Academy</div>
-                      <div class="s-main-intro__text">Where Inspiration Meets Education</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide s-main-intro__slide">
-                <div class="s-main-intro__content">
-                  <picture>
-                    <source media="(min-width: 600px)" srcset="./img/intro/banner.jpg"><img class="s-main-intro__image" src="./img/intro/banner.jpg">
-                  </picture>
-                  <div class="l-container">
-                    <div class="s-main-intro__info">
-                      <div class="s-main-intro__title">A State of Mind Academy - 2 slide</div>
-                      <div class="s-main-intro__text">Where Inspiration Meets Education - 2 slide</div>
-                    </div>
-                  </div>
+        <section class="s-main-intro">
+          <div class="s-main-intro__wrapper">
+            <picture>
+              <source media="(min-width: 600px)" srcset="./img/intro/banner.jpg"><img class="s-main-intro__image" src="./img/intro/banner.jpg">
+            </picture>
+            <div class="l-container">
+              <div class="s-main-intro__content">
+                <div class="s-main-intro__info">
+                  <h1 class="s-main-intro__title">A State of Mind Academy</h1>
+                  <div class="s-main-intro__text">Where Inspiration Meets Education</div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
         <section class="m-section s-main-standards">
           <div class="l-container">
             <div class="m-section__wrapper s-main-standards__wrapper">
@@ -339,9 +322,9 @@
 </svg>
       </button>
     </div>
-    <script defer src="./js/main.js?v=1694418203671"></script>
+    <script defer src="./js/main.js?v=1694493501402"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
-    <script defer src="./js/vendor.js?v=1694418203671"></script>
+    <script defer src="./js/vendor.js?v=1694493501402"></script>
     <script defer src="./js/page_main.js"></script>
   </body>
 </html>

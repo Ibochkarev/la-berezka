@@ -155,22 +155,18 @@ h5 {
   line-height: 1.25rem;
 }
 
-.s-main-intro__slide {
-  height: auto;
+.s-main-intro__wrapper {
+  position: relative;
 }
 
 .s-main-intro__content {
-  position: relative;
-  height: 28.75rem;
-  max-width: 90rem;
+  position: absolute;
+  top: 0;
+  max-width: 89%;
   margin: 0 auto;
-  background-repeat: no-repeat;
-  background-position: top right;
-  background-size: cover;
 }
 
 .s-main-intro__image {
-  position: absolute;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -180,9 +176,7 @@ h5 {
 }
 
 .s-main-intro__info {
-  position: relative;
   padding: 2.9375rem 0;
-  max-width: 70%;
 }
 
 .s-main-intro__title {
@@ -393,6 +387,10 @@ h5 {
 }
 
 @media (min-width: 768px) {
+  .s-main-intro__content {
+    max-width: 94%;
+  }
+
   .s-meets-education__slider {
     padding: 0 -1.875rem;
   }
@@ -460,12 +458,6 @@ h5 {
   }
 }
 
-@media (min-width: 1024px) {
-  .s-main-intro__content {
-    height: 40.625rem;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .font-h1-didona {
     font-size: 2.5rem;
@@ -523,7 +515,7 @@ h5 {
 
 @media (min-width: 1336px) {
   .s-main-intro__content {
-    height: 50rem;
+    max-width: 77.5rem;
   }
 }
 

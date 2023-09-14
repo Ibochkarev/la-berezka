@@ -197,6 +197,7 @@ h5 {
 }
 
 .s-page-intro__introtext {
+  display: none;
   font-size: 0.75rem;
   font-weight: 300;
   line-height: 1.125rem;
@@ -413,11 +414,7 @@ h5 {
 
   .s-page-intro__info {
     padding: 5.625rem 0;
-  }
-
-  .s-page-intro__introtext {
-    font-size: 1.0625rem;
-    line-height: 1.5625rem;
+    max-width: 100%;
   }
 
   .s-team-list__item-photo {
@@ -519,6 +516,12 @@ h5 {
 }
 
 @media (min-width: 1024px) {
+  .s-page-intro__introtext {
+    display: block;
+    font-size: 1.0625rem;
+    line-height: 1.5625rem;
+  }
+
   .s-team-path__list {
     gap: 4.625rem;
   }

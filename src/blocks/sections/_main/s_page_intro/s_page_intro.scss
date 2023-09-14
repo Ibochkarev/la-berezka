@@ -37,6 +37,7 @@
 
     @media (min-width: 768px) {
       padding: rem(90) 0;
+      max-width: 100%;
     }
 
     @media (min-width: 1200px) {
@@ -74,11 +75,13 @@
   }
 
   &__introtext {
+    display: none;
     font-size: rem(12);
     font-weight: 300;
     line-height: rem(18);
 
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
+      display: block;
       font-size: rem(17);
       line-height: rem(25);
     }

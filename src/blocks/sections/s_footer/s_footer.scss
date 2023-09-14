@@ -83,12 +83,18 @@
     }
 
     &-item {
+      transition: transform 0.5s ease 0s;
+
       &:not(:last-child) {
         margin-right: rem(8);
 
         @media (min-width: 768px) {
           margin-right: rem(20);
         }
+      }
+
+      &:hover {
+        transform: scale(1.2);
       }
     }
   }

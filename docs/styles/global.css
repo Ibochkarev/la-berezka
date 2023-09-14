@@ -1988,7 +1988,7 @@ section {
   background-image: linear-gradient(0deg, #000, #000);
   background-position: center bottom;
   background-repeat: no-repeat;
-  background-size: 0 2px;
+  background-size: 0 0.125rem;
   content: '';
   height: 0.125rem;
   width: 100%;
@@ -2524,8 +2524,22 @@ section {
   width: 100%;
 }
 
+.s-footer__socials-item {
+  -webkit-transition: -webkit-transform 0.5s ease 0s;
+  transition: -webkit-transform 0.5s ease 0s;
+  -o-transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s;
+  transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
+}
+
 .s-footer__socials-item:not(:last-child) {
   margin-right: 0.5rem;
+}
+
+.s-footer__socials-item:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .s-footer__menu {

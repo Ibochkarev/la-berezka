@@ -1913,6 +1913,60 @@ section {
   margin-bottom: 0.25rem;
 }
 
+.m-breadcrumbs {
+  margin-bottom: 2rem;
+}
+
+.m-breadcrumbs__item {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.m-breadcrumbs__item:not(:last-child):after {
+  margin-right: 0.625rem;
+  margin-left: 0.625rem;
+  color: var(--color-grey);
+  content: "/";
+}
+
+.m-breadcrumbs__item:not(:last-child):hover {
+  opacity: 0.8;
+}
+
+.m-breadcrumbs__link {
+  cursor: pointer;
+  font-weight: 400;
+  color: var(--color-dark);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 1rem;
+  line-height: 1.875rem;
+}
+
+.m-breadcrumbs__link:hover {
+  opacity: 0.8;
+}
+
+.m-breadcrumbs__link-current {
+  font-weight: 300;
+  color: var(--color-dark);
+}
+
+.m-breadcrumbs__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  padding: 0;
+  list-style-type: none;
+}
+
 .s-header {
   z-index: 12;
   position: relative;

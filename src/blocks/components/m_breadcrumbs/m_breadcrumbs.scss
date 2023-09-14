@@ -6,9 +6,9 @@
     vertical-align: top;
 
     &:not(:last-child):after {
-      margin-right: rem(4);
-      margin-left: rem(4);
-      color: var(--color-dark);
+      margin-right: rem(10);
+      margin-left: rem(10);
+      color: var(--color-grey);
       content: "/";
     }
 
@@ -19,9 +19,11 @@
 
   &__link {
     cursor: pointer;
-    font-weight: 300;
+    font-weight: 400;
     color: var(--color-dark);
     transition: 0.5s;
+    font-size: rem(16);
+    line-height: rem(30);
 
     &:hover {
       opacity: 0.8;

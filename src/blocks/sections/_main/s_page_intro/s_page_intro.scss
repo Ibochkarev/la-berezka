@@ -36,13 +36,22 @@
     }
 
     @media (min-width: 768px) {
-      padding: rem(90) 0;
       max-width: 100%;
+      padding: rem(90) 0;
     }
 
     @media (min-width: 1200px) {
       max-width: rem(700);
       padding: rem(147) 0;
+    }
+
+    .m-breadcrumbs  {
+      display: none;
+
+      @media (min-width: 1024px) {
+        display: flex;
+        margin-bottom: rem(38);
+      }
     }
   }
 
@@ -81,6 +90,7 @@
     line-height: rem(18);
 
     @media (min-width: 1024px) {
+      max-width: rem(700);
       display: block;
       font-size: rem(17);
       line-height: rem(25);

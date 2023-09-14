@@ -32,7 +32,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
-    <link rel="stylesheet" href="styles/global.css?v=1694688116285">
+    <link rel="stylesheet" href="styles/global.css?v=1694705408530">
     <link rel="stylesheet" href="./styles/page_team.css">
   </head>
   <body>
@@ -73,6 +73,20 @@
             <div class="l-container">
               <div class="s-page-intro__content">
                 <div class="s-page-intro__info">
+                  <div class="m-breadcrumbs">
+                    <div class="l-wide">
+                      <ul class="m-breadcrumbs__list" itemscope="itemscope" itemtype="https://schema.org/BreadcrumbList">
+                        <li class="m-breadcrumbs__item" itemscope="itemscope" itemprop="itemListElement" itemtype="https://schema.org/ListItem"><span class="m-breadcrumbs__link font-l" itemprop="name">State of Mind</span>
+                          <meta itemprop="position" content="0"/>
+                          <meta itemprop="item" content="#"/>
+                        </li>
+                        <li class="m-breadcrumbs__item"><span class="m-breadcrumbs__link-current font-l" itemprop="name">Our Team</span>
+                          <meta itemprop="item" content="#"/>
+                          <meta itemprop="position" content=""/>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                   <h1 class="s-page-intro__title">The Spirits behind</h1>
                   <div class="s-page-intro__text">La berёzka academy</div>
                   <div class="s-page-intro__introtext">The authors of the project consciously sought to move away from the British educational model that dominates Moscow's international schools and drew inspiration from the French and Swiss approach, while preserving the values of Russian classical culture and education. The founders gave the children's academy a gloss of exceptional service and a truly individual approach - La Berezka values the individuality of each child, encourages self-expression and emotional development.</div>
@@ -85,20 +99,30 @@
           <div class="l-container">
             <div class="m-section__wrapper s-team-list__wrapper">
               <div class="s-team-list__slider swiper-container">
-                <button class="s-team-list__button s-team-list__button-prev" type="button"><svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="s-team-list__buttons">
+                  <button class="s-team-list__button s-team-list__button-prev" type="button"><svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M18 6.96606L9.5 6.96606L1 6.96606M1 6.96606L7.5 13.4661M1 6.96606L7.5 0.466064" stroke="#1F1E20"/>
 </svg>
-                </button>
-                <button class="s-team-list__button s-team-list__button-next" type="button"><svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  </button>
+                  <button class="s-team-list__button s-team-list__button-next" type="button"><svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M-5.68248e-07 6.96606L8.5 6.96607L17 6.96607M17 6.96607L10.5 0.466065M17 6.96607L10.5 13.4661" stroke="#1F1E20"/>
 </svg>
-                </button>
+                  </button>
+                </div>
                 <div class="swiper-wrapper">
                   <div class="swiper-slide s-team-list__slide">
                     <div class="s-team-list__item">
                       <div class="s-team-list__item-photo"><img src="./img/s-team-list/alain-roland.jpg" alt=""></div>
-                      <div class="s-team-list__item-info">From Paris to Riga and back to Moscow our educational solutions are part of a world-class international environment of all cultural and academic backgrounds.</div>
-                      <div class="s-team-list__item-content">
+                      <div class="s-team-list__item-box">
+                        <div class="s-team-list__item-info">From Paris to Riga and back to Moscow our educational solutions are part of a world-class international environment of all cultural and academic backgrounds.</div>
+                        <div class="s-team-list__item-content">
+                          <div class="s-team-list__item-name font-h2">ALAIN ROLAND</div>
+                          <div class="s-team-list__item-position">Co-author of the La Berёzka Project, Avenue42 Founder</div>
+                          <div class="s-team-list__item-text">More than 10 years in education. Experience in opening La preschool des Batignolles in Paris, Exupéry International School in Riga, French kindergarten in Lapino, Moscow.</div>
+                        </div>
+                      </div>
+                      <div class="s-team-list__item-info is-mobile">From Paris to Riga and back to Moscow our educational solutions are part of a world-class international environment of all cultural and academic backgrounds.</div>
+                      <div class="s-team-list__item-content is-mobile">
                         <div class="s-team-list__item-name font-h2">ALAIN ROLAND</div>
                         <div class="s-team-list__item-position">Co-author of the La Berёzka Project, Avenue42 Founder</div>
                         <div class="s-team-list__item-text">More than 10 years in education. Experience in opening La preschool des Batignolles in Paris, Exupéry International School in Riga, French kindergarten in Lapino, Moscow.</div>
@@ -108,8 +132,16 @@
                   <div class="swiper-slide s-team-list__slide">
                     <div class="s-team-list__item">
                       <div class="s-team-list__item-photo"><img src="./img/s-team-list/alain-roland.jpg" alt=""></div>
-                      <div class="s-team-list__item-info">From Paris to Riga and back to Moscow our educational solutions are part of a world-class international environment of all cultural and academic backgrounds.</div>
-                      <div class="s-team-list__item-content">
+                      <div class="s-team-list__item-box">
+                        <div class="s-team-list__item-info">From Paris to Riga and back to Moscow our educational solutions are part of a world-class international environment of all cultural and academic backgrounds.</div>
+                        <div class="s-team-list__item-content">
+                          <div class="s-team-list__item-name font-h2">ALAIN ROLAND</div>
+                          <div class="s-team-list__item-position">Co-author of the La Berёzka Project, Avenue42 Founder</div>
+                          <div class="s-team-list__item-text">More than 10 years in education. Experience in opening La preschool des Batignolles in Paris, Exupéry International School in Riga, French kindergarten in Lapino, Moscow.</div>
+                        </div>
+                      </div>
+                      <div class="s-team-list__item-info is-mobile">From Paris to Riga and back to Moscow our educational solutions are part of a world-class international environment of all cultural and academic backgrounds.</div>
+                      <div class="s-team-list__item-content is-mobile">
                         <div class="s-team-list__item-name font-h2">ALAIN ROLAND</div>
                         <div class="s-team-list__item-position">Co-author of the La Berёzka Project, Avenue42 Founder</div>
                         <div class="s-team-list__item-text">More than 10 years in education. Experience in opening La preschool des Batignolles in Paris, Exupéry International School in Riga, French kindergarten in Lapino, Moscow.</div>
@@ -241,9 +273,9 @@
 </svg>
       </button>
     </div>
-    <script defer src="./js/main.js?v=1694688116286"></script>
+    <script defer src="./js/main.js?v=1694705408531"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
-    <script defer src="./js/vendor.js?v=1694688116286"></script>
+    <script defer src="./js/vendor.js?v=1694705408531"></script>
     <script defer src="./js/page_team.js"></script>
   </body>
 </html>

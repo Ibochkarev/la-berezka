@@ -172,13 +172,13 @@ section {
   transition: background-size .3s;
   letter-spacing: rem(0.17);
   background-image: linear-gradient(currentcolor, currentcolor);
-  background-position: right bottom;
+  background-position: center bottom;
   background-repeat: no-repeat;
   background-size: 100% rem(1);
   white-space: nowrap;
 
   &:hover {
-    background-position: left bottom;
+    background-position: center bottom;
     animation: .5s animLinkHover;
   }
 }

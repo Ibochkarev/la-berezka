@@ -1593,14 +1593,14 @@ section {
   background-image: -webkit-gradient(linear, left top, left bottom, from(currentcolor), to(currentcolor));
   background-image: -o-linear-gradient(currentcolor, currentcolor);
   background-image: linear-gradient(currentcolor, currentcolor);
-  background-position: right bottom;
+  background-position: center bottom;
   background-repeat: no-repeat;
   background-size: 100% 0.0625rem;
   white-space: nowrap;
 }
 
 .link-animation:hover {
-  background-position: left bottom;
+  background-position: center bottom;
   -webkit-animation: .5s animLinkHover;
   animation: .5s animLinkHover;
 }
@@ -1992,7 +1992,7 @@ section {
   content: '';
   height: 0.125rem;
   width: 100%;
-  bottom: -1.625rem;
+  bottom: 0;
 }
 
 .s-header__navigation-item:hover::before {
@@ -3117,6 +3117,10 @@ section {
 
   .s-header__navigation-item {
     margin-bottom: 0;
+  }
+
+  .s-header__navigation-item::before {
+    bottom: -1.625rem;
   }
 
   .s-header__navigation-item--request {

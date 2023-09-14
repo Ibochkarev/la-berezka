@@ -109,7 +109,11 @@
         content: '';
         height: rem(2);
         width: 100%;
-        bottom: rem(-26);
+        bottom: 0;
+
+        @media (min-width: 1024px) {
+          bottom: rem(-26);
+        }
       }
 
       &:hover::before {

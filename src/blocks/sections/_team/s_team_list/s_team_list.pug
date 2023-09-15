@@ -6,6 +6,27 @@
       name: 'ALAIN ROLAND',
       position: 'Co-author of the La Berёzka Project, Avenue42 Founder',
       text: 'More than 10 years in education. Experience in opening La preschool des Batignolles in Paris, Exupéry International School in Riga, French kindergarten in Lapino, Moscow.'
+    },
+    {
+      photo: './img/s-team-list/Mathieu.jpg',
+      info: 'Our main goal is to immerse the child in the natural process of learning from an early age, instill in him a love of learning and a desire to go to school with joy.',
+      name: 'Nicolas Mathieu',
+      position: 'Co-author of the La Berёzka project, Avenue42 Founder',
+      text: 'More than 10 years in education. Experience in opening La preschool des Batignolles in Paris, Exupéry International School in Riga, French kindergarten in Lapino, Moscow.'
+    },
+    {
+      photo: './img/s-team-list/antonova.jpg',
+      info: 'Одна из моих любимых книг — «Маленький принц». Она помогает всем взрослым не забывать, что они тоже были детьми. Основная задача команды La Berёzka — воплотить детские мечты, реализовать таланты и сохранить ребёнка внутри себя. Мы те взрослые, которые помнят, как невинна и прекрасна «планета» каждого малыша. Буду рада встречам и приглашаю вас и ваших детей в наше удивительное образовательное пространство!',
+      name: 'elena antonova',
+      position: 'Co-author of the La Berёzka project, Avenue42 Founder',
+      text: 'More than 10 years in education. Experience in opening La preschool des Batignolles in Paris, Exupéry International School in Riga, French kindergarten in Lapino, Moscow.'
+    },
+    {
+      photo: './img/s-team-list/nafikov.jpg',
+      info: "The essence of the La Berezka project is that we wanted to move away a little bit from the classic British education that prevails in Moscow's international schools. To make it more multicultural and multi-component: take some things from French and Swiss education, leave some things from British education, and at the same time highlight the Russian component.",
+      name: 'ildar nafikov',
+      position: 'Co-author of the La Berezka project, founder of the Heritage Education Group',
+      text: 'More than 10 years of experience in international education, under the leadership of Mr. Ildar, the eighth campus is already opening in Russia and the CIS.'
     }
   ]
 
@@ -22,22 +43,6 @@
         </svg>
     .swiper-wrapper
       each item in teamItems
-        .swiper-slide.s-team-list__slide
-          .s-team-list__item
-            .s-team-list__item-photo
-              img(src=item.photo, alt="")
-            .s-team-list__item-box
-              .s-team-list__item-info=item.info
-              .s-team-list__item-content
-                .s-team-list__item-name.font-h2=item.name
-                .s-team-list__item-position=item.position
-                .s-team-list__item-text=item.text
-            .s-team-list__item-info.is-mobile=item.info
-            .s-team-list__item-content.is-mobile
-              .s-team-list__item-name.font-h2=item.name
-              .s-team-list__item-position=item.position
-              .s-team-list__item-text=item.text
-
         .swiper-slide.s-team-list__slide
           .s-team-list__item
             .s-team-list__item-photo

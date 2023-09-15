@@ -194,6 +194,12 @@ h5 {
   line-height: 1.3125rem;
 }
 
+.s-legacy {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(255, 249, 240, 0.8)));
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 249, 240, 0.8) 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 249, 240, 0.8) 100%);
+}
+
 .s-legacy__wrapper {
   display: -ms-grid;
   display: grid;
@@ -244,9 +250,9 @@ h5 {
   width: 100%;
   max-width: 20.8125rem;
   margin: 0 auto;
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  transition: 1s;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
 }

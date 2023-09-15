@@ -20,10 +20,15 @@
       .s-team-path__item
         .s-team-path__item-year= item.year
         .s-team-path__item-text= item.text
-  .s-team-path__current
-    img.s-team-path__bg(src="./img/s-team-path/map.png", alt="")
-    .s-team-path__info
-      .s-team-path__info-image
-        img(src="./img/s-team-path/team.jpg", alt="")
-        span La Berёzka Team 2023
-      .s-team-path__info-text The La Berёzka project is preparing to open schools abroad — in Monaco, Florida (USA) and other places where people who would like to give their children the best of Russian culture combined with a promising.
+  .s-team-path__location
+    .s-team-path__location-col
+      img.s-team-path__location-logo(src="./img/s-team-path/logo.svg", alt="")
+      .s-team-path__location-info 2023,<br /> Moscow
+      .s-team-path__location-text In 2020, thanks to a chance meeting, they become partners and start their joint adventure. La Berёzka International Academy.
+
++section("s-team-path-current", "", "", '', false)
+  .s-team-path-current__info
+    .s-team-path-current__info-image
+      img(src="./img/s-team-path/team.jpg", alt="")
+      span La Berёzka Team 2023
+    .s-team-path-current__info-text The La Berёzka project is preparing to open schools abroad — in Monaco, Florida (USA) and other places where people who would like to give their children the best of Russian culture combined with a promising.

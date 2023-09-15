@@ -1,5 +1,4 @@
 .s-page-intro {
-
   &__wrapper {
     position: relative;
   }
@@ -7,11 +6,11 @@
   &__content {
     position: absolute;
     top: 0;
-    max-width: 89%;
+    max-width: 75%;
     margin: 0 auto;
 
     @media (min-width: 768px) {
-      max-width: 94%;
+      max-width: 50%;
     }
 
     @media (min-width: 1336px) {
@@ -23,12 +22,13 @@
     width: 100%;
     height: 100%;
     max-height: calc(100vh - 80px);
+    min-height: rem(533);
     object-fit: cover;
     object-position: right;
   }
 
   &__info {
-    max-width: 70%;
+    max-width: 60%;
     padding: rem(47) 0;
 
     @media (min-width: 475px) {
@@ -40,7 +40,7 @@
       padding: rem(90) 0;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 1440px) {
       max-width: rem(700);
       padding: rem(147) 0;
     }
@@ -84,14 +84,13 @@
   }
 
   &__introtext {
-    display: none;
     font-size: rem(12);
     font-weight: 300;
     line-height: rem(18);
 
     @media (min-width: 1024px) {
-      max-width: rem(700);
       display: block;
+      max-width: rem(700);
       font-size: rem(17);
       line-height: rem(25);
     }

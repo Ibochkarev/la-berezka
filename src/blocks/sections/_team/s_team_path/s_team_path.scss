@@ -148,8 +148,34 @@
   }
 
   &__location {
+    position: relative;
+
+    @media (min-width: 768px) {
+      padding: rem(56) 0;
+    }
+
+    &-image {
+
+      img {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        background-size: contain;
+
+        @media (min-width: 768px) {
+          bottom: rem(-50);
+          display: block;
+          // width: auto;
+          // background-size: cover;
+        }
+      }
+    }
 
     &-col {
+      z-index: 1;
+      position: relative;
       display: flex;
       align-items: center;
       justify-content: center;

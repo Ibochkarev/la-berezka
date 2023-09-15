@@ -471,7 +471,22 @@ h5 {
   text-align: center;
 }
 
+.s-team-path__location {
+  position: relative;
+}
+
+.s-team-path__location-image img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background-size: contain;
+}
+
 .s-team-path__location-col {
+  z-index: 1;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -605,6 +620,15 @@ h5 {
   .s-team-path-current__info-text {
     font-size: 1.0625rem;
     line-height: 1.5625rem;
+  }
+
+  .s-team-path__location {
+    padding: 3.5rem 0;
+  }
+
+  .s-team-path__location-image img {
+    bottom: -3.125rem;
+    display: block;
   }
 
   .s-team-path__location-info {

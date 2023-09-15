@@ -21,6 +21,11 @@
         .s-team-path__item-year= item.year
         .s-team-path__item-text= item.text
   .s-team-path__location
+    .s-team-path__location-bg
+    .s-team-path__location-image
+      picture
+        source(media="(min-width: 768px)", srcset="./img/s-team-path/bg.png",)
+        img(src="./img/s-team-path/bg-mobile.png", alt="")
     .s-team-path__location-col
       img.s-team-path__location-logo(src="./img/s-team-path/logo.svg", alt="")
       .s-team-path__location-info 2023,<br /> Moscow

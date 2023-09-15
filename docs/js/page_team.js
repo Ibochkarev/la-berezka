@@ -155,6 +155,17 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/blocks/sections/_team/s_our_team/s_our_team.js":
+/*!************************************************************!*\
+  !*** ./src/blocks/sections/_team/s_our_team/s_our_team.js ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("\n\n//# sourceURL=webpack:///./src/blocks/sections/_team/s_our_team/s_our_team.js?");
+
+/***/ }),
+
 /***/ "./src/blocks/sections/_team/s_team_list/s_team_list.js":
 /*!**************************************************************!*\
   !*** ./src/blocks/sections/_team/s_team_list/s_team_list.js ***!
@@ -175,7 +186,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var swip
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sections_team_s_team_list_s_team_list__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! %sections%/_team/s_team_list/s_team_list */ \"./src/blocks/sections/_team/s_team_list/s_team_list.js\");\n\n\n//# sourceURL=webpack:///./src/js/page_team.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sections_team_s_team_list_s_team_list__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! %sections%/_team/s_team_list/s_team_list */ \"./src/blocks/sections/_team/s_team_list/s_team_list.js\");\n/* harmony import */ var _sections_team_s_our_team_s_our_team__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! %sections%/_team/s_our_team/s_our_team */ \"./src/blocks/sections/_team/s_our_team/s_our_team.js\");\n/* harmony import */ var _sections_team_s_our_team_s_our_team__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_sections_team_s_our_team_s_our_team__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\n//# sourceURL=webpack:///./src/js/page_team.js?");
 
 /***/ })
 

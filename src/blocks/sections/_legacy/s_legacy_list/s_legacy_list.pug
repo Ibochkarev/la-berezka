@@ -1,0 +1,43 @@
+-
+  const listLegacy = [
+    {
+      image: './img/s-legacy-list/book.jpg',
+      title: 'La Berёzka',
+      subtitle: 'BOOk of arts',
+      text: 'Our unique set of books for preschool children to develop their cultural and arts skills. We share our set of books with global community as an open source.',
+      category: 'Open source'
+    },
+    {
+      image: './img/s-legacy-list/inspiring.jpg',
+      title: 'Parents',
+      subtitle: 'SPEECH NIGHTS',
+      text: 'Our parents are an integral part of our vibrant community, and their success stories serve as a source of inspiration and motivation for everyone involved.',
+      category: 'inspiring STORIES'
+    },
+    {
+      image: './img/s-legacy-list/Industrial.jpg',
+      title: 'Industrial',
+      subtitle: 'Partnerships',
+      text: 'We involve industrial partners to help children and our team to build skills required for being a successful entrepreneur and leader.',
+      category: 'CREATIVE entrepreneurship'
+    },
+    {
+      image: './img/s-legacy-list/unleashing.jpg',
+      title: 'Unleashing the Power of the',
+      subtitle: 'EDUTECH MINDSET',
+      text: 'La Berezka Award of Modern Technologies for preschool children. Our award is established to develop children skills in following areas: Robotics, Biology, Programming, Self-Made from Nature.',
+      category: 'MODERN TECHNOLOGIES'
+    },
+  ]
+
++section("s-legacy-list", "", "", '', false)
+  .s-legacy-list__items
+    each item in listLegacy
+      .s-legacy-list__card
+        .s-legacy-list__card-image
+          img(src=item.image, alt="")
+          .s-legacy-list__card-category=item.category
+        .s-legacy-list__card-info
+          h3.s-legacy-list__card-title=item.title
+          .s-legacy-list__card-subtitle=item.subtitle
+          .s-legacy-list__card-text=item.text

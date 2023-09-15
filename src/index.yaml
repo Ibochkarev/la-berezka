@@ -4,7 +4,9 @@ PageList:
   - file: homepage.html
     ready: 100
   - file: team.html
-    ready: 30
+    ready: 80
+  - file: legacy.html
+    ready: 80
   - file: cookies.html
     ready: 100
   - file: main.html

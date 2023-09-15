@@ -1,0 +1,13 @@
+extends ../layouts/default
+
+block variables
+  - const title = "SAVVA’s Legacy"
+
+block append head
+  link(rel="stylesheet" href="./styles/page_legacy.css")
+
+block content
+  include ../../blocks/sections/_legacy/s_legacy_list/s_legacy_list.pug
+
+//- block append scripts
+//-   script(defer src="./js/page_team.js")

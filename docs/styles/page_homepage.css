@@ -401,6 +401,14 @@ h5 {
     padding: 0 -1.875rem;
   }
 
+  .s-meets-education .s-meets-education__slide:nth-child(1) .s-meets-education__item {
+    padding-left: calc(20px * 1);
+  }
+
+  .s-meets-education .s-meets-education__slide:nth-child(3) .s-meets-education__item {
+    padding-right: calc(20px * 1);
+  }
+
   .s-meets-education__item {
     padding: 1rem 1.875rem 0;
   }

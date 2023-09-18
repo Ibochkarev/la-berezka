@@ -29,6 +29,22 @@
     }
   }
 
+  @media (min-width: 768px) {
+    .s-meets-education__slide {
+      &:nth-child(1) {
+        .s-meets-education__item {
+          padding-left: calc(20px * 1);
+        }
+      }
+
+      &:nth-child(3) {
+        .s-meets-education__item {
+          padding-right: calc(20px * 1);
+        }
+      }
+    }
+  }
+
   &__item {
     padding-right: rem(16);
     padding-left: rem(16);

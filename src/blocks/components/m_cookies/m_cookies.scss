@@ -60,18 +60,23 @@
     text-transform: uppercase;
     color: var(--color-dark);
     border: 0;
+    transition: background-color 0.3s ease;
 
     &--more {
       margin-right: rem(10);
       background-color: var(--color-light-grey);
 
       &:hover {
-        background: var(--d-9-c-6-a-9, #F3E7D5);
+        background-color: #F3E7D5;
       }
     }
 
     &--agree {
       background-color: var(--color-light-sand);
+
+      &:hover {
+        background-color: #E5E5E5;
+      }
     }
   }
 }

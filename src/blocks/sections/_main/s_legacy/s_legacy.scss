@@ -16,6 +16,10 @@
   }
 
   &__cover {
+    @media (max-width: 799px) {
+      margin: rem(20) 0;
+    }
+
     img {
       width: 100%;
       height: auto;

@@ -1,0 +1,323 @@
+:root {
+  --color-dark: #1f1e20;
+  --color-sand: #d9c6a9;
+  --color-middle-sand: #fffbf2;
+  --color-light-sand: #d9c6a9;
+  --color-crayola: #d1d997;
+  --color-middle-crayola: #e8eccb;
+  --color-grey: #a7a7a7;
+  --color-middle-grey: #e5e5e5;
+  --color-light-grey: #f9f9f9;
+  --color-white: #fff;
+  --color-light-white: rgba(255, 255, 255, 0.8);
+}
+
+:root {
+  --a-padding--x1: 0.25rem;
+  --a-padding--x2: 0.5rem;
+  --a-padding--x3: 0.75rem;
+  --a-padding--x4: 1rem;
+  --a-padding--x5: 1.25rem;
+  --a-padding--x6: 1.5rem;
+  --a-padding--x7: 1.75rem;
+  --a-padding--x8: 2rem;
+  --a-padding--x9: 2.25rem;
+  --a-padding--x10: 2.5rem;
+  --a-padding--x11: 2.75rem;
+  --a-padding--x12: 3rem;
+  --a-padding--x13: 3.25rem;
+  --a-padding--x14: 3.5rem;
+  --a-padding--x15: 3.75rem;
+  --a-padding--x16: 4rem;
+  --a-padding--x17: 4.25rem;
+  --a-padding--x18: 4.5rem;
+  --a-padding--x19: 4.75rem;
+  --a-padding--x20: 5rem;
+}
+
+:root {
+  --a-borderRadius--x1: 0.25rem;
+  --a-borderRadius--x2: 0.5rem;
+  --a-borderRadius--x3: 0.75rem;
+  --a-borderRadius--x4: 1rem;
+  --a-borderRadius--x5: 1.25rem;
+  --a-borderRadius--x6: 1.5rem;
+  --a-borderRadius--x7: 1.75rem;
+  --a-borderRadius--x8: 2rem;
+  --a-borderRadius--x9: 2.25rem;
+  --a-borderRadius--x10: 2.5rem;
+  --a-borderRadius--x11: 2.75rem;
+  --a-borderRadius--x12: 3rem;
+  --a-borderRadius--x13: 3.25rem;
+  --a-borderRadius--x14: 3.5rem;
+  --a-borderRadius--x15: 3.75rem;
+  --a-borderRadius--x16: 4rem;
+  --a-borderRadius--x17: 4.25rem;
+  --a-borderRadius--x18: 4.5rem;
+  --a-borderRadius--x19: 4.75rem;
+  --a-borderRadius--x20: 5rem;
+  --a-borderRadius--x21: 5.25rem;
+  --a-borderRadius--x22: 5.5rem;
+  --a-borderRadius--x23: 5.75rem;
+  --a-borderRadius--x24: 6rem;
+  --a-borderRadius--x25: 6.25rem;
+  --a-borderRadius--def: var(--a-borderRadius--x4);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+.font-h1-didona {
+  font-family: 'Didona', sans-serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 2.25rem;
+  text-transform: uppercase;
+}
+
+.font-h2-didona {
+  font-family: 'Didona', sans-serif;
+  font-size: 2.1875rem;
+  font-weight: 400;
+  line-height: 2.0625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.font-h3-didona {
+  font-family: 'Didona', sans-serif;
+  font-size: 1.625rem;
+  font-weight: 400;
+  line-height: 2.125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.font-h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.375rem;
+  font-weight: 100;
+  line-height: 2.125rem;
+}
+
+.font-h2 {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.625rem;
+  letter-spacing: 0.01em;
+}
+
+.font-h2-medium {
+  font-family: "Roboto Medium", sans-serif;
+  font-size: 1.375rem;
+  font-weight: 500;
+  line-height: 1.875rem;
+}
+
+.font-h2-light {
+  font-family: "Roboto Light", sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 300;
+  line-height: 1.625rem;
+  letter-spacing: 0.01em;
+}
+
+.font-text-m {
+  font-family: "Roboto Light", sans-serif;
+  font-size: 1.625rem;
+  font-weight: 300;
+  line-height: 2.1875rem;
+}
+
+.font-text-s {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.375rem;
+}
+
+.font-button {
+  font-family: "Roboto Light", sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 300;
+  line-height: 1.625rem;
+}
+
+.font-menu {
+  font-family: "Roboto Light", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.25rem;
+}
+
+.s-info__wrapper {
+  padding-bottom: 4.75rem;
+}
+
+.s-info__title {
+  font-size: 1.375rem;
+  font-weight: 100;
+  line-height: 2.125rem;
+  font-style: normal;
+}
+
+.s-info__subtitle {
+  margin-bottom: 0.9375rem;
+  font-family: "Didona", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+.s-info__text {
+  max-width: 70%;
+  margin-bottom: 1.25rem;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.125rem;
+}
+
+.s-info__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 1.875rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  font-size: 0.625rem;
+  line-height: 0.875rem;
+  text-transform: uppercase;
+  background: var(--color-sand);
+  -webkit-transition: opacity 0.2s ease-out;
+  -o-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+}
+
+.s-info__button:hover {
+  opacity: .8;
+}
+
+@media (min-width: 768px) {
+  .s-info__wrapper {
+    padding-top: 10rem;
+    padding-bottom: 8.75rem;
+  }
+
+  .s-info__title {
+    font-size: 2.625rem;
+    line-height: 3.375rem;
+  }
+
+  .s-info__subtitle {
+    font-size: 2.625rem;
+    line-height: 3.375rem;
+    letter-spacing: 0.02625rem;
+  }
+
+  .s-info__text {
+    max-width: 45rem;
+    margin-bottom: 2.3125rem;
+    font-size: 1.0625rem;
+    line-height: 1.5625rem;
+    letter-spacing: 0.01063rem;
+  }
+
+  .s-info__button {
+    height: 2.5rem;
+    font-size: 0.75rem;
+    line-height: 0.875rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .font-h1-didona {
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 3rem;
+    letter-spacing: 0.025rem;
+  }
+
+  .font-h1 {
+    font-size: 2.625rem;
+    line-height: 3.375rem;
+  }
+
+  .font-h2 {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+  }
+
+  .font-h2-light {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+  }
+
+  .font-text-s {
+    font-size: 1.0625rem;
+    line-height: 1.5625rem;
+  }
+
+  .font-button {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+  }
+}
+
+@media screen {
+  .px-0 {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .py-0 {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .pb-0 {
+    padding-bottom: 0;
+  }
+
+  .pt-0 {
+    padding-top: 0;
+  }
+
+  .mx-0 {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .my-0 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .mb-0 {
+    margin-bottom: 0;
+  }
+
+  .mt-0 {
+    margin-top: 0;
+  }
+
+  .br-0 {
+    border-radius: 0;
+  }
+}
+/*# sourceMappingURL=maps/page_info.css.map */

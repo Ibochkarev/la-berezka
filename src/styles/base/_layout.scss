@@ -35,6 +35,9 @@
     height: 100vh;
     min-height: 100vh;
     flex-direction: column;
-    padding-bottom: rem(40);
+
+    &__content {
+      flex: 1 0 auto;
+    }
   }
 }

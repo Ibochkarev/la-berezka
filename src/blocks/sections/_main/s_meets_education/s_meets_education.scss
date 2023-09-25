@@ -123,17 +123,17 @@
 
   &__button {
     position: absolute;
-    top: 53%;
+    top: 52%;
     background: transparent;
     border: 0;
     transform: translateY(-50%);
 
     &-prev {
-      left: 0;
+      left: rem(10);
     }
 
     &-next {
-      right: 0;
+      right: rem(10);
     }
   }
 }

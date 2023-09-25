@@ -1,0 +1,55 @@
+-
+  const articlesItems = [
+    {
+      title: "Five Children's Books <span>with storytelling</span>",
+      text: "Children's books that are easy to start a conversation about important things. About love, fears, decisions of the heart. making the right choices.",
+      image: "./img/s-blog/1.jpg",
+    },
+    {
+      title: "Urban <span>vegetable garden</span>",
+      text: "Our parents are an integral part of our vibrant community, and their success stories serve as a source of inspiration and motivation for everyone involved.",
+      image: "./img/s-blog/4.jpg",
+    },
+    {
+      title: "Children’s <span>ROom</span>",
+      text: "Interior selection for a bright, stylish children's room.",
+      image: "./img/s-blog/2.jpg",
+    },
+    {
+      title: "Ten Kid’s Studios <span>For creativity</span>",
+      text: "Ten interesting and exciting creative studios for children’s activities.",
+      image: "./img/s-blog/5.jpg",
+    },
+    {
+      title: "Parents <span>SPEECH NIGHTS</span>",
+      text: "Our parents are an integral part of our vibrant community, and their success stories serve as a source of inspiration and motivation for everyone involved.",
+      image: "./img/s-blog/3.jpg",
+    },
+    {
+      title: "The 20 Best <span>kids' brands</span>",
+      text: "Our parents are an integral part of our vibrant community, and their success stories serve as a source of inspiration and motivation for everyone involved.",
+      image: "./img/s-blog/6.jpg",
+    },
+  ]
+
++section("s-articles", '', '', '', false)
+  +m_breadcrumbs(['State of Mind'], 'Blog')
+  h1.s-articles__title Blog
+  .s-articles__subtitle La berёzka
+
+  .s-articles__categories
+    a.s-articles__category(href="") EDUCATION
+    a.s-articles__category(href="") INTERESTS
+    a.s-articles__category(href="") PLACES
+    a.s-articles__category(href="") INSPIRATION
+
+  .s-articles__items
+    each item, i in articlesItems
+      article.m-article(class=i % 2 == 0 ? 'm-article--full' : '')
+        a.m-article__image(href="", class=i % 2 == 0 ? 'm-article__image--full' : '')
+          img(src=item.image, alt="")
+        .m-article__info
+          h3.m-article__title
+            a.m-article__title-link(href="")!=item.title
+          .m-article__text=item.text
+

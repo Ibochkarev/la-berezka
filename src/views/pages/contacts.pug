@@ -1,0 +1,14 @@
+extends  ../layouts/default
+
+block variables
+  - const title = "Контакты"
+
+block append head
+  link(rel="stylesheet" href="./styles/page_contacts.css")
+
+block content
+  include ../../blocks/sections/_contacts/s_contacts/s_contacts.pug
+
+block append scripts
+  script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=1fb28fa2-95c1-4ccf-a695-f9ae8003521a")
+  script(defer src="./js/page_contacts.js")

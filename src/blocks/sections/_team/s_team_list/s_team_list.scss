@@ -16,8 +16,8 @@
     }
 
     &-box {
-      display: none;
       position: relative;
+      display: none;
       max-width: rem(650);
       margin-left: rem(24);
 
@@ -146,8 +146,10 @@
   }
 
   &__buttons {
+    z-index: 10;
     position: absolute;
     top: 50%;
+    right: 0;
     left: 0;
     width: 100%;
     max-width: rem(1440);

@@ -1,0 +1,13 @@
+extends ../layouts/default
+
+block variables
+  - const title = "Explore"
+
+block append head
+  link(rel="stylesheet" href="./styles/page_explore.css")
+
+block content
+  include ../../blocks/sections/_explore/s_explore_one_day/s_explore_one_day.pug
+
+block append scripts
+  script(defer src="./js/page_explore.js")

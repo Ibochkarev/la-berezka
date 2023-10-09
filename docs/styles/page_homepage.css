@@ -351,6 +351,89 @@ h5 {
   border-radius: 0.625rem;
 }
 
+.s-our-team__slide {
+  height: 18.125rem;
+}
+
+.s-our-team__slide--image {
+  display: block;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.s-our-team__slide--text {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-sand);
+}
+
+.s-our-team__slide-wrapper {
+  max-width: 20rem;
+  padding: 1.5rem;
+}
+
+.s-our-team__slide-title {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 2rem;
+  font-style: normal;
+  letter-spacing: 0.0375rem;
+}
+
+.s-our-team__slide-text {
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.3125rem;
+}
+
+.s-our-team__bottom {
+  z-index: 102;
+  position: relative;
+  overflow: hidden;
+  top: -44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  max-width: 48.125rem;
+  margin: 0 auto;
+}
+
+.s-our-team__button {
+  z-index: 2;
+  cursor: pointer;
+  position: relative;
+  display: block;
+  width: 1.875rem;
+  height: 2.8125rem;
+  color: var(--color-white);
+  border: 0;
+  background-color: var(--color-dark);
+  -webkit-box-flex: 0;
+  -ms-flex: none;
+  flex: none;
+}
+
+.s-our-team__item-text {
+  height: 2.75rem;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 2rem;
+  text-align: center;
+  background-color: var(--color-white);
+  font-style: normal;
+  letter-spacing: 0.0375rem;
+}
+
 @media (min-width: 475px) {
   .s-main-intro__info {
     padding: 5.625rem 0;
@@ -432,6 +515,14 @@ h5 {
     line-height: 1.25rem;
     text-align: left;
     letter-spacing: 0.0075rem;
+  }
+
+  .s-our-team__slide {
+    height: 28.125rem;
+  }
+
+  .s-our-team__slide-wrapper {
+    padding: 3.375rem 4rem;
   }
 }
 

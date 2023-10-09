@@ -1,0 +1,89 @@
+.s-our-team {
+  &__slider {}
+
+  &__slide {
+    height: rem(290);
+
+    @media (min-width: 768px) {
+      height: rem(450);
+    }
+
+    &--image {
+      display: block;
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &--text {
+      width: 100%;
+      height: 100%;
+      background-color: var(--color-sand);
+    }
+
+    &-wrapper {
+      max-width: rem(320);
+      padding: rem(24);
+
+      @media (min-width: 768px) {
+        padding: rem(54) rem(64);
+      }
+    }
+
+    &-title {
+      font-family: "Playfair Display", sans-serif;
+      font-size: rem(20);
+      font-weight: 400;
+      line-height: rem(32);
+      font-style: normal;
+      letter-spacing: rem(0.6);
+    }
+
+    &-text {
+      font-size: rem(14);
+      font-weight: 300;
+      line-height: rem(21);
+    }
+  }
+
+  &__bottom {
+    z-index: 102;
+    position: relative;
+    overflow: hidden;
+    top: -44px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: rem(770);
+    margin: 0 auto;
+  }
+
+  &__button {
+    z-index: 2;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    width: rem(30);
+    height: rem(45);
+    color: var(--color-white);
+    border: 0;
+    background-color: var(--color-dark);
+    flex: none;
+  }
+
+  &__item {
+
+    &-text {
+      height: rem(44);
+      font-family: "Playfair Display", sans-serif;
+      font-size: rem(20);
+      font-weight: 400;
+      line-height: rem(32);
+      text-align: center;
+      background-color: var(--color-white);
+      font-style: normal;
+      letter-spacing: rem(0.6);
+    }
+  }
+}

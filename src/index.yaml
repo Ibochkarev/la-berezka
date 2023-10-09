@@ -17,6 +17,8 @@ PageList:
     ready: 100
   - file: about.html
     ready: 100
+  - file: explore.html
+    ready: 100
   - file: academy_admission.html
     ready: 100
   - file: program.html

@@ -26,6 +26,7 @@ module.exports = {
     page_homepage: './src/js/page_homepage.js',
     page_team: './src/js/page_team.js',
     page_contacts: './src/js/page_contacts.js',
+    page_explore: './src/js/page_explore.js',
   },
 
   output: {

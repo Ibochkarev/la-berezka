@@ -223,8 +223,8 @@ h5 {
 }
 
 .s-team-list__item-box {
-  display: none;
   position: relative;
+  display: none;
   max-width: 40.625rem;
   margin-left: 1.5rem;
 }
@@ -302,8 +302,10 @@ h5 {
 }
 
 .s-team-list__buttons {
+  z-index: 10;
   position: absolute;
   top: 50%;
+  right: 0;
   left: 0;
   width: 100%;
   max-width: 90rem;

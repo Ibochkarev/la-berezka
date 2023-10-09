@@ -159,10 +159,11 @@
 /*!************************************************************!*\
   !*** ./src/blocks/sections/_team/s_our_team/s_our_team.js ***!
   \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("\n\n//# sourceURL=webpack:///./src/blocks/sections/_team/s_our_team/s_our_team.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ \"./node_modules/swiper/swiper.esm.js\");\n\nswiper__WEBPACK_IMPORTED_MODULE_0__[\"Swiper\"].use([swiper__WEBPACK_IMPORTED_MODULE_0__[\"Navigation\"], swiper__WEBPACK_IMPORTED_MODULE_0__[\"Thumbs\"]]);\nwindow.addEventListener('load', function () {\n  var ourTeamItemsSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__[\"Swiper\"](\".s-our-team__slider\", {\n    slidesPerView: 1,\n    resistance: true,\n    resistanceRatio: 1,\n    breakpoints: {\n      640: {\n        slidesPerView: 2,\n        spaceBetween: 0\n      }\n    }\n  });\n  var ourTeamItemsSliderBottom = new swiper__WEBPACK_IMPORTED_MODULE_0__[\"Swiper\"](\".s-our-team__bottom\", {\n    slidesPerView: 1,\n    resistance: true,\n    resistanceRatio: 1,\n    navigation: {\n      nextEl: '.s-our-team__button-next',\n      prevEl: '.s-our-team__button-prev'\n    },\n    breakpoints: {\n      640: {\n        slidesPerView: 2,\n        spaceBetween: 0\n      }\n    },\n    thumbs: {\n      swiper: ourTeamItemsSlider\n    }\n  });\n}, false);\n\n//# sourceURL=webpack:///./src/blocks/sections/_team/s_our_team/s_our_team.js?");
 
 /***/ }),
 
@@ -174,7 +175,7 @@ eval("\n\n//# sourceURL=webpack:///./src/blocks/sections/_team/s_our_team/s_our_
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ \"./node_modules/swiper/swiper.esm.js\");\n\nswiper__WEBPACK_IMPORTED_MODULE_0__[\"Swiper\"].use([swiper__WEBPACK_IMPORTED_MODULE_0__[\"Navigation\"]]);\nwindow.addEventListener('load', function () {\n  var teamItemsSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__[\"Swiper\"](\".s-team-list__slider\", {\n    slidesPerView: 1,\n    navigation: {\n      nextEl: '.s-team-list__button-next',\n      prevEl: '.s-team-list__button-prev'\n    },\n    resistance: true,\n    resistanceRatio: 1,\n    spaceBetween: 16,\n    autoHeight: false,\n    grabCursor: true\n  });\n}, false);\n\n//# sourceURL=webpack:///./src/blocks/sections/_team/s_team_list/s_team_list.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ \"./node_modules/swiper/swiper.esm.js\");\n\nswiper__WEBPACK_IMPORTED_MODULE_0__[\"Swiper\"].use([swiper__WEBPACK_IMPORTED_MODULE_0__[\"Navigation\"]]);\nwindow.addEventListener('load', function () {\n  var teamItemsSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__[\"Swiper\"](\".s-team-list__slider\", {\n    slidesPerView: 'auto',\n    navigation: {\n      nextEl: '.s-team-list__button-next',\n      prevEl: '.s-team-list__button-prev'\n    },\n    resistance: true,\n    resistanceRatio: 1,\n    spaceBetween: 28,\n    grabCursor: true,\n    direction: 'vertical',\n    breakpoints: {\n      768: {\n        slidesPerView: 1,\n        spaceBetween: 16,\n        direction: 'horizontal',\n        autoHeight: true\n      }\n    }\n  });\n}, false);\n\n//# sourceURL=webpack:///./src/blocks/sections/_team/s_team_list/s_team_list.js?");
 
 /***/ }),
 
@@ -186,7 +187,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var swip
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sections_team_s_team_list_s_team_list__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! %sections%/_team/s_team_list/s_team_list */ \"./src/blocks/sections/_team/s_team_list/s_team_list.js\");\n/* harmony import */ var _sections_team_s_our_team_s_our_team__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! %sections%/_team/s_our_team/s_our_team */ \"./src/blocks/sections/_team/s_our_team/s_our_team.js\");\n/* harmony import */ var _sections_team_s_our_team_s_our_team__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_sections_team_s_our_team_s_our_team__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\n//# sourceURL=webpack:///./src/js/page_team.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sections_team_s_team_list_s_team_list__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! %sections%/_team/s_team_list/s_team_list */ \"./src/blocks/sections/_team/s_team_list/s_team_list.js\");\n/* harmony import */ var _sections_team_s_our_team_s_our_team__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! %sections%/_team/s_our_team/s_our_team */ \"./src/blocks/sections/_team/s_our_team/s_our_team.js\");\n\n\n\n//# sourceURL=webpack:///./src/js/page_team.js?");
 
 /***/ })
 

@@ -167,6 +167,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var swip
 
 /***/ }),
 
+/***/ "./src/blocks/sections/_team/s_our_team/s_our_team.js":
+/*!************************************************************!*\
+  !*** ./src/blocks/sections/_team/s_our_team/s_our_team.js ***!
+  \************************************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ \"./node_modules/swiper/swiper.esm.js\");\n\nswiper__WEBPACK_IMPORTED_MODULE_0__[\"Swiper\"].use([swiper__WEBPACK_IMPORTED_MODULE_0__[\"Navigation\"], swiper__WEBPACK_IMPORTED_MODULE_0__[\"Thumbs\"]]);\nwindow.addEventListener('load', function () {\n  var ourTeamItemsSlider = new swiper__WEBPACK_IMPORTED_MODULE_0__[\"Swiper\"](\".s-our-team__slider\", {\n    slidesPerView: 1,\n    resistance: true,\n    resistanceRatio: 1,\n    breakpoints: {\n      640: {\n        slidesPerView: 2,\n        spaceBetween: 0\n      }\n    }\n  });\n  var ourTeamItemsSliderBottom = new swiper__WEBPACK_IMPORTED_MODULE_0__[\"Swiper\"](\".s-our-team__bottom\", {\n    slidesPerView: 1,\n    resistance: true,\n    resistanceRatio: 1,\n    navigation: {\n      nextEl: '.s-our-team__button-next',\n      prevEl: '.s-our-team__button-prev'\n    },\n    breakpoints: {\n      640: {\n        slidesPerView: 2,\n        spaceBetween: 0\n      }\n    },\n    thumbs: {\n      swiper: ourTeamItemsSlider\n    }\n  });\n}, false);\n\n//# sourceURL=webpack:///./src/blocks/sections/_team/s_our_team/s_our_team.js?");
+
+/***/ }),
+
 /***/ "./src/js/page_homepage.js":
 /*!*********************************!*\
   !*** ./src/js/page_homepage.js ***!
@@ -175,7 +187,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var swip
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sections_main_s_meets_education_s_meets_education__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! %sections%/_main/s_meets_education/s_meets_education */ \"./src/blocks/sections/_main/s_meets_education/s_meets_education.js\");\n// import '%sections%/_main/s_main_intro/s_main_intro'\n\n\n//# sourceURL=webpack:///./src/js/page_homepage.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sections_main_s_meets_education_s_meets_education__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! %sections%/_main/s_meets_education/s_meets_education */ \"./src/blocks/sections/_main/s_meets_education/s_meets_education.js\");\n/* harmony import */ var _sections_team_s_our_team_s_our_team__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! %sections%/_team/s_our_team/s_our_team */ \"./src/blocks/sections/_team/s_our_team/s_our_team.js\");\n// import '%sections%/_main/s_main_intro/s_main_intro'\n\n\n\n//# sourceURL=webpack:///./src/js/page_homepage.js?");
 
 /***/ })
 

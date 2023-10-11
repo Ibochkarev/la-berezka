@@ -1,0 +1,55 @@
+-
+  const books = [
+    {
+      image: "./img/s-explore-storytellers/1.jpeg",
+      title: "Pre-Nursery",
+      age: "For children 3-5 y.o",
+      text: 'Through "Goldilocks and the Three Bears," our little ones explore the story that highlights the importance of family and the world around them. Children will learn the significance of family bonds and the security provided by a loving home.'
+    },
+    {
+      image: "./img/s-explore-storytellers/2.jpeg",
+      title: "Nursery",
+      age: "For children 3-5 y.o",
+      text: 'Through "Goldilocks and the Three Bears," our little ones explore the story that highlights the importance of family and the world around them. Children will learn the significance of family bonds and the security provided by a loving home.'
+    },
+    {
+      image: "./img/s-explore-storytellers/3.jpeg",
+      title: "Nursery",
+      age: "For children 3-5 y.o",
+      text: 'Through "Goldilocks and the Three Bears," our little ones explore the story that highlights the importance of family and the world around them. Children will learn the significance of family bonds and the security provided by a loving home.'
+    },
+    {
+      image: "./img/s-explore-storytellers/4.jpeg",
+      title: "Year 1 Book",
+      age: "For children 3-5 y.o",
+      text: `"The adaptation we have written of 'Swan Lake,' presented by Pyotr Ilyich Tchaikovsky during his travels and encounters with illustrious figures such as Queen Victoria, Edgar Degas, and Marie Curie, offers a unique educational experience for our children.`
+    },
+    {
+      image: "./img/s-explore-storytellers/5.jpeg",
+      title: "Year 2 Book",
+      age: "For children 3-5 y.o",
+      text: `Our curriculum features exciting adventures like those of the Pott family, portrayed in Ian Fleming's "Chitty Chitty Bang Bang." These stories inspire entrepreneurial thinking, and hands-on science experiments in our labs turn concepts into reality.`
+    }
+  ]
+
++section("s-explore-storytellers", "Empowering Minds through Captivating Activity Books", "The Storyteller's Path", "For instance, in our English classes, our students don't simply memorize word lists; they dive headfirst into the language by taking on roles within real-life contexts and situations. This approach fosters the development of both thought and language, extending far beyond the academic realm. Our children acquire linguistic skills through creative activities, emotions, and ideas.", false)
+
+  .s-explore-storytellers__slider.swiper-container
+    .swiper-wrapper.s-explore-storytellers__slider-wrapper
+      each book in books
+        .swiper-slide.s-explore-storytellers__slide
+          .s-explore-storytellers__card
+            .s-explore-storytellers__card-cover
+              img(src=book.image, alt="")
+            .s-explore-storytellers__card-info
+              h4.s-explore-storytellers__card-title= book.title
+              .s-explore-storytellers__card-age= book.age
+              .s-explore-storytellers__card-text= book.text
+    button.s-explore-storytellers__button.s-explore-storytellers__button-prev(type="button")
+      <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M18 6.96606L9.5 6.96606L1 6.96606M1 6.96606L7.5 13.4661M1 6.96606L7.5 0.466064" stroke="#1F1E20"/>
+      </svg>
+    button.s-explore-storytellers__button.s-explore-storytellers__button-next(type="button")
+      <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M-5.68248e-07 6.96606L8.5 6.96607L17 6.96607M17 6.96607L10.5 0.466065M17 6.96607L10.5 13.4661" stroke="#1F1E20"/>
+      </svg>

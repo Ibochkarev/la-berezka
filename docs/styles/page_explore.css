@@ -281,6 +281,295 @@ h5 {
   line-height: 1.125rem;
 }
 
+.s-explore-include__list {
+  display: -ms-grid;
+  display: grid;
+  padding: 2rem 0;
+  border-top: 0.0625rem solid var(--color-dark);
+  border-bottom: 0.0625rem solid var(--color-dark);
+  gap: 1.25rem;
+  -ms-grid-columns: (1fr)[1];
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.s-explore-include__card {
+  padding: 0 1.125rem;
+}
+
+.s-explore-include__card-title {
+  margin-bottom: 1.25rem;
+  font-family: 'Didona', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+  text-transform: uppercase;
+  font-style: normal;
+  letter-spacing: 0.0125rem;
+}
+
+.s-explore-include__card-link {
+  position: relative;
+  display: block;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+}
+
+.s-explore-include__card-link::after {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 0.375rem;
+  height: 0.625rem;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg width='8' height='11' viewBox='0 0 8 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.08618L6.30957 5.59813L1 10.1101' stroke='%23A7A7A7' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.s-explore-include__card-text {
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.375rem;
+  font-style: normal;
+}
+
+.s-explore-advantages__wrapper {
+  overflow: visible;
+}
+
+.s-explore-advantages__slider {
+  overflow: hidden;
+}
+
+.s-explore-advantages__slide {
+  height: auto;
+}
+
+.s-explore-advantages__item {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.s-explore-advantages__item-image {
+  margin-bottom: 0.625rem;
+}
+
+.s-explore-advantages__item-image img {
+  width: 100%;
+  max-width: 20.8125rem;
+  max-height: 31.875rem;
+  margin: 0 auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.s-explore-advantages__item-alt {
+  margin-bottom: 1.875rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 0.6875rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  text-align: center;
+  color: var(--color-grey);
+  font-style: italic;
+  letter-spacing: 0.00688rem;
+}
+
+.s-explore-advantages__item-title {
+  margin-bottom: 1.25rem;
+  text-align: center;
+  font-family: 'Didona', sans-serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 2.25rem;
+  text-transform: uppercase;
+}
+
+.s-explore-advantages__item-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.375rem;
+  text-align: center;
+}
+
+.s-explore-advantages__item-title {
+  display: block;
+}
+
+.s-explore-advantages__item-link {
+  position: relative;
+  text-decoration: underline;
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+  text-decoration-thickness: from-font;
+}
+
+.s-explore-advantages__item-link::after {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 0.375rem;
+  height: 0.625rem;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg width='8' height='11' viewBox='0 0 8 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.08618L6.30957 5.59813L1 10.1101' stroke='%23A7A7A7' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.s-explore-advantages__button {
+  position: absolute;
+  top: 52%;
+  background: transparent;
+  border: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.s-explore-advantages__button-prev {
+  left: 0.625rem;
+}
+
+.s-explore-advantages__button-next {
+  right: 0.625rem;
+}
+
+.s-explore-text-block {
+  position: relative;
+}
+
+.s-explore-text-block::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-image: url("data:image/svg+xml,%3Csvg width='1440' height='701' viewBox='0 0 1440 701' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='1440' height='350' transform='translate(1440 350.84) rotate(-180)' fill='url(%23paint0_linear_2706_2790)' fill-opacity='0.8'/%3E%3Crect width='1440' height='350' transform='translate(0 350.84)' fill='url(%23paint1_linear_2706_2790)' fill-opacity='0.8'/%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_2706_2790' x1='720' y1='0' x2='720' y2='350' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FFF9F0'/%3E%3Cstop offset='1' stop-color='white' stop-opacity='0'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear_2706_2790' x1='720' y1='0' x2='720' y2='350' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23FFF9F0'/%3E%3Cstop offset='1' stop-color='white' stop-opacity='0'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+  background-size: contain;
+  background-position: center center;
+  content: '';
+}
+
+.s-explore-text-block__wrapper {
+  padding-top: 8.25rem;
+  padding-bottom: 8.25rem;
+}
+
+.s-explore-text-block__content {
+  z-index: 1;
+  position: relative;
+  max-width: 65.3125rem;
+  margin: 0 auto;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.375rem;
+  text-align: center;
+  font-style: normal;
+  letter-spacing: 0.00937rem;
+}
+
+.s-explore-storytellers {
+  overflow: hidden;
+}
+
+.s-explore-storytellers .m-section__wrapper {
+  overflow: visible;
+}
+
+.s-explore-storytellers__slider {
+  position: relative;
+}
+
+.s-explore-storytellers__slide {
+  overflow: hidden;
+}
+
+.s-explore-storytellers__card {
+  padding: 0 1rem;
+}
+
+.s-explore-storytellers__card-cover img {
+  width: 100%;
+  height: auto;
+}
+
+.s-explore-storytellers__card-info {
+  padding: 1.5625rem;
+  background: rgba(255, 249, 240, 0.8);
+}
+
+.s-explore-storytellers__card-title {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 1.375rem;
+  font-weight: 400;
+  line-height: 2.1875rem;
+  font-style: normal;
+}
+
+.s-explore-storytellers__card-age {
+  margin-bottom: 0.75rem;
+  font-size: 1.0625rem;
+  font-weight: 300;
+  line-height: 1.5625rem;
+  font-style: normal;
+  letter-spacing: 0.01063rem;
+}
+
+.s-explore-storytellers__card-text {
+  font-size: 1.0625rem;
+  font-weight: 300;
+  line-height: 1.5625rem;
+  font-style: normal;
+  letter-spacing: 0.01063rem;
+}
+
+.s-explore-storytellers__button {
+  z-index: 3;
+  cursor: pointer;
+  position: absolute;
+  top: var(--swiper-navigation-top-offset, 50%);
+  margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+  background: transparent;
+  border: 0;
+}
+
+.s-explore-storytellers__button.swiper-button-disabled {
+  display: none;
+}
+
+.s-explore-storytellers__button-prev {
+  left: -0.625rem;
+}
+
+.s-explore-storytellers__button-next {
+  right: -0.625rem;
+}
+
+@media (min-width: 600px) {
+  .s-explore-advantages__slider {
+    margin: 0 -1.25rem;
+  }
+
+  .s-explore-advantages__slide:not(:last-child) {
+    border-right: 0.04688rem solid var(--color-dark);
+  }
+
+  .s-explore-advantages__item {
+    padding: 0 1.25rem;
+  }
+}
+
 @media (min-width: 768px) {
   .s-explore-one-day__wrapper {
     display: -webkit-box;
@@ -298,6 +587,75 @@ h5 {
     -webkit-box-flex: 0;
     -ms-flex: none;
     flex: none;
+  }
+
+  .s-explore-include__card-title {
+    margin-bottom: 1.125rem;
+    font-size: 1.625rem;
+    line-height: 2.125rem;
+    letter-spacing: 0.03125rem;
+  }
+
+  .s-explore-include__card-text {
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+  }
+
+  .s-explore-advantages .s-explore-advantages__slide:nth-child(1) .s-explore-advantages__item {
+    padding-left: calc(20px * 1);
+  }
+
+  .s-explore-advantages .s-explore-advantages__slide:nth-child(3) .s-explore-advantages__item {
+    padding-right: calc(20px * 1);
+  }
+
+  .s-explore-advantages__slider {
+    margin: 0 -1.875rem;
+  }
+
+  .s-explore-advantages__item {
+    padding: 0 1.875rem;
+  }
+
+  .s-explore-advantages__item-alt {
+    margin-bottom: 1.25rem;
+  }
+
+  .s-explore-advantages__item-title {
+    font-family: 'Didona', sans-serif;
+    font-size: 1.625rem;
+    font-weight: 400;
+    line-height: 2.125rem;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+
+  .s-explore-advantages__item-text {
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    text-align: left;
+    letter-spacing: 0.0075rem;
+  }
+
+  .s-explore-text-block::before {
+    height: 21.875rem;
+  }
+
+  .s-explore-text-block__wrapper {
+    padding-top: 13.75rem;
+    padding-bottom: 13.75rem;
+  }
+
+  .s-explore-text-block__content {
+    font-size: 1.875rem;
+    font-weight: 400;
+    line-height: 2.8125rem;
+    font-style: normal;
+    letter-spacing: 0.01875rem;
+  }
+
+  .s-explore-storytellers .m-section__wrapper {
+    overflow: visible;
   }
 }
 
@@ -335,6 +693,56 @@ h5 {
     font-size: 1.0625rem;
     line-height: 1.5625rem;
   }
+
+  .s-explore-include .m-section__wrapper {
+    padding-bottom: 1.25rem;
+  }
+
+  .s-explore-include__list {
+    padding: 3.125rem 0;
+    gap: 2.5rem;
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .s-explore-include__card {
+    padding: 0;
+  }
+
+  .s-explore-storytellers__card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .s-explore-storytellers__card-info {
+    width: 15.4375rem;
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .s-explore-include__list {
+    gap: 7.625rem;
+  }
+
+  .s-explore-storytellers__card {
+    padding: 0;
+    width: 53.75rem;
+  }
+
+  .s-explore-storytellers__button-prev {
+    left: -1.5rem;
+  }
+
+  .s-explore-storytellers__button-next {
+    right: 3.125rem;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -368,6 +776,51 @@ h5 {
   .font-button {
     font-size: 1.125rem;
     line-height: 1.625rem;
+  }
+
+  .s-explore-advantages__item-title {
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 3rem;
+    letter-spacing: 0.025rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .s-explore-advantages__slider {
+    margin: 0 -3.75rem;
+  }
+
+  .s-explore-advantages__item {
+    padding: 0 3.125rem;
+  }
+
+  .s-explore-storytellers__card {
+    width: 61.25rem;
+  }
+
+  .s-explore-storytellers__card-info {
+    padding: 3.5rem 1.5rem 2rem;
+  }
+
+  .s-explore-storytellers__button-next {
+    right: 4.375rem;
+  }
+}
+
+@media (min-width: 1260px) {
+  .s-explore-storytellers__card {
+    width: 69rem;
+  }
+}
+
+@media (min-width: 1336px) {
+  .s-explore-storytellers__button-prev {
+    left: -2.25rem;
+  }
+
+  .s-explore-storytellers__button-next {
+    right: 0;
   }
 }
 

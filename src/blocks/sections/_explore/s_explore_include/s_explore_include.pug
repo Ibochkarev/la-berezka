@@ -1,0 +1,28 @@
+-
+  const includeList = [
+    {
+      title: "SCHOOL COUNSELLOR",
+      text: "Our school counsellor, Miss Olesya, brings her valuable experience from Moscow's most prestigious international schools, granting her profound insight into the students' needs. She plays a pivotal role on our campus, nurturing their minds and hearts, instilling resilience, and promoting their emotional growth.",
+      isLink: false
+    },
+    {
+      title: "SCHOOL DOCTOR",
+      text: "Our doctor, Miss Marina, also boasts extensive experience in international schools and serves as the guardian of their physical health, tending to their well-being with both expertise and compassion.",
+      isLink: true
+    },
+    {
+      title: "Speech therapist",
+      text: "Our speech therapist Miss Ksenia, armed with scientific knowledge, is dedicated to unleashing the power of communication, ensuring that every student's voice resonates with clarity and confidence.",
+      isLink: false
+    }
+  ]
+
++section("s-explore-include", "", "", '', false)
+  .s-explore-include__list
+    each item in includeList
+      .s-explore-include__card
+        if item.isLink === true
+          a.s-explore-include__card-title.s-explore-include__card-link(href="#")= item.title
+        else
+          .s-explore-include__card-title= item.title
+        .s-explore-include__card-text= item.text

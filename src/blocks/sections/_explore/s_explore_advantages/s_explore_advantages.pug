@@ -1,0 +1,46 @@
+-
+  const advantages = [
+    {
+      image: "./img/s-explore-advantages/1.jpg",
+      alt: "Master class in La Berёzka’s Art Atelier",
+      isLink: true,
+      title: "Art atelier",
+      text: "Our Art Atelier is much more than just a place for artistic expression, it's a veritable journey through the great works of the classical painters who gave rise to the greatest movements in the history of painting.",
+    },
+    {
+      image: "./img/s-explore-advantages/2.jpg",
+      alt: "Rose Marine Restaurant",
+      title: "Nutrition",
+      text: "Our commitment to nutritional excellence is driven by our unwavering dedication to providing fresh and healthy meals that nourish both the body and the mind.",
+    },
+    {
+      image: "./img/s-explore-advantages/3.jpg",
+      alt: "Playtronica in La Berёzka’s Nova Lab",
+      title: "Nova lab",
+      text: "Our Nova Lab is much more than just an experiment room. It's a space where the theory taught in class is brought to life through hands-on scientific work. What makes it even more special is that this laboratory is the fruit of the work of our students and teachers over the course of their school projects.",
+    },
+  ]
+
++section("s-explore-advantages", "", "", "", false)
+  .s-explore-advantages__slider.swiper-container
+    button.s-explore-advantages__button.s-explore-advantages__button-prev(type="button")
+      <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M18 6.96606L9.5 6.96606L1 6.96606M1 6.96606L7.5 13.4661M1 6.96606L7.5 0.466064" stroke="#1F1E20"/>
+      </svg>
+    button.s-explore-advantages__button.s-explore-advantages__button-next(type="button")
+      <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M-5.68248e-07 6.96606L8.5 6.96607L17 6.96607M17 6.96607L10.5 0.466065M17 6.96607L10.5 13.4661" stroke="#1F1E20"/>
+      </svg>
+    .swiper-wrapper
+      each advantage in advantages
+        .swiper-slide.s-explore-advantages__slide
+          .s-explore-advantages__item
+            .s-explore-advantages__item-image
+              img(src=advantage.image, alt="")
+            .s-explore-advantages__item-alt=advantage.alt
+            if advantage.isLink === true
+              a.s-explore-advantages__item-title.s-explore-advantages__item-link(href="")=advantage.title
+            else
+              .s-explore-advantages__item-title=advantage.title
+            .s-explore-advantages__item-text=advantage.text
+

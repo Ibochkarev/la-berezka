@@ -102,10 +102,7 @@
       &::before {
         @media (min-width: 1024px) {
           position: absolute;
-          // bottom: 0;
-
-          // @media (min-width: 1024px) {
-            bottom: rem(-26);
+          bottom: rem(-26);
           width: 100%;
           height: rem(2);
           transition: background .3s;
@@ -114,7 +111,6 @@
           background-repeat: no-repeat;
           background-size: 0 rem(2);
           content: '';
-          // }
         }
       }
 

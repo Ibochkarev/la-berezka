@@ -19,11 +19,11 @@
 
   &__link {
     cursor: pointer;
-    font-weight: 400;
-    color: var(--color-dark);
-    transition: 0.5s;
     font-size: rem(16);
+    font-weight: 400;
     line-height: rem(30);
+    color: var(--color-grey);
+    transition: 0.5s;
 
     &:hover {
       opacity: 0.8;
@@ -32,7 +32,7 @@
 
   &__link-current {
     font-weight: 300;
-    color: var(--color-dark);
+    color: var(--color-grey);
   }
 
   &__list {

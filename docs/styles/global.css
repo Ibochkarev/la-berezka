@@ -1972,13 +1972,13 @@ section {
 
 .m-breadcrumbs__link {
   cursor: pointer;
+  font-size: 1rem;
   font-weight: 400;
-  color: var(--color-dark);
+  line-height: 1.875rem;
+  color: var(--color-grey);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
-  font-size: 1rem;
-  line-height: 1.875rem;
 }
 
 .m-breadcrumbs__link:hover {
@@ -1987,7 +1987,7 @@ section {
 
 .m-breadcrumbs__link-current {
   font-weight: 300;
-  color: var(--color-dark);
+  color: var(--color-grey);
 }
 
 .m-breadcrumbs__list {

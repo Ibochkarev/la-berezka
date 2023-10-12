@@ -293,6 +293,7 @@ h5 {
 }
 
 .s-explore-include__card {
+  min-width: 0;
   padding: 0 1.125rem;
 }
 
@@ -842,7 +843,11 @@ h5 {
 
 @media (min-width: 1024px) {
   .s-explore-include__list {
-    gap: 7.625rem;
+    gap: 2.8125rem;
+  }
+
+  .s-explore-include__card:nth-child(2) {
+    padding-left: 0.9375rem;
   }
 
   .s-explore-advantages .s-explore-advantages__slide:nth-child(1) .s-explore-advantages__item {
@@ -1007,6 +1012,18 @@ h5 {
 }
 
 @media (min-width: 1200px) {
+  .s-explore-include__list {
+    gap: 4.6875rem;
+  }
+
+  .s-explore-include__card {
+    width: 20.875rem;
+  }
+
+  .s-explore-include__card:nth-child(2) {
+    padding-left: 1.5625rem;
+  }
+
   .s-explore-advantages__item {
     padding: 0 3.125rem;
   }

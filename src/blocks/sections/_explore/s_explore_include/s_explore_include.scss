@@ -20,15 +20,34 @@
     }
 
     @media (min-width: 1024px) {
-      gap: rem(122);
+      gap: rem(45);
+    }
+
+    @media (min-width: 1200px) {
+      gap: rem(75);
     }
   }
 
   &__card {
+    min-width: 0;
     padding: 0 rem(18);
 
     @media (min-width: 992px) {
       padding: 0;
+    }
+
+    @media (min-width: 1200px) {
+      width: rem(334);
+    }
+
+    &:nth-child(2) {
+      @media (min-width: 1024px) {
+        padding-left: rem(15);
+      }
+
+      @media (min-width: 1200px) {
+        padding-left: rem(25);
+      }
     }
 
     &-title {

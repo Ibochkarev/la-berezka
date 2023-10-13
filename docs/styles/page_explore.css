@@ -335,6 +335,7 @@ h5 {
   font-weight: 300;
   line-height: 1.375rem;
   font-style: normal;
+  text-align: justify;
 }
 
 .s-explore-advantages__slider {
@@ -391,7 +392,7 @@ h5 {
   font-size: 0.875rem;
   font-weight: 300;
   line-height: 1.375rem;
-  text-align: center;
+  text-align: justify;
 }
 
 .s-explore-advantages__item-title {
@@ -732,7 +733,6 @@ h5 {
   .s-explore-advantages__item-text {
     font-size: 0.75rem;
     line-height: 1.25rem;
-    text-align: left;
     letter-spacing: 0.0075rem;
   }
 

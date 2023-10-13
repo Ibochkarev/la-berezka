@@ -2,15 +2,14 @@ const accordionButtons = document.querySelectorAll('.s-explore-one-day__item-but
 
 accordionButtons.forEach((accordion) => {
   accordion.onclick = function () {
+    // Удалите класс 'is-open' у всех элементов
+    accordionButtons.forEach((item) => {
+      item.classList.remove('is-open')
+      item.parentNode.classList.remove('is-open')
+    })
+
+    // Добавьте класс 'is-open' к текущему элементу
     this.classList.toggle('is-open')
     this.parentNode.classList.toggle('is-open')
-
-    // let content = this.nextElementSibling
-
-    // if (content.style.maxHeight) {
-    //   content.style.height = null
-    // } else {
-    //   content.style.height = 'auto'
-    // }
   }
 })

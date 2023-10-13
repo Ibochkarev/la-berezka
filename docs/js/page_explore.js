@@ -174,7 +174,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var swip
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("var accordionButtons = document.querySelectorAll('.s-explore-one-day__item-button');\naccordionButtons.forEach(function (accordion) {\n  accordion.onclick = function () {\n    this.classList.toggle('is-open');\n    this.parentNode.classList.toggle('is-open');\n\n    // let content = this.nextElementSibling\n\n    // if (content.style.maxHeight) {\n    //   content.style.height = null\n    // } else {\n    //   content.style.height = 'auto'\n    // }\n  };\n});\n\n//# sourceURL=webpack:///./src/blocks/sections/_explore/s_explore_one_day/s_explore_one_day.js?");
+eval("var accordionButtons = document.querySelectorAll('.s-explore-one-day__item-button');\naccordionButtons.forEach(function (accordion) {\n  accordion.onclick = function () {\n    // Удалите класс 'is-open' у всех элементов\n    accordionButtons.forEach(function (item) {\n      item.classList.remove('is-open');\n      item.parentNode.classList.remove('is-open');\n    });\n\n    // Добавьте класс 'is-open' к текущему элементу\n    this.classList.toggle('is-open');\n    this.parentNode.classList.toggle('is-open');\n  };\n});\n\n//# sourceURL=webpack:///./src/blocks/sections/_explore/s_explore_one_day/s_explore_one_day.js?");
 
 /***/ }),
 

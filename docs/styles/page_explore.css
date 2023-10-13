@@ -555,7 +555,9 @@ h5 {
 }
 
 .s-explore-education {
-  background: rgba(255, 249, 240, 0.8);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 249, 240, 0.8)), to(rgba(255, 255, 255, 0)));
+  background: -o-linear-gradient(top, rgba(255, 249, 240, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(180deg, rgba(255, 249, 240, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 .s-explore-education__list {
@@ -569,6 +571,7 @@ h5 {
 }
 
 .s-explore-education__card {
+  cursor: pointer;
   display: -ms-grid;
   display: grid;
   gap: 0.9375rem;
@@ -578,7 +581,6 @@ h5 {
 
 .s-explore-education__card-cover {
   width: 10.3125rem;
-  min-height: 10.3125rem;
 }
 
 .s-explore-education__card-cover img {
@@ -886,9 +888,12 @@ h5 {
   }
 
   .s-explore-education__card {
+    overflow: hidden;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 15.625rem;
+    height: 12.5rem;
   }
 
   .s-explore-education__card--1 {
@@ -936,6 +941,8 @@ h5 {
   }
 
   .s-explore-education__card--5 {
+    width: 17.1875rem;
+    height: 27.0625rem;
     -ms-grid-row: 1;
     grid-row-start: 1;
     -ms-grid-column: 3;
@@ -944,6 +951,11 @@ h5 {
     grid-row-end: 3;
     -ms-grid-column-span: 1;
     grid-column-end: 4;
+  }
+
+  .s-explore-education__card--5 .s-explore-education__card-cover img {
+    -o-object-fit: contain;
+    object-fit: contain;
   }
 
   .s-explore-education__card--6 {
@@ -968,12 +980,40 @@ h5 {
     grid-column-end: 5;
   }
 
+  .s-explore-education__card:hover .s-explore-education__card-cover {
+    display: none;
+  }
+
+  .s-explore-education__card:hover .s-explore-education__card-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
   .s-explore-education__card-cover {
     width: 100%;
   }
 
+  .s-explore-education__card-cover img {
+    -o-object-fit: none;
+    object-fit: none;
+  }
+
   .s-explore-education__card-content {
     display: none;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 3.3125rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .s-explore-education__card-title {
+    font-size: 1.125rem;
+    line-height: 1.625rem;
   }
 }
 

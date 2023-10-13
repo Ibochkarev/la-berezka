@@ -1,5 +1,6 @@
 .s-explore-education {
-  background: rgba(255, 249, 240, 0.8);
+  // background: rgba(255, 249, 240, 0.8);
+  background: linear-gradient(180deg, rgba(255, 249, 240, 0.80) 0%, rgba(255, 255, 255, 0.00) 100%);
 
   &__list {
     display: grid;
@@ -22,12 +23,16 @@
   }
 
   &__card {
+    cursor: pointer;
     display: grid;
     gap: rem(15);
     grid-template-columns: repeat(2, 1fr);
 
     @media (min-width: 1024px) {
+      overflow: hidden;
       display: flex;
+      width: rem(250);
+      height: rem(200);
 
       &--1 {
         grid-row-start: 1;
@@ -58,10 +63,18 @@
       }
 
       &--5 {
+        width: rem(275);
+        height: rem(433);
         grid-row-start: 1;
         grid-column-start: 3;
         grid-row-end: 3;
         grid-column-end: 4;
+
+        .s-explore-education__card-cover {
+          img {
+            object-fit: contain;
+          }
+        }
       }
 
       &--6 {
@@ -79,6 +92,20 @@
       }
     }
 
+    &:hover {
+      @media (min-width: 1024px) {
+        .s-explore-education__card {
+          &-cover {
+            display: none;
+          }
+
+          &-content {
+            display: flex;
+          }
+        }
+      }
+    }
+
     &--even {
       @media (max-width: 767px) {
         direction: rtl;
@@ -91,7 +118,6 @@
 
     &-cover {
       width: rem(165);
-      min-height: rem(165);
 
       @media (min-width: 1024px) {
         width: 100%;
@@ -101,6 +127,10 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+
+        @media (min-width: 1024px) {
+          object-fit: none;
+        }
       }
     }
 
@@ -112,6 +142,9 @@
 
       @media (min-width: 1024px) {
         display: none;
+        justify-content: center;
+        padding: rem(53);
+        flex-direction: column;
       }
     }
 
@@ -123,6 +156,11 @@
       text-transform: uppercase;
       font-style: normal;
       letter-spacing: rem(0.11);
+
+      @media (min-width: 1024px) {
+        font-size: rem(18);
+        line-height: rem(26);
+      }
     }
 
     &-text {

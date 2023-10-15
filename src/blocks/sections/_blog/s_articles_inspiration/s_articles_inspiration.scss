@@ -1,0 +1,52 @@
+.s-articles-inspiration {
+  &__items {
+    display: grid;
+    gap: rem(20);
+    grid-template-columns: repeat(1, 1fr);
+
+    @media (min-width: 575px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 1024px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__card {
+    overflow: hidden;
+    box-shadow: 0 rem(1) rem(15) 0 rgba(34, 34, 34, 0.03);
+
+    &--text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: rem(20) rem(30);
+      font-size: rem(14);
+      font-weight: 300;
+      line-height: 140%;
+      border-radius: rem(10);
+      background-color: var(--color-white);
+      font-style: normal;
+      letter-spacing: rem(0.14);
+
+      @media (min-width: 768px) {
+        padding: rem(40) rem(44);
+        font-size: rem(17);
+        line-height: 147%;
+        letter-spacing: rem(0.17);
+      }
+    }
+
+    &-text {
+      text-align: center;
+    }
+
+    &-image {
+      width: 100%;
+      height: 100%;
+      border-radius: rem(10);
+      object-fit: cover;
+    }
+  }
+}

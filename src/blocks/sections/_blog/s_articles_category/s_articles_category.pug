@@ -1,0 +1,52 @@
+-
+  const articles = [
+    {
+      title: 'BEST ART SCHOOLS',
+      text: 'И сервиса услуг Thérapie является чай. Мы представляем чай в многообразии его потенциала - это и вкусный напиток с вековой историей, объединяющий людей, и лекарство для души и тела человека, а также проводник к знаниям о себе и окружающем мире.',
+      image: './img/s-articles-category/1.jpg',
+      link: '#'
+    },
+    {
+      title: 'BEST ART SCHOOLS and studios',
+      text: 'И сервиса услуг Thérapie является чай. Мы представляем чай в многообразии его потенциала - это и вкусный напиток с вековой историей, объединяющий людей, и лекарство для души и тела человека, а также проводник к знаниям о себе и окружающем мире.',
+      image: './img/s-articles-category/2.jpg',
+      link: '#'
+    },
+    {
+      title: 'BEST ART SCHOOLS',
+      text: 'И сервиса услуг Thérapie является чай. Мы представляем чай в многообразии его потенциала - это и вкусный напиток с вековой историей, объединяющий людей, и лекарство для души и тела человека, а также проводник к знаниям о себе и окружающем мире.',
+      image: './img/s-articles-category/3.jpg',
+      link: '#'
+    },
+    {
+      title: 'BEST ART SCHOOLS',
+      text: 'И сервиса услуг Thérapie является чай. Мы представляем чай в многообразии его потенциала - это и вкусный напиток с вековой историей, объединяющий людей, и лекарство для души и тела человека, а также проводник к знаниям о себе и окружающем мире.',
+      image: './img/s-articles-category/4.jpg',
+      link: '#'
+    },
+    {
+      title: 'BEST ART SCHOOLS',
+      text: 'И сервиса услуг Thérapie является чай. Мы представляем чай в многообразии его потенциала - это и вкусный напиток с вековой историей, объединяющий людей, и лекарство для души и тела человека, а также проводник к знаниям о себе и окружающем мире.',
+      image: './img/s-articles-category/1.jpg',
+      link: '#'
+    },
+  ]
+
++section("s-articles-category", 'More articles about', 'INSPIRATION', '', false)
+  .s-articles-category__slider.swiper-container
+    button.s-articles-category__button.s-articles-category__button-prev(type="button")
+      <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M18 6.96606L9.5 6.96606L1 6.96606M1 6.96606L7.5 13.4661M1 6.96606L7.5 0.466064" stroke="#1F1E20"/>
+      </svg>
+    button.s-articles-category__button.s-articles-category__button-next(type="button")
+      <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M-5.68248e-07 6.96606L8.5 6.96607L17 6.96607M17 6.96607L10.5 0.466065M17 6.96607L10.5 13.4661" stroke="#1F1E20"/>
+      </svg>
+    .swiper-wrapper
+      each article in articles
+        a.swiper-slide.s-articles-category__slide(href=article.link)
+          .s-articles-category__card
+            .s-articles-category__card-image
+              img(src=article.image, alt="")
+            .s-articles-category__card-title=article.title
+            .s-articles-category__card-text=article.text

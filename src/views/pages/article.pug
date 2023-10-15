@@ -1,0 +1,16 @@
+extends ../layouts/default
+
+block variables
+  - const title = "Статья"
+
+block append head
+  link(rel="stylesheet" href="./styles/page_article.css")
+
+block content
+  include ../../blocks/sections/s_universal_table/s_universal_table.pug
+  include ../../blocks/sections/_blog/s_articles_inspiration/s_articles_inspiration.pug
+  include ../../blocks/sections/s_universal_text_block/s_universal_text_block.pug
+  include ../../blocks/sections/_blog/s_articles_category/s_articles_category.pug
+
+block append scripts
+  script(defer src="./js/page_article.js")

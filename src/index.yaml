@@ -13,15 +13,17 @@ PageList:
     ready: 100
   - file: articles.html
     ready: 100
-  - file: main.html
+  - file: article.html
     ready: 100
-  - file: about.html
-    ready: 100
+  # - file: main.html
+  #   ready: 100
+  # - file: about.html
+  #   ready: 100
   - file: explore.html
     ready: 100
-  - file: academy_admission.html
-    ready: 100
-  - file: program.html
-    ready: 90
+  # - file: academy_admission.html
+  #   ready: 100
+  # - file: program.html
+  #   ready: 90
   - file: 404.html
     ready: 100

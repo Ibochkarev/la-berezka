@@ -27,6 +27,7 @@ module.exports = {
     page_team: './src/js/page_team.js',
     page_contacts: './src/js/page_contacts.js',
     page_explore: './src/js/page_explore.js',
+    page_article: './src/js/page_article.js',
   },
 
   output: {

@@ -1,0 +1,15 @@
+extends ../layouts/default
+
+block variables
+  - const title = "Executive Leadership"
+
+block append head
+  link(rel="stylesheet" href="./styles/page_employee.css")
+
+block content
+  include ../../blocks/sections/s_employee_info/s_employee_info.pug
+  include ../../blocks/sections/s_universal_text_block/s_universal_text_block.pug
+  include ../../blocks/sections/s_see_all_articles/s_see_all_articles.pug
+
+//- block append scripts
+//-   script(defer src="./js/page_employee.js")

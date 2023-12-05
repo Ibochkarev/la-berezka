@@ -1,0 +1,66 @@
+-
+  const days = [
+    {
+      time: '08:30',
+      name: 'Welcome Time'
+    },
+    {
+      time: '09:00',
+      name: 'Breakfast'
+    },
+    {
+      time: '9:45',
+      name: 'Classes'
+    },
+    {
+      time: '11:15',
+      name: 'Snack'
+    },
+    {
+      time: '11:30',
+      name: 'Walk'
+    },
+    {
+      time: '12:00',
+      name: 'Lunch'
+    },
+    {
+      time: '12:30',
+      name: 'Relax Time'
+    },
+    {
+      time: '14:30',
+      name: 'Classes'
+    },
+    {
+      time: '15:00',
+      name: 'Snack'
+    },
+    {
+      time: '15:30',
+      name: 'Classes'
+    },
+    {
+      time: '16:30',
+      name: 'Walk'
+    },
+    {
+      time: '17:00',
+      name: 'Dinner'
+    },
+  ]
+
++section("s-universal-accordion", "", "", '', false)
+  .s-universal-accordion__items
+    each day in days
+      .s-universal-accordion__item
+        button.s-universal-accordion__item-button(type="button")
+          .s-universal-accordion__item-info
+            span.s-universal-accordion__item-time=day.time
+            span.s-universal-accordion__item-name=day.name
+          .s-universal-accordion__item-arrow
+            span
+            span
+        .s-universal-accordion__item-content
+          .s-universal-accordion__item-subtitle Естественные науки, Языки, Музыка, Танцы, Спорт.
+          .s-universal-accordion__item-text Развивают критическое мышление, любознательность и целеустремленность. Развивает крупную моторику и навыки работы в команде, укрепляет здоровье

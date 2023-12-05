@@ -178,13 +178,12 @@
     }
 
     &-image {
-
       img {
         position: absolute;
         bottom: 0;
         left: 0;
         width: 100%;
-        height: auto;
+        height: -webkit-fill-available;
         background-size: contain;
 
         @media (min-width: 768px) {

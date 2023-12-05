@@ -1,0 +1,99 @@
+.s-page-intro {
+  &__wrapper {
+    position: relative;
+  }
+
+  &__content {
+    position: absolute;
+    top: 0;
+    max-width: 75%;
+    margin: 0 auto;
+
+    @media (min-width: 768px) {
+      max-width: 50%;
+    }
+
+    @media (min-width: 1336px) {
+      max-width: rem(1240);
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    max-height: calc(100vh - 80px);
+    min-height: rem(430);
+    object-fit: cover;
+    object-position: right;
+  }
+
+  &__info {
+    max-width: 60%;
+    padding: rem(47) 0;
+
+    @media (min-width: 475px) {
+      max-width: 80%;
+    }
+
+    @media (min-width: 768px) {
+      max-width: 100%;
+      padding: rem(90) 0;
+    }
+
+    @media (min-width: 1440px) {
+      max-width: rem(700);
+      padding: rem(107) 0;
+    }
+
+    .m-breadcrumbs  {
+      display: none;
+
+      @media (min-width: 1024px) {
+        display: flex;
+        margin-bottom: rem(38);
+      }
+    }
+  }
+
+  &__title {
+    margin: 0 0 rem(5);
+    font-size: rem(14);
+    font-weight: 300;
+    line-height: rem(21);
+
+    @media (min-width: 992px) {
+      font-size: rem(42);
+      font-weight: 100;
+      line-height: rem(54);
+    }
+  }
+
+  &__text {
+    margin: 0 0 rem(24);
+    font-family: 'Didona', sans-serif;
+    font-weight: 400;
+    font-size: rem(22);
+    line-height: rem(24);
+    text-transform: uppercase;
+
+    @media (min-width: 992px) {
+      margin: 0 0 rem(40);
+      font-size: rem(40);
+      line-height: rem(48);
+      letter-spacing: rem(0.44);
+    }
+  }
+
+  &__introtext {
+    font-size: rem(12);
+    font-weight: 300;
+    line-height: rem(18);
+
+    @media (min-width: 1024px) {
+      display: block;
+      max-width: rem(700);
+      font-size: rem(17);
+      line-height: rem(25);
+    }
+  }
+}

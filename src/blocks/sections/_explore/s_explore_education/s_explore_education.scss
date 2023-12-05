@@ -31,8 +31,8 @@
     @media (min-width: 1024px) {
       overflow: hidden;
       display: flex;
-      width: rem(250);
-      height: rem(200);
+      width: rem(251);
+      height: rem(201);
 
       &--1 {
         grid-row-start: 1;
@@ -129,7 +129,7 @@
         object-fit: cover;
 
         @media (min-width: 1024px) {
-          object-fit: none;
+          object-fit: contain;
         }
       }
     }

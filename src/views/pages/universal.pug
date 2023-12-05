@@ -1,0 +1,24 @@
+extends ../layouts/default
+
+block variables
+  - const title = "Универсальная страница"
+
+block append head
+  link(rel="stylesheet" href="./styles/page_universal.css")
+
+block content
+  include ../../blocks/sections/_main/s_page_intro/s_page_intro.pug
+  include ../../blocks/sections/_main/s_meets_education/s_meets_education.pug
+  include ../../blocks/sections/s_universal_accordion/s_universal_accordion.pug
+  include ../../blocks/sections/_blog/s_articles_inspiration/s_articles_inspiration.pug
+  include ../../blocks/sections/_explore/s_explore_include/s_explore_include.pug
+  include ../../blocks/sections/s_universal_table/s_universal_table.pug
+  include ../../blocks/sections/_blog/s_articles_category/s_articles_category.pug
+  include ../../blocks/sections/s_universal_text_block/s_universal_text_block.pug
+  include ../../blocks/sections/s_universal_video/s_universal_video.pug
+  include ../../blocks/sections/_team/s_team_list/s_team_list.pug
+  include ../../blocks/sections/s_universal_content/s_universal_content.pug
+  include ../../blocks/sections/_legacy/s_legacy_list/s_legacy_list.pug
+
+block append scripts
+  script(defer src="./js/page_universal.js")

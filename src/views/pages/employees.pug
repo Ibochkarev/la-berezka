@@ -1,0 +1,15 @@
+extends ../layouts/default
+
+block variables
+  - const title = "Our Team"
+
+block append head
+  link(rel="stylesheet" href="./styles/page_employees.css")
+
+block content
+  include ../../blocks/sections/s_employees_intro/s_employees_intro.pug
+  include ../../blocks/sections/s_universal_text_block/s_universal_text_block.pug
+  include ../../blocks/sections/s_our_leaders/s_our_leaders.pug
+
+//- block append scripts
+//-   script(defer src="./js/page_employees.js")

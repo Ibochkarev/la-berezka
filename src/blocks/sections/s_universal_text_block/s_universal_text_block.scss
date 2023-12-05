@@ -19,13 +19,13 @@
     }
   }
 
-  &__wrapper {
-    padding-top: rem(132);
-    padding-bottom: rem(132);
+  &__wrapper.m-section__wrapper {
+    padding-top: rem(80);
+    padding-bottom: rem(90);
 
     @media (min-width: 768px) {
-      padding-top: rem(220);
-      padding-bottom: rem(220);
+      padding-top: rem(180);
+      padding-bottom: rem(180);
     }
   }
 

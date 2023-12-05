@@ -28,6 +28,7 @@ module.exports = {
     page_contacts: './src/js/page_contacts.js',
     page_explore: './src/js/page_explore.js',
     page_article: './src/js/page_article.js',
+    page_universal: './src/js/page_universal.js',
   },
 
   output: {

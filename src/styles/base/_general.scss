@@ -201,3 +201,27 @@ section {
     background-size: 100% rem(1);
   }
 }
+
+
+.fixed-whatsapp {
+  z-index: 100;
+  position: fixed;
+  bottom: rem(60);
+  right: rem(20);
+
+  &__icon {
+    display: block;
+    transition: all 250ms ease-in 0s;
+    animation: 0s ease 0s 1 normal none running none;
+
+    &:hover {
+      display: block;
+      transform: scale(1.15);
+    }
+
+    img {
+      width: rem(48);
+      height: rem(48);
+    }
+  }
+}

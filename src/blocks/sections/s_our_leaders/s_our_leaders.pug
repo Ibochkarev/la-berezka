@@ -1,0 +1,101 @@
+-
+  const employees = [
+    {
+      name: "Alain Roland",
+      position: "Head of Academy",
+      text: 'More than 10 years in education. Experience in opening La preschool des Batignolles in Paris, Exupéry International School in Riga, French kindergarten in Lapino, Moscow.',
+      photo: "./img/s-our-leaders/Roland.jpg",
+    },
+    {
+      name: "Elena Antonova",
+      position: "Head of Admissions",
+      text: 'Ms. Elena has 13 years of experience in international education, operations management, interacting with parents, students and managing a campus team.',
+      photo: "./img/s-our-leaders/Antonova.jpg",
+    },
+    {
+      name: "Ildar Nafikov",
+      position: "Co-founder ",
+      text: 'More than 10 years of experience in international education, under the leadership of Mr. Ildar, the eighth campus is already opening in Russia and the CIS.',
+      photo: "./img/s-our-leaders/Nafikov.jpg",
+    },
+    {
+      name: "Nicolas Mathieu",
+      position: "Co-founder ",
+      text: 'More than 10 years in education. Experience in opening La preschool des Batignolles in Paris, Exupéry International School in Riga, French kindergarten in Lapino, Moscow.',
+      photo: "./img/s-our-leaders/Mathieu.jpg",
+    },
+    {
+      name: "Aysa Roland",
+      position: "Head of Early Years",
+      text: 'More than 10 years in education. Experience in opening La preschool des Batignolles in Paris, Exupéry International School in Riga, French kindergarten in Lapino, Moscow.',
+      photo: "./img/s-our-leaders/AysaRoland.jpg",
+    },
+    {
+      name: "Ruslan Galimzyanov",
+      position: "Co-founder",
+      text: 'More than 10 years in education. Experience in opening La preschool des Batignolles in Paris, Exupéry International School in Riga, French kindergarten in Lapino, Moscow.',
+      photo: "./img/s-our-leaders/Galimzyanov.jpg",
+    },
+    {
+      name: "Alyona Komissarenko",
+      position: "Art Teacher",
+      text: 'More than 10 years in education. Experience in opening La preschool des Batignolles in Paris, Exupéry International School in Riga, French kindergarten in Lapino, Moscow.',
+      photo: "./img/s-our-leaders/Komissarenko.jpg",
+    },
+    {
+      name: "marina surname",
+      position: "School Doctor",
+      text: 'More than 10 years in education. Experience in opening La preschool des Batignolles in Paris, Exupéry International School in Riga, French kindergarten in Lapino, Moscow.',
+      photo: "./img/s-our-leaders/Marina.jpg",
+    },
+    {
+      name: "Carlo Gertzen",
+      position: "Class Teacher Year 1",
+      text: 'More than 10 years in education. Experience in opening La preschool des Batignolles in Paris, Exupéry International School in Riga, French kindergarten in Lapino, Moscow.',
+      photo: "./img/s-our-leaders/Gertzen.jpg",
+    },
+  ]
+
++section("s-our-leaders", "Meet", "our leaders", "", false)
+  form.s-our-leaders__search(action="")
+    input.s-our-leaders__search-input(type="text")
+    button.s-our-leaders__search-button(type="submit") Search
+  .s-our-leaders__wrap
+    .s-our-leaders__filters
+      .s-our-leaders__filters-title Filter by Teams
+      select.s-our-leaders__select#teams(name="teams")
+        option(value="Executive Leadership Team") Executive Leadership Team (6)
+        option(value="Academic Team") Partners (2) Academic Team (12)
+        option(value="Operations Team") Operations Team (8)
+        option(value="Partners") Partners (2)
+
+    .s-our-leaders__items
+      each item in employees
+        a.s-our-leaders__card(href="")
+          .s-our-leaders__card-info
+            .s-our-leaders__card-name=item.name
+            .s-our-leaders__card-position=item.position
+            .s-our-leaders__card-text=item.text
+          .s-our-leaders__card-photo
+            img(src=item.photo, alt=item.name)
+
+    ul.s-our-leaders__pagination
+      li.s-our-leaders__pagination-prev.disabled
+        a.s-our-leaders__pagination-link.disabled(href="")
+          <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11 5L6 5L1 5M1 5L4.82353 9M1 5L4.82353 1" stroke="#1F1E20"/>
+          </svg>
+      li.s-our-leaders__pagination-page.is-active
+        a.s-our-leaders__pagination-link(href="") 1
+      li.s-our-leaders__pagination-page.s-our-leaders__pagination-skip ...
+      li.s-our-leaders__pagination-page
+        a.s-our-leaders__pagination-link(href="") 3
+      li.s-our-leaders__pagination-next
+        a.s-our-leaders__pagination-link(href="")
+          <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M-3.49691e-07 5L5 5L10 5M10 5L6.17647 1M10 5L6.17647 9" stroke="#1F1E20"/>
+          </svg>
+
+
+
+

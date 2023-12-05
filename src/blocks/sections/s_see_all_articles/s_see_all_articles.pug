@@ -1,0 +1,36 @@
+-
+  const articles = [
+    {
+      image: './img/s-see-all-articles/1.jpg',
+      title: 'BEST art SCHOOLS',
+      text: 'More than 10 years in education. Experience in opening La preschool des Batignolles in Paris, Exupéry International School in Riga, French kindergarten in Lapino, Moscow.',
+      author: 'by Nicolas Mathieu,',
+      date: '22 ноября 2023',
+    },
+    {
+      image: './img/s-see-all-articles/2.jpg',
+      title: 'BEST art SCHOOL Sand studios',
+      text: 'More than 10 years in education. Experience in opening La preschool des Batignolles in Paris, Exupéry International School in Riga, French kindergarten in Lapino, Moscow.',
+      author: 'by Nicolas Mathieu,',
+      date: '22 ноября 2023',
+    },
+    {
+      image: './img/s-see-all-articles/3.jpg',
+      title: 'BEST art SCHOOLS',
+      text: 'More than 10 years in education. Experience in opening La preschool des Batignolles in Paris, Exupéry International School in Riga, French kindergarten in Lapino, Moscow.',
+      author: 'by Nicolas Mathieu,',
+      date: '22 ноября 2023',
+    },
+  ]
+
++section("s-see-all-articles", "See all articles", "by nicolas mathieu", "", false)
+  .s-see-all-articles__items
+    each article in articles
+      .s-see-all-articles__card
+        a.s-see-all-articles__card-image(href="#")
+          img(src=article.image, alt="")
+        .s-see-all-articles__card-info
+          .s-see-all-articles__card-title=article.title
+          .s-see-all-articles__card-text=article.text
+          .s-see-all-articles__card-author=article.author
+          .s-see-all-articles__card-date=article.date

@@ -27,3 +27,9 @@ PageList:
   #   ready: 90
   - file: 404.html
     ready: 100
+  - file: universal.html
+    ready: 100
+  - file: employee.html
+    ready: 100
+  - file: employees.html
+    ready: 100

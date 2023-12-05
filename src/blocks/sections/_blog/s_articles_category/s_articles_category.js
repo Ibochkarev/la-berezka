@@ -5,19 +5,21 @@ window.addEventListener(
   'load',
   () => {
     const articlesCategorySlider = new Swiper(`.s-articles-category__slider`, {
-      slidesPerView: 'auto',
       navigation: {
         nextEl: '.s-articles-category__button-next',
         prevEl: '.s-articles-category__button-prev',
       },
       resistance: true,
       resistanceRatio: 1,
-      spaceBetween: 30,
       autoHeight: true,
       grabCursor: true,
       breakpoints: {
+        0: {
+          slidesPerView: 'auto',
+          spaceBetween: 28,
+        },
         768: {
-          spaceBetween: 20,
+          spaceBetween: 33,
         },
       },
     })

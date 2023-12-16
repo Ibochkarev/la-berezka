@@ -73,6 +73,10 @@
       &.is-open {
         .s-explore-one-day__item-info {
           border-color: var(--color-dark);
+
+          @media (max-width: 768px) {
+            border: 0;
+          }
         }
       }
     }

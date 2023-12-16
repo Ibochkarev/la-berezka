@@ -73,7 +73,17 @@
       padding: 0 rem(50);
     }
 
+    &:hover {
+      .s-explore-advantages__item-image {
+        img {
+          scale: 1.05;
+        }
+      }
+    }
+
     &-image {
+      overflow: hidden;
+      position: relative;
       margin-bottom: rem(10);
 
       img {
@@ -81,6 +91,7 @@
         max-width: rem(333);
         max-height: rem(510);
         margin: 0 auto;
+        transition: scale .75s ease-in-out;
         object-fit: cover;
 
         @media (min-width: 768px) {

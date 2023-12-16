@@ -352,7 +352,13 @@ h5 {
   padding-left: 1rem;
 }
 
+.s-explore-advantages__item:hover .s-explore-advantages__item-image img {
+  scale: 1.05;
+}
+
 .s-explore-advantages__item-image {
+  overflow: hidden;
+  position: relative;
   margin-bottom: 0.625rem;
 }
 
@@ -361,6 +367,9 @@ h5 {
   max-width: 20.8125rem;
   max-height: 31.875rem;
   margin: 0 auto;
+  -webkit-transition: scale .75s ease-in-out;
+  -o-transition: scale .75s ease-in-out;
+  transition: scale .75s ease-in-out;
   -o-object-fit: cover;
   object-fit: cover;
 }
@@ -1040,6 +1049,12 @@ h5 {
 
   .s-explore-storytellers__button-next {
     right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .s-explore-one-day__item-button.is-open .s-explore-one-day__item-info {
+    border: 0;
   }
 }
 

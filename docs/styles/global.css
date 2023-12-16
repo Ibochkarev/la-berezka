@@ -1781,23 +1781,21 @@ section {
 .m-cookies {
   z-index: 1;
   position: fixed;
-  right: 0;
-  bottom: 0;
   left: 0;
   display: none;
   width: 100%;
   max-width: 100vw;
-  margin-right: auto;
-  margin-left: auto;
+  bottom: 0.625rem;
+  left: 0.625rem;
 }
 
 .m-cookies.is-show {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1924,7 +1922,7 @@ section {
 }
 
 .m-cookies__button--more:hover {
-  background-color: #F3E7D5;
+  background-color: var(--color-middle-grey);
 }
 
 .m-cookies__button--agree {
@@ -1932,7 +1930,7 @@ section {
 }
 
 .m-cookies__button--agree:hover {
-  background-color: #E5E5E5;
+  background-color: #F3E7D5;
 }
 
 .m-info-card {
@@ -3100,6 +3098,7 @@ section {
 
 .s-universal-table table td {
   padding: 0.9375rem;
+  font-family: "Roboto Light", sans-serif;
   font-size: 0.875rem;
   font-weight: 300;
   line-height: 1.3125rem;
@@ -3140,8 +3139,9 @@ section {
   }
 
   .m-cookies {
-    bottom: 0.625rem;
     max-width: 94%;
+    left: 1.5rem;
+    bottom: 1.5rem;
   }
 
   .m-cookies__wrapper {
@@ -3387,6 +3387,7 @@ section {
   }
 
   .m-cookies {
+    left: 2rem;
     bottom: 2rem;
   }
 

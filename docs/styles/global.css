@@ -1588,7 +1588,7 @@ section {
 .fixed-whatsapp {
   z-index: 100;
   position: fixed;
-  bottom: 3.75rem;
+  bottom: 5rem;
   right: 1.25rem;
 }
 
@@ -1783,8 +1783,6 @@ section {
   position: fixed;
   left: 0;
   display: none;
-  width: 100%;
-  max-width: 100vw;
   bottom: 0.625rem;
   left: 0.625rem;
 }
@@ -1799,6 +1797,8 @@ section {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  width: 100%;
+  max-width: 100vw;
 }
 
 .m-cookies__close {
@@ -3139,9 +3139,12 @@ section {
   }
 
   .m-cookies {
-    max-width: 94%;
     left: 1.5rem;
     bottom: 1.5rem;
+  }
+
+  .m-cookies.is-show {
+    max-width: 94%;
   }
 
   .m-cookies__wrapper {
@@ -3659,7 +3662,7 @@ section {
     max-width: 77.5rem;
   }
 
-  .m-cookies {
+  .m-cookies.is-show {
     max-width: 77.5rem;
   }
 

@@ -1,3 +1,10 @@
+:root {
+  --arrow-bg: rgba(255, 255, 255, 0.3);
+  --arrow-icon: url(../img/global/arrow-select.svg);
+  --option-bg: white;
+  --select-bg: rgba(255, 255, 255, 0.2);
+}
+
 .s-our-leaders {
   .m-section__wrapper {
     padding-top: 0;
@@ -73,12 +80,40 @@
   &__filters {
     margin-bottom: rem(24);
 
+    fieldset {
+      padding: 0;
+      border: 0;
+    }
+
     &-title {
       margin-bottom: rem(10);
       font-size: rem(12);
       font-weight: 300;
       line-height: rem(18);
       font-style: normal;
+    }
+  }
+
+  &__select {
+    cursor: pointer;
+    padding: rem(11) rem(40) rem(11) rem(17);
+    font-size: rem(16);
+    font-weight: 300;
+    color: var(--color-grey);
+    background: var(--color-white);
+    background: var(--arrow-icon) no-repeat right 0.8em center / 1.4em,
+    linear-gradient(to left, var(--arrow-bg) 3em, var(--select-bg) 3em);
+    border: rem(1) solid var(--color-middle-grey);
+    border-radius: rem(2);
+    appearance: none;
+
+    /* Remove IE arrow */
+    &::-ms-expand {
+      display: none;
+    }
+    /* Remove focus outline */
+    &:focus {
+      outline: none;
     }
   }
 
@@ -101,6 +136,7 @@
     border-top: rem(1) solid var(--color-middle-grey);
 
     @media (min-width: 992px) {
+      justify-content: flex-end;
       padding: 0;
       border: 0;
       flex-direction: column-reverse;
@@ -233,6 +269,23 @@
         cursor: default;
         color: var(--color-grey);
         pointer-events: none;
+      }
+    }
+  }
+}
+
+.ui-menu-item-wrapper {
+  .s-our-leaders__card {
+    justify-content: space-between;
+    flex-direction: row;
+
+    &-photo {
+      width: rem(96);
+      margin-bottom: 0;
+
+      img {
+        width: 100%;
+        height: auto;
       }
     }
   }

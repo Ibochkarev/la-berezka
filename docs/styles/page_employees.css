@@ -208,6 +208,13 @@ h5 {
   line-height: 1.125rem;
 }
 
+:root {
+  --arrow-bg: rgba(255, 255, 255, 0.3);
+  --arrow-icon: url(../img/global/arrow-select.svg);
+  --option-bg: white;
+  --select-bg: rgba(255, 255, 255, 0.2);
+}
+
 .s-our-leaders .m-section__wrapper {
   padding-top: 0;
 }
@@ -277,12 +284,44 @@ h5 {
   margin-bottom: 1.5rem;
 }
 
+.s-our-leaders__filters fieldset {
+  padding: 0;
+  border: 0;
+}
+
 .s-our-leaders__filters-title {
   margin-bottom: 0.625rem;
   font-size: 0.75rem;
   font-weight: 300;
   line-height: 1.125rem;
   font-style: normal;
+}
+
+.s-our-leaders__select {
+  cursor: pointer;
+  padding: 0.6875rem 2.5rem 0.6875rem 1.0625rem;
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--color-grey);
+  background: var(--color-white);
+  background: var(--arrow-icon) no-repeat right 0.8em center/1.4em, -webkit-gradient(linear, right top, left top, color-stop(3em, var(--arrow-bg)), color-stop(3em, var(--select-bg)));
+  background: var(--arrow-icon) no-repeat right 0.8em center/1.4em, -o-linear-gradient(right, var(--arrow-bg) 3em, var(--select-bg) 3em);
+  background: var(--arrow-icon) no-repeat right 0.8em center/1.4em, linear-gradient(to left, var(--arrow-bg) 3em, var(--select-bg) 3em);
+  border: 0.0625rem solid var(--color-middle-grey);
+  border-radius: 0.125rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Remove IE arrow */
+  /* Remove focus outline */
+}
+
+.s-our-leaders__select::-ms-expand {
+  display: none;
+}
+
+.s-our-leaders__select:focus {
+  outline: none;
 }
 
 .s-our-leaders__items {
@@ -410,6 +449,26 @@ h5 {
   pointer-events: none;
 }
 
+.ui-menu-item-wrapper .s-our-leaders__card {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.ui-menu-item-wrapper .s-our-leaders__card-photo {
+  width: 6rem;
+  margin-bottom: 0;
+}
+
+.ui-menu-item-wrapper .s-our-leaders__card-photo img {
+  width: 100%;
+  height: auto;
+}
+
 @media (min-width: 475px) {
   .s-page-intro__info {
     max-width: 80%;
@@ -468,6 +527,9 @@ h5 {
   }
 
   .s-our-leaders__card {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
     padding: 0;
     border: 0;
     -webkit-box-orient: vertical;

@@ -285,6 +285,12 @@ h5 {
   font-style: normal;
 }
 
+.s-employee-info__text p:not(:last-child),
+.s-employee-info__text ul:not(:last-child),
+.s-employee-info__text ol:not(:last-child) {
+  margin-bottom: 0.625rem;
+}
+
 .s-see-all-articles .m-section__wrapper {
   padding-top: 0;
 }

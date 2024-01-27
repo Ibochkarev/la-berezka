@@ -135,6 +135,10 @@
     padding: rem(24) 0;
     border-top: rem(1) solid var(--color-middle-grey);
 
+    &:hover .s-our-leaders__card-photo img {
+        scale: 1.05;
+    }
+
     @media (min-width: 992px) {
       justify-content: flex-end;
       padding: 0;
@@ -145,6 +149,8 @@
     &-photo {
       margin-left: rem(15);
       flex: none;
+      overflow: hidden;
+      position: relative;
 
       @media (min-width: 992px) {
         margin-bottom: rem(30);
@@ -156,6 +162,7 @@
         height: auto;
         max-width: rem(150);
         object-fit: contain;
+        transition: scale .75s ease-in-out;
 
         @media (min-width: 992px) {
           max-width: 100%;

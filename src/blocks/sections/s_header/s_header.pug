@@ -29,11 +29,19 @@ header.s-header
         //- a.s-header__actions-item.s-header__actions-search(href="#" aria-label="Поиск" title="Поиск")
         //-   +svgMono("ic-search")
         //- .s-header__actions-item.s-header__actions-item--languages
-        .s-header__languages
-          a.s-header__language.is-active(href="#" aria-label="English" title="English") en
-          a.s-header__language(href="#" aria-label="Russian" title="Russian") ru
+        button.s-header__language-button(type="button")
+          span En
+          <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <mask id="path-1-inside-1_5511_2980" fill="white">
+            <path d="M7 3.5L3.5 7L7.10124e-08 3.5L3.5 -2.59522e-07L7 3.5Z"/>
+            </mask>
+            <path d="M3.5 -2.59522e-07L4.20711 -0.707107L3.5 -1.41421L2.79289 -0.707107L3.5 -2.59522e-07ZM0.707107 4.20711L4.20711 0.707107L2.79289 -0.707107L-0.707107 2.79289L0.707107 4.20711ZM2.79289 0.707107L6.29289 4.20711L7.70711 2.79289L4.20711 -0.707107L2.79289 0.707107Z" fill="#1F1E20" mask="url(#path-1-inside-1_5511_2980)"/>
+          </svg>
         button.s-header__actions-item.s-header__burger(type="button" aria-label="Меню" title="Меню")
           +svgMono("ic-menu")
+    .s-header__languages
+      a.s-header__languages-item.font-menu(href="#" aria-label="Русский (Ru)" title="Русский (Ru)") Русский (Ru)
+      a.s-header__languages-item.font-menu.is-active(href="#" aria-label="English (En)" title="English (En)") English (En)
 
 //- .m-modal-menu
 //-   .m-modal-menu__wrapper.animated.zoomIn

@@ -343,11 +343,17 @@ h5 {
   border-top: 0.0625rem solid var(--color-middle-grey);
 }
 
+.s-our-leaders__card:hover .s-our-leaders__card-photo img {
+  scale: 1.05;
+}
+
 .s-our-leaders__card-photo {
   margin-left: 0.9375rem;
   -webkit-box-flex: 0;
   -ms-flex: none;
   flex: none;
+  overflow: hidden;
+  position: relative;
 }
 
 .s-our-leaders__card-photo img {
@@ -356,6 +362,9 @@ h5 {
   max-width: 9.375rem;
   -o-object-fit: contain;
   object-fit: contain;
+  -webkit-transition: scale .75s ease-in-out;
+  -o-transition: scale .75s ease-in-out;
+  transition: scale .75s ease-in-out;
 }
 
 .s-our-leaders__card-name {

@@ -4,6 +4,8 @@ Swiper.use([Pagination, Navigation])
 
 let header = document.querySelector('.s-header'),
   headerBurger = document.querySelector('.s-header__burger'),
+  languagesButton = document.querySelector('.s-header__language-button'),
+  languagesList = document.querySelector('.s-header__languages'),
   // headerSearchButton = document.querySelector('.s-header__actions-search'),
   // mobileModalMenuClose = document.querySelector('.m-modal-menu__close'),
   mobileModalSearchClose = document.querySelector('.m-modal-search__close'),
@@ -58,4 +60,9 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   document.addEventListener('scroll', handleScrollPage)
+
+  languagesButton.addEventListener('click', () => {
+    languagesButton.classList.toggle('is-active')
+    languagesList.classList.toggle('is-show')
+  })
 })

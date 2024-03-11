@@ -124,12 +124,17 @@
       }
     }
 
+    &-cover {
+      min-width: 0;
+    }
+
     &-text {
       font-size: rem(14);
       font-weight: 300;
       line-height: 140%;
       font-style: normal;
       letter-spacing: rem(0.14);
+      min-width: 0;
 
       @media (min-width: 992px) {
         font-size: rem(17);

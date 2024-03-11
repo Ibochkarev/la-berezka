@@ -29,7 +29,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
-    <link rel="stylesheet" href="styles/global.css?v=1706336794297">
+    <link rel="stylesheet" href="styles/global.css?v=1710124399192">
     <link rel="stylesheet" href="./styles/page_homepage.css">
   </head>
   <body>
@@ -69,16 +69,33 @@
       </header>
       <main class="l-main__content">
         <div class="backdrop"></div>
-        <section class="s-main-intro">
-          <div class="s-main-intro__wrapper">
-            <picture>
-              <source media="(min-width: 600px)" srcset="./img/intro/banner-home.jpg"><img class="s-main-intro__image" src="./img/intro/banner-home-mobile.jpg">
-            </picture>
-            <div class="l-container">
-              <div class="s-main-intro__content">
-                <div class="s-main-intro__info">
-                  <h1 class="s-main-intro__title">A State of Mind Academy</h1>
-                  <div class="s-main-intro__text">Where Inspiration Meets Education</div>
+        <section class="s-main-intro-slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide s-main-intro-slider__slide s-main-intro-slider__slide--media">
+              <div class="s-main-intro-slider__slide-wrapper">
+                <picture>
+                  <source media="(min-width: 600px)" srcset="./img/intro/banner-home.jpg"><img class="s-main-intro-slider__slide-image" src="./img/intro/banner-home-mobile.jpg">
+                </picture>
+                <div class="l-container">
+                  <div class="s-main-intro-slider__slide-content">
+                    <div class="s-main-intro-slider__slide-info">
+                      <h1 class="s-main-intro-slider__slide-title">A State of Mind Academy</h1>
+                      <div class="s-main-intro-slider__slide-text">Where Inspiration Meets Education</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide s-main-intro-slider__slide s-main-intro-slider__slide--video">
+              <div class="s-main-intro-slider__slide-wrapper">
+                <video src="//2017-media.weareenvoy.net/hero-blossom.mp4" autoplay loop></video>
+                <div class="l-container">
+                  <div class="s-main-intro-slider__slide-content">
+                    <div class="s-main-intro-slider__slide-info">
+                      <h1 class="s-main-intro-slider__slide-title">A State of Mind Academy</h1>
+                      <div class="s-main-intro-slider__slide-text">Where Inspiration Meets Education</div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -300,9 +317,9 @@
 </svg>
       </button>
     </div>
-    <script defer src="./js/main.js?v=1706336794298"></script>
+    <script defer src="./js/main.js?v=1710124399193"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
-    <script defer src="./js/vendor.js?v=1706336794298"></script>
+    <script defer src="./js/vendor.js?v=1710124399193"></script>
     <script defer src="./js/page_homepage.js"></script>
   </body>
 </html>

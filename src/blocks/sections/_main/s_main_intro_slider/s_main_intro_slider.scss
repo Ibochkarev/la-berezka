@@ -1,0 +1,109 @@
+.s-main-intro-slider {
+  &__slide {
+    &-wrapper {
+      position: relative;
+    }
+
+    &--video {
+      color: #fff;
+
+      .s-main-intro-slider__slide-wrapper {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding-bottom: 56.25%;
+        background: rgb(2,0,36);
+        background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(104,104,110,0.5102634803921569) 100%);
+
+        &::before {
+          z-index: 1;
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: block;
+          width: 100%;
+          height: 100%;
+          background: rgb(2,0,36);
+          background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(104,104,110,0.5102634803921569) 100%,);
+          opacity: 0.4;
+          content: '';
+        }
+      }
+
+      video {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%    !important;
+  height: auto   !important;
+        // width: 100%;
+        // height: 100%;
+        border: 0;
+      }
+    }
+
+    &-content {
+      z-index: 2;
+      position: absolute;
+      top: 0;
+      max-width: 89%;
+      margin: 0 auto;
+
+      @media (min-width: 768px) {
+        max-width: 94%;
+      }
+
+      @media (min-width: 1336px) {
+        max-width: rem(1240);
+      }
+    }
+
+    &-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: right;
+    }
+
+    &-info {
+      padding: rem(47) 0;
+
+      @media (min-width: 475px) {
+        padding: rem(90) 0;
+      }
+
+      @media (min-width: 1200px) {
+        padding: rem(147) 0;
+      }
+    }
+
+    &-title {
+      margin: 0 0 rem(5);
+      font-family: 'Didona', sans-serif;
+      font-size: rem(22);
+      font-weight: 400;
+      line-height: rem(22);
+      text-transform: uppercase;
+
+      @media (min-width: 992px) {
+        font-size: rem(40);
+        line-height: rem(48);
+        letter-spacing: rem(0.44);
+      }
+    }
+
+    &-text {
+      margin: 0;
+      font-size: rem(14);
+      font-weight: 300;
+      line-height: rem(21);
+
+      @media (min-width: 992px) {
+        font-size: rem(42);
+        font-weight: 100;
+        line-height: rem(54);
+      }
+    }
+  }
+}

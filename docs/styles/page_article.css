@@ -234,12 +234,17 @@ h5 {
   grid-template-columns: repeat(1, 1fr);
 }
 
+.s-article-content__block-cover {
+  min-width: 0;
+}
+
 .s-article-content__block-text {
   font-size: 0.875rem;
   font-weight: 300;
   line-height: 140%;
   font-style: normal;
   letter-spacing: 0.00875rem;
+  min-width: 0;
 }
 
 .s-article-content__block-text a {

@@ -1,0 +1,18 @@
++section('s-request', 'Request', 'Invitation', '', false)
+    form.s-request__form(action="")
+      .s-request__form-item
+        label.s-request__form-label(for="") The pleasure of La Berёzka team is requested by
+        input.s-request__form-input(type="text", placeholder="Put here")
+      .s-request__form-item
+        label.s-request__form-label(for="") Your phone number
+        input.s-request__form-input(type="tel", placeholder="Put here")
+      .s-request__form-item
+        label.s-request__form-label(for="") Your e-mail
+        input.s-request__form-input(type="email", placeholder="Put here")
+      .s-request__form-item
+        label.s-request__form-label(for="") Your child's age
+        input.s-request__form-input(type="text", placeholder="Put here")
+      .s-request__form-item--checkbox(for="")
+        input.s-request__form-input.s-request__form-input--checkbox(type="checkbox")
+        span Я даю своё согласие на условия обработки персональных данных и получение информационных рассылок в соответствии с политикой <a href="">конфиденциальности</a>.
+      button.s-request__form-button(type="submit") Отправить

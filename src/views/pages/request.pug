@@ -1,0 +1,13 @@
+extends ../layouts/default
+
+block variables
+  - const title = "Request Invitation"
+
+block append head
+  link(rel="stylesheet" href="./styles/page_request.css")
+
+block content
+  include ../../blocks/sections/_request/s-request/s-request.pug
+
+//- block append scripts
+//-   script(defer src="./js/page_team.js")

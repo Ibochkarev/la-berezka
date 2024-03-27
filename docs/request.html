@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Our Team</title>
+    <title>Request Invitation</title>
     <meta name="theme-color" content="#fff">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -29,8 +29,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
-    <link rel="stylesheet" href="styles/global.css?v=1711531602225">
-    <link rel="stylesheet" href="./styles/page_employees.css">
+    <link rel="stylesheet" href="styles/global.css?v=1711531603640">
+    <link rel="stylesheet" href="./styles/page_request.css">
   </head>
   <body>
     <div class="l-main">
@@ -69,132 +69,35 @@
       </header>
       <main class="l-main__content">
         <div class="backdrop"></div>
-        <section class="s-page-intro">
-          <div class="s-page-intro__wrapper">
-            <picture>
-              <source media="(min-width: 600px)" srcset="./img/intro/banner-team.jpg"><img class="s-page-intro__image" src="./img/intro/banner-team-mobile.jpg">
-            </picture>
-            <div class="l-container">
-              <div class="s-page-intro__content">
-                <div class="s-page-intro__info">
-                  <div class="m-breadcrumbs">
-                    <div class="l-wide">
-                      <ul class="m-breadcrumbs__list" itemscope="itemscope" itemtype="https://schema.org/BreadcrumbList">
-                        <li class="m-breadcrumbs__item" itemscope="itemscope" itemprop="itemListElement" itemtype="https://schema.org/ListItem"><span class="m-breadcrumbs__link font-l" itemprop="name">State of Mind</span>
-                          <meta itemprop="position" content="0"/>
-                          <meta itemprop="item" content="#"/>
-                        </li>
-                        <li class="m-breadcrumbs__item"><span class="m-breadcrumbs__link-current font-l" itemprop="name">Our Team</span>
-                          <meta itemprop="item" content="#"/>
-                          <meta itemprop="position" content=""/>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <h1 class="s-page-intro__title">The Spirits behind</h1>
-                  <div class="s-page-intro__text">La berёzka academy</div>
-                  <div class="s-page-intro__introtext">The authors of the project consciously sought to move away from the British educational model that dominates Moscow's international schools and drew inspiration from the French and Swiss approach, while preserving the values of Russian classical culture and education.</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="m-section s-universal-text-block">
+        <section class="m-section s-request">
           <div class="l-container">
-            <div class="m-section__wrapper s-universal-text-block__wrapper">
-              <div class="s-universal-text-block__content">Stepping into an art classroom, you get into an art atelier in Montmartre, opening the door to a laboratory — to the moon or Silicon Valley, where you start studying robotics, 3D modeling and programming"</div>
-            </div>
-          </div>
-        </section>
-        <section class="m-section s-our-leaders">
-          <div class="l-container">
-            <div class="m-section__wrapper s-our-leaders__wrapper">
+            <div class="m-section__wrapper s-request__wrapper">
               <div class="m-section__headline">
-                <h1 class="m-section__title font-h1">Meet</h1>
-                <p class="m-section__subtitle font-h1-didona">our leaders</p>
+                <h1 class="m-section__title font-h1">Request</h1>
+                <p class="m-section__subtitle font-h1-didona">Invitation</p>
               </div>
-              <form class="s-our-leaders__search" action="">
-                <input class="s-our-leaders__search-input" type="text">
-                <button class="s-our-leaders__search-button" type="submit">Search</button>
+              <form class="s-request__form" action="">
+                <div class="s-request__form-item">
+                  <label class="s-request__form-label" for="">The pleasure of La Berёzka team is requested by</label>
+                  <input class="s-request__form-input" type="text" placeholder="Put here">
+                </div>
+                <div class="s-request__form-item">
+                  <label class="s-request__form-label" for="">Your phone number</label>
+                  <input class="s-request__form-input" type="tel" placeholder="Put here">
+                </div>
+                <div class="s-request__form-item">
+                  <label class="s-request__form-label" for="">Your e-mail</label>
+                  <input class="s-request__form-input" type="email" placeholder="Put here">
+                </div>
+                <div class="s-request__form-item">
+                  <label class="s-request__form-label" for="">Your child's age</label>
+                  <input class="s-request__form-input" type="text" placeholder="Put here">
+                </div>
+                <div class="s-request__form-item--checkbox" for="">
+                  <input class="s-request__form-input s-request__form-input--checkbox" type="checkbox"><span>Я даю своё согласие на условия обработки персональных данных и получение информационных рассылок в соответствии с политикой <a href="">конфиденциальности</a>.</span>
+                </div>
+                <button class="s-request__form-button" type="submit">Отправить</button>
               </form>
-              <div class="s-our-leaders__wrap">
-                <div class="s-our-leaders__filters">
-                  <div class="s-our-leaders__filters-title">Filter by Teams</div>
-                  <select class="s-our-leaders__select" id="teams" name="teams">
-                    <option value="Executive Leadership Team">Executive Leadership Team (6)</option>
-                    <option value="Academic Team">Partners (2) Academic Team (12)</option>
-                    <option value="Operations Team">Operations Team (8)</option>
-                    <option value="Partners">Partners (2)</option>
-                  </select>
-                </div>
-                <div class="s-our-leaders__items"><a class="s-our-leaders__card" href="">
-                    <div class="s-our-leaders__card-info">
-                      <div class="s-our-leaders__card-name">Alain Roland</div>
-                      <div class="s-our-leaders__card-position">Head of Academy</div>
-                      <div class="s-our-leaders__card-text">More than 10 years in education. Experience in opening La preschool des Batignolles in Paris, Exupéry International School in Riga, French kindergarten in Lapino, Moscow.</div>
-                    </div>
-                    <div class="s-our-leaders__card-photo"><img src="./img/s-our-leaders/Roland.jpg" alt="Alain Roland"></div></a><a class="s-our-leaders__card" href="">
-                    <div class="s-our-leaders__card-info">
-                      <div class="s-our-leaders__card-name">Elena Antonova</div>
-                      <div class="s-our-leaders__card-position">Head of Admissions</div>
-                      <div class="s-our-leaders__card-text">Ms. Elena has 13 years of experience in international education, operations management, interacting with parents, students and managing a campus team.</div>
-                    </div>
-                    <div class="s-our-leaders__card-photo"><img src="./img/s-our-leaders/Antonova.jpg" alt="Elena Antonova"></div></a><a class="s-our-leaders__card" href="">
-                    <div class="s-our-leaders__card-info">
-                      <div class="s-our-leaders__card-name">Ildar Nafikov</div>
-                      <div class="s-our-leaders__card-position">Co-founder </div>
-                      <div class="s-our-leaders__card-text">More than 10 years of experience in international education, under the leadership of Mr. Ildar, the eighth campus is already opening in Russia and the CIS.</div>
-                    </div>
-                    <div class="s-our-leaders__card-photo"><img src="./img/s-our-leaders/Nafikov.jpg" alt="Ildar Nafikov"></div></a><a class="s-our-leaders__card" href="">
-                    <div class="s-our-leaders__card-info">
-                      <div class="s-our-leaders__card-name">Nicolas Mathieu</div>
-                      <div class="s-our-leaders__card-position">Co-founder </div>
-                      <div class="s-our-leaders__card-text">More than 10 years in education. Experience in opening La preschool des Batignolles in Paris, Exupéry International School in Riga, French kindergarten in Lapino, Moscow.</div>
-                    </div>
-                    <div class="s-our-leaders__card-photo"><img src="./img/s-our-leaders/Mathieu.jpg" alt="Nicolas Mathieu"></div></a><a class="s-our-leaders__card" href="">
-                    <div class="s-our-leaders__card-info">
-                      <div class="s-our-leaders__card-name">Aysa Roland</div>
-                      <div class="s-our-leaders__card-position">Head of Early Years</div>
-                      <div class="s-our-leaders__card-text">More than 10 years in education. Experience in opening La preschool des Batignolles in Paris, Exupéry International School in Riga, French kindergarten in Lapino, Moscow.</div>
-                    </div>
-                    <div class="s-our-leaders__card-photo"><img src="./img/s-our-leaders/AysaRoland.jpg" alt="Aysa Roland"></div></a><a class="s-our-leaders__card" href="">
-                    <div class="s-our-leaders__card-info">
-                      <div class="s-our-leaders__card-name">Ruslan Galimzyanov</div>
-                      <div class="s-our-leaders__card-position">Co-founder</div>
-                      <div class="s-our-leaders__card-text">More than 10 years in education. Experience in opening La preschool des Batignolles in Paris, Exupéry International School in Riga, French kindergarten in Lapino, Moscow.</div>
-                    </div>
-                    <div class="s-our-leaders__card-photo"><img src="./img/s-our-leaders/Galimzyanov.jpg" alt="Ruslan Galimzyanov"></div></a><a class="s-our-leaders__card" href="">
-                    <div class="s-our-leaders__card-info">
-                      <div class="s-our-leaders__card-name">Alyona Komissarenko</div>
-                      <div class="s-our-leaders__card-position">Art Teacher</div>
-                      <div class="s-our-leaders__card-text">More than 10 years in education. Experience in opening La preschool des Batignolles in Paris, Exupéry International School in Riga, French kindergarten in Lapino, Moscow.</div>
-                    </div>
-                    <div class="s-our-leaders__card-photo"><img src="./img/s-our-leaders/Komissarenko.jpg" alt="Alyona Komissarenko"></div></a><a class="s-our-leaders__card" href="">
-                    <div class="s-our-leaders__card-info">
-                      <div class="s-our-leaders__card-name">marina surname</div>
-                      <div class="s-our-leaders__card-position">School Doctor</div>
-                      <div class="s-our-leaders__card-text">More than 10 years in education. Experience in opening La preschool des Batignolles in Paris, Exupéry International School in Riga, French kindergarten in Lapino, Moscow.</div>
-                    </div>
-                    <div class="s-our-leaders__card-photo"><img src="./img/s-our-leaders/Marina.jpg" alt="marina surname"></div></a><a class="s-our-leaders__card" href="">
-                    <div class="s-our-leaders__card-info">
-                      <div class="s-our-leaders__card-name">Carlo Gertzen</div>
-                      <div class="s-our-leaders__card-position">Class Teacher Year 1</div>
-                      <div class="s-our-leaders__card-text">More than 10 years in education. Experience in opening La preschool des Batignolles in Paris, Exupéry International School in Riga, French kindergarten in Lapino, Moscow.</div>
-                    </div>
-                    <div class="s-our-leaders__card-photo"><img src="./img/s-our-leaders/Gertzen.jpg" alt="Carlo Gertzen"></div></a>
-                </div>
-                <ul class="s-our-leaders__pagination">
-                  <li class="s-our-leaders__pagination-prev disabled"><a class="s-our-leaders__pagination-link disabled" href=""><svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M11 5L6 5L1 5M1 5L4.82353 9M1 5L4.82353 1" stroke="#1F1E20"/>
-</svg></a></li>
-                  <li class="s-our-leaders__pagination-page is-active"><a class="s-our-leaders__pagination-link" href="">1</a></li>
-                  <li class="s-our-leaders__pagination-page s-our-leaders__pagination-skip">...</li>
-                  <li class="s-our-leaders__pagination-page"><a class="s-our-leaders__pagination-link" href="">3</a></li>
-                  <li class="s-our-leaders__pagination-next"><a class="s-our-leaders__pagination-link" href=""><svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M-3.49691e-07 5L5 5L10 5M10 5L6.17647 1M10 5L6.17647 9" stroke="#1F1E20"/>
-</svg></a></li>
-                </ul>
-              </div>
             </div>
           </div>
         </section>
@@ -288,8 +191,8 @@
 </svg>
       </button>
     </div>
-    <script defer src="./js/main.js?v=1711531602226"></script>
+    <script defer src="./js/main.js?v=1711531603640"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
-    <script defer src="./js/vendor.js?v=1711531602226"></script>
+    <script defer src="./js/vendor.js?v=1711531603640"></script>
   </body>
 </html>

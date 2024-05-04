@@ -454,20 +454,25 @@ h5 {
   overflow: hidden;
 }
 
-.s-explore-storytellers .m-section__wrapper {
-  overflow: visible;
-}
-
 .s-explore-storytellers__slider {
   position: relative;
 }
 
 .s-explore-storytellers__slide {
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .s-explore-storytellers__card {
-  padding: 0 1rem;
+  padding: 0 2.1875rem;
 }
 
 .s-explore-storytellers__card-cover img {
@@ -476,16 +481,19 @@ h5 {
 }
 
 .s-explore-storytellers__card-info {
-  padding: 1.5625rem;
+  padding: 1.5625rem 1.5625rem 2rem;
   background: rgba(255, 249, 240, 0.8);
 }
 
 .s-explore-storytellers__card-title {
+  margin-bottom: 0.625rem;
+  padding-bottom: 0.625rem;
   font-family: "Playfair Display", sans-serif;
   font-size: 1.375rem;
   font-weight: 400;
   line-height: 2.1875rem;
   font-style: normal;
+  border-bottom: 0.0625rem solid var(--color-sand);
 }
 
 .s-explore-storytellers__card-age {
@@ -498,9 +506,9 @@ h5 {
 }
 
 .s-explore-storytellers__card-text {
-  font-size: 1.0625rem;
+  font-size: 0.75rem;
   font-weight: 300;
-  line-height: 1.5625rem;
+  line-height: 1.25rem;
   font-style: normal;
   letter-spacing: 0.01063rem;
 }
@@ -520,17 +528,33 @@ h5 {
 }
 
 .s-explore-storytellers__button-prev {
-  left: -0.625rem;
+  left: 0;
 }
 
 .s-explore-storytellers__button-next {
-  right: -0.625rem;
+  right: 0;
+}
+
+.s-explore-storytellers .swiper-pagination {
+  max-width: 52.5rem;
+  margin-top: -30px;
+  gap: 5px;
+}
+
+.s-explore-storytellers .swiper-pagination-current {
+  font-family: 'Didona', sans-serif;
+  font-size: 1.875rem;
+  line-height: 1.4375rem;
+}
+
+.s-explore-storytellers .swiper-pagination-total {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .s-explore-education {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 249, 240, 0.8)), to(rgba(255, 255, 255, 0)));
-  background: -o-linear-gradient(top, rgba(255, 249, 240, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
-  background: linear-gradient(180deg, rgba(255, 249, 240, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
+  background: url("../img/s-explore-education/bg.png");
+  background-size: contain;
 }
 
 .s-explore-education__list {
@@ -541,6 +565,10 @@ h5 {
   -ms-grid-columns: (1fr)[1];
   grid-template-columns: repeat(1, 1fr);
   gap: 0.9375rem;
+}
+
+.s-explore-education__grid {
+  display: none;
 }
 
 .s-explore-education__card {
@@ -619,11 +647,7 @@ h5 {
 .s-explore-education__text {
   max-width: 57.6875rem;
   margin: 0 auto;
-  font-size: 0.75rem;
-  font-weight: 300;
-  line-height: 1.125rem;
   text-align: center;
-  font-style: normal;
 }
 
 @media (min-width: 600px) {
@@ -708,13 +732,13 @@ h5 {
     letter-spacing: 0.0075rem;
   }
 
-  .s-explore-storytellers .m-section__wrapper {
-    overflow: visible;
-  }
-
   .s-explore-education__list {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .s-explore-education__card-cover {
+    width: 100%;
   }
 
   .s-explore-education__tag {
@@ -724,9 +748,6 @@ h5 {
   }
 
   .s-explore-education__text {
-    font-size: 1.0625rem;
-    font-weight: 300;
-    line-height: 1.5625rem;
     letter-spacing: 0.01063rem;
   }
 }
@@ -785,16 +806,35 @@ h5 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+  }
+
+  .s-explore-storytellers__card-cover {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 
   .s-explore-storytellers__card-info {
     width: 15.4375rem;
+    padding: 3.125rem 2.5rem;
     -webkit-box-flex: 0;
     -ms-flex: none;
     flex: none;
+  }
+
+  .s-explore-storytellers__card-title {
+    margin-bottom: 1.5625rem;
+    padding-bottom: 1.5625rem;
+    font-size: 1.875rem;
+    line-height: 2.8125rem;
+  }
+
+  .s-explore-storytellers__card-text {
+    font-size: 1.0625rem;
+    line-height: 1.5625rem;
   }
 }
 
@@ -820,30 +860,39 @@ h5 {
   }
 
   .s-explore-storytellers__card {
-    padding: 0;
-    width: 53.75rem;
+    width: 100%;
+    max-width: 53.75rem;
   }
 
-  .s-explore-storytellers__button-prev {
-    left: -1.5rem;
+  .s-explore-storytellers__card-cover img {
+    width: 31.25rem;
+    height: 20.625rem;
   }
 
-  .s-explore-storytellers__button-next {
-    right: 3.125rem;
+  .s-explore-storytellers__card-info {
+    width: 16.25rem;
+    height: 25rem;
+  }
+
+  .s-explore-education {
+    min-height: 67.625rem;
   }
 
   .s-explore-education__list {
-    height: 100%;
-    margin: 2.5rem auto 3.125rem;
-    -ms-grid-rows: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 2.0625rem;
+    display: none;
+  }
+
+  .s-explore-education__grid {
+    position: relative;
+    display: block;
+    max-width: 69.125rem;
+    min-height: 37.5rem;
+    margin: 0 auto;
   }
 
   .s-explore-education__card {
     overflow: hidden;
+    position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -945,10 +994,6 @@ h5 {
     display: flex;
   }
 
-  .s-explore-education__card-cover {
-    width: 100%;
-  }
-
   .s-explore-education__card-cover img {
     -o-object-fit: contain;
     object-fit: contain;
@@ -959,7 +1004,7 @@ h5 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    padding: 3.3125rem;
+    padding: 1rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -969,6 +1014,89 @@ h5 {
   .s-explore-education__card-title {
     font-size: 1.125rem;
     line-height: 1.625rem;
+  }
+}
+
+@media (min-width: 1024px) and (min-width: 1024px) {
+  .s-explore-education__card--1 {
+    top: 14.375rem;
+    left: 45%;
+    width: 9.375rem;
+    height: 15.625rem;
+  }
+
+  .s-explore-education__card--2 {
+    top: 12.5rem;
+    left: 20%;
+    width: 13.75rem;
+  }
+
+  .s-explore-education__card--3 {
+    top: -70px;
+    right: 0;
+    width: 10.375rem;
+    height: 14.625rem;
+  }
+
+  .s-explore-education__card--4 {
+    top: 14.375rem;
+    right: 90px;
+    width: 15rem;
+    height: 10rem;
+  }
+
+  .s-explore-education__card--5 {
+    top: 1.875rem;
+    left: 0;
+    width: 10rem;
+    height: auto;
+  }
+
+  .s-explore-education__card--6 {
+    top: 0;
+    left: 20%;
+    width: 13.75rem;
+    height: 8.75rem;
+  }
+
+  .s-explore-education__card--7 {
+    top: 0;
+    left: 50%;
+    width: 15.3125rem;
+  }
+}
+
+@media (min-width: 1024px) and (min-width: 1200px) {
+  .s-explore-education__card--1 {
+    width: 12.5rem;
+    height: 17.5rem;
+  }
+
+  .s-explore-education__card--2 {
+    width: 15.6875rem;
+  }
+
+  .s-explore-education__card--3 {
+    width: 12.25rem;
+    height: 16.5rem;
+  }
+
+  .s-explore-education__card--4 {
+    width: 16.875rem;
+    height: 11.875rem;
+  }
+
+  .s-explore-education__card--5 {
+    width: 11.875rem;
+  }
+
+  .s-explore-education__card--6 {
+    width: 15.6875rem;
+    height: 11.0625rem;
+  }
+
+  .s-explore-education__card--7 {
+    width: 17.1875rem;
   }
 }
 
@@ -1024,31 +1152,31 @@ h5 {
   }
 
   .s-explore-storytellers__card {
-    width: 61.25rem;
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    padding: 0;
   }
 
+  .s-explore-storytellers__card-cover img {
+    width: 35.8125rem;
+    height: 23.9375rem;
+  }
+
+  .s-explore-education__card-content {
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 1280px) {
   .s-explore-storytellers__card-info {
-    padding: 3.5rem 1.5rem 2rem;
-  }
-
-  .s-explore-storytellers__button-next {
-    right: 4.375rem;
+    width: 22.4375rem;
   }
 }
 
-@media (min-width: 1260px) {
-  .s-explore-storytellers__card {
-    width: 69rem;
-  }
-}
-
-@media (min-width: 1336px) {
-  .s-explore-storytellers__button-prev {
-    left: -2.25rem;
-  }
-
-  .s-explore-storytellers__button-next {
-    right: 0;
+@media (max-width: 991px) {
+  .s-explore-storytellers .swiper-pagination {
+    display: none;
   }
 }
 

@@ -1,6 +1,11 @@
 .s-explore-education {
-  // background: rgba(255, 249, 240, 0.8);
-  background: linear-gradient(180deg, rgba(255, 249, 240, 0.80) 0%, rgba(255, 255, 255, 0.00) 100%);
+  background:url('../img/s-explore-education/bg.png');
+  background-size:  contain;
+
+
+  @media (min-width: 1024px) {
+    min-height: rem(1082);
+  }
 
   &__list {
     display: grid;
@@ -14,11 +19,19 @@
     }
 
     @media (min-width: 1024px) {
-      height: 100%;
-      margin: rem(40) auto rem(50);
-      grid-template-rows: 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      gap: rem(33);
+      display: none;
+    }
+  }
+
+  &__grid {
+    display: none;
+
+    @media (min-width: 1024px) {
+      position: relative;
+      display: block;
+      max-width: rem(1106);
+      min-height: rem(600);
+      margin: 0 auto;
     }
   }
 
@@ -30,6 +43,7 @@
 
     @media (min-width: 1024px) {
       overflow: hidden;
+      position: absolute;
       display: flex;
       width: rem(251);
       height: rem(201);
@@ -39,6 +53,18 @@
         grid-column-start: 1;
         grid-row-end: 2;
         grid-column-end: 2;
+
+        @media (min-width: 1024px) {
+          top: rem(230);
+          left: 45%;
+          width: rem(150);
+          height: rem(250);
+        }
+
+        @media (min-width: 1200px) {
+          width: rem(200);
+          height: rem(280);
+        }
       }
 
       &--2 {
@@ -46,6 +72,16 @@
         grid-column-start: 1;
         grid-row-end: 3;
         grid-column-end: 2;
+
+        @media (min-width: 1024px) {
+          top: rem(200);
+          left: 20%;
+          width: rem(220);
+        }
+
+        @media (min-width: 1200px) {
+          width: rem(251);
+        }
       }
 
       &--3 {
@@ -53,6 +89,18 @@
         grid-column-start: 2;
         grid-row-end: 2;
         grid-column-end: 3;
+
+        @media (min-width: 1024px) {
+          top: -70px;
+          right: 0;
+          width: rem(166);
+          height:rem(234);
+        }
+
+        @media (min-width: 1200px) {
+          width: rem(196);
+          height:rem(264);
+        }
       }
 
       &--4 {
@@ -60,6 +108,18 @@
         grid-column-start: 2;
         grid-row-end: 3;
         grid-column-end: 3;
+
+        @media (min-width: 1024px) {
+          top: rem(230);
+          right: 90px;
+          width: rem(240);
+          height: rem(160);
+        }
+
+        @media (min-width: 1200px) {
+          width: rem(270);
+          height: rem(190);
+        }
       }
 
       &--5 {
@@ -69,6 +129,18 @@
         grid-column-start: 3;
         grid-row-end: 3;
         grid-column-end: 4;
+
+
+        @media (min-width: 1024px) {
+          top: rem(30);
+          left: 0;
+          width: rem(160);
+          height: auto;
+        }
+
+        @media (min-width: 1200px) {
+          width: rem(190);
+        }
 
         .s-explore-education__card-cover {
           img {
@@ -82,6 +154,18 @@
         grid-column-start: 4;
         grid-row-end: 2;
         grid-column-end: 5;
+
+        @media (min-width: 1024px) {
+          top: 0;
+          left: 20%;
+          width: rem(220);
+          height:rem(140);
+        }
+
+        @media (min-width: 1200px) {
+          width: rem(251);
+          height:rem(177);
+        }
       }
 
       &--7 {
@@ -89,6 +173,16 @@
         grid-column-start: 4;
         grid-row-end: 3;
         grid-column-end: 5;
+
+        @media (min-width: 1024px) {
+          top: 0;
+          left: 50%;
+          width: rem(245);
+        }
+
+        @media (min-width: 1200px) {
+          width: rem(275);
+        }
       }
     }
 
@@ -119,7 +213,7 @@
     &-cover {
       width: rem(165);
 
-      @media (min-width: 1024px) {
+      @media (min-width: 768px) {
         width: 100%;
       }
 
@@ -143,8 +237,12 @@
       @media (min-width: 1024px) {
         display: none;
         justify-content: center;
-        padding: rem(53);
+        padding: rem(16);
         flex-direction: column;
+      }
+
+      @media (min-width: 1200px) {
+        padding: rem(24);
       }
     }
 
@@ -199,16 +297,9 @@
   &__text {
     max-width: rem(923);
     margin: 0 auto;
-    font-size: rem(12);
-    font-weight: 300;
-    line-height: rem(18);
     text-align: center;
-    font-style: normal;
 
     @media (min-width: 768px) {
-      font-size: rem(17);
-      font-weight: 300;
-      line-height: rem(25);
       letter-spacing: rem(0.17);
     }
   }

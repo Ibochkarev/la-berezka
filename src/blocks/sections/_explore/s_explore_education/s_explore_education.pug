@@ -4,49 +4,49 @@
       title: 'Art Curriculum',
       text: 'In this creative space, students explore classical and contemporary art forms, nurturing both artistic skills and aesthetic intelligence.',
       image: './img/s-explore-education/ac.jpg',
-      imageDesktop: './img/s-explore-education/ac-desktop.jpg',
+      imageDesktop: './img/s-explore-education/ac-desktop.png',
       class: 's-explore-education__card--1'
     },
     {
       title: 'Russian program',
       text: 'Teaching writing, reading and basic math. Preparation for school.',
       image: './img/s-explore-education/rp.jpg',
-      imageDesktop: './img/s-explore-education/rp-desktop.jpg',
+      imageDesktop: './img/s-explore-education/rp-desktop.png',
       class: 's-explore-education__card--2'
     },
     {
       title: 'British EYFS',
       text: 'Teaching is through the Early Years Foundation Stage for children aged 3 to 5 years and Key Stage 1 for children aged 5 to 7 years.',
       image: './img/s-explore-education/be.jpg',
-      imageDesktop: './img/s-explore-education/be-desktop.jpg',
+      imageDesktop: './img/s-explore-education/be-desktop.png',
       class: 's-explore-education__card--3'
     },
     {
       title: 'Science Reactions',
       text: 'A specially equipped classroom for conducting scientific experiments, growing plants and launching rockets into space.',
       image: './img/s-explore-education/sr.jpg',
-      imageDesktop: './img/s-explore-education/sr-desktop.jpg',
+      imageDesktop: './img/s-explore-education/sr-desktop.png',
       class: 's-explore-education__card--4'
     },
     {
       title: 'StoryTelling Immersion',
       text: 'Immerse yourself in the world of narrative and character exploration through our activity books.',
       image: './img/s-explore-education/si.jpg',
-      imageDesktop: './img/s-explore-education/si-desktop.jpg',
+      imageDesktop: './img/s-explore-education/si-desktop.png',
       class: 's-explore-education__card--5'
     },
     {
       title: 'Entrepreneurship',
       text: 'Nurturing young minds to cultivate innovative thinking and creative problem-solving',
       image: './img/s-explore-education/en.jpg',
-      imageDesktop: './img/s-explore-education/en-desktop.jpg',
+      imageDesktop: './img/s-explore-education/en-desktop.png',
       class: 's-explore-education__card--6'
     },
     {
       title: 'Physical Education',
       text: 'Playgrounds and a multifunctional hall for sports. Sports clubs and sections for all tastes.',
       image: './img/s-explore-education/pe.jpg',
-      imageDesktop: './img/s-explore-education/pe-desktop.jpg',
+      imageDesktop: './img/s-explore-education/pe-desktop.png',
       class: 's-explore-education__card--7'
     }
   ]
@@ -60,12 +60,21 @@
       - var even = index % 2;
         .s-explore-education__card(class={'s-explore-education__card--even' : even}, class=card.class)
           .s-explore-education__card-cover
-            picture
-              source(srcset=card.imageDesktop media="screen and (min-width:1024px)")
-              img(src=card.image alt= card.title decoding="async" loading="lazy")
+            img(src=card.image alt= card.title decoding="async" loading="lazy")
           .s-explore-education__card-content
             .s-explore-education__card-info
               .s-explore-education__card-title= card.title
               .s-explore-education__card-text= card.text
-  .s-explore-education__tag State of Mind curriculum
-  .s-explore-education__text At La Berezka Academy, we offer a meticulously crafted educational program designed to empower young minds. Our curriculum seamlessly blends Russian and English foundations, fostering bilingual proficiency from an early age. Through the enchantment of storytelling, we inspire curiosity and ignite a passion for learning. Our four pillars—Culture, Education, Art and Science—provide a holistic foundation for academic success.
+
+  .s-explore-education__grid
+    each card,index in educationList
+      - var even = index % 2;
+        .s-explore-education__card(class={'s-explore-education__card--even' : even}, class=card.class)
+          .s-explore-education__card-cover
+              img(src=card.imageDesktop alt= card.title decoding="async" loading="lazy")
+          .s-explore-education__card-content
+            .s-explore-education__card-info
+              .s-explore-education__card-title= card.title
+              .s-explore-education__card-text= card.text
+  //- .s-explore-education__tag State of Mind curriculum
+  .s-explore-education__text.font-text-s At La Berezka Academy, we offer a meticulously crafted educational program designed to empower young minds. Our curriculum seamlessly blends Russian and English foundations, fostering bilingual proficiency from an early age. Through the enchantment of storytelling, we inspire curiosity and ignite a passion for learning. Our four pillars—Culture, Education, Art, and Science—provide a holistic foundation for academic success.

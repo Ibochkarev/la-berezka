@@ -3424,11 +3424,6 @@ section {
     height: 21.875rem;
   }
 
-  .s-universal-text-block__wrapper.m-section__wrapper {
-    padding-top: 11.25rem;
-    padding-bottom: 11.25rem;
-  }
-
   .s-universal-text-block__content {
     font-size: 1.875rem;
     font-weight: 400;
@@ -3771,6 +3766,11 @@ section {
 @media (min-width: 1200px) {
   .s-footer__wrapper {
     padding: 3.125rem 6.875rem 3.125rem 1.875rem;
+  }
+
+  .s-universal-text-block__wrapper.m-section__wrapper {
+    padding-top: 11.25rem;
+    padding-bottom: 11.25rem;
   }
 }
 

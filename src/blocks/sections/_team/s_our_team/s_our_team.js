@@ -8,17 +8,14 @@ window.addEventListener(
       slidesPerView: 1,
       resistance: true,
       resistanceRatio: 1,
-      breakpoints: {
-        640: {
-          slidesPerView: 2,
-          spaceBetween: 0,
-        },
-      },
+      spaceBetween: 0,
+      autoHeight: true,
     })
     const ourTeamItemsSliderBottom = new Swiper(`.s-our-team__bottom`, {
       slidesPerView: 1,
       resistance: true,
       resistanceRatio: 1,
+      spaceBetween: 0,
       navigation: {
         nextEl: '.s-our-team__button-next',
         prevEl: '.s-our-team__button-prev',
@@ -33,6 +30,9 @@ window.addEventListener(
         swiper: ourTeamItemsSlider,
       },
     })
+
+    ourTeamItemsSlider.controller.control = ourTeamItemsSliderBottom
+    ourTeamItemsSliderBottom.controller.control = ourTeamItemsSlider
   },
   false,
 )

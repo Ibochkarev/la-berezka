@@ -1,12 +1,11 @@
-import { Swiper, Navigation, Pagination, EffectFade } from 'swiper'
-Swiper.use([Navigation, Pagination, EffectFade])
+import { Swiper, Navigation, Pagination } from 'swiper'
+Swiper.use([Navigation, Pagination])
 
 window.addEventListener(
   'load',
   () => {
     const exploreStorytellersSlider = new Swiper(`.s-explore-storytellers__slider`, {
       slidesPerView: 1,
-      effect: 'fade',
       navigation: {
         nextEl: '.s-explore-storytellers__button-next',
         prevEl: '.s-explore-storytellers__button-prev',

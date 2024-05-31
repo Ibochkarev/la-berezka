@@ -1648,6 +1648,7 @@ section {
 }
 
 .l-main {
+  overflow-x: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

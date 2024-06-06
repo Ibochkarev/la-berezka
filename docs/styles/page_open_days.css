@@ -270,8 +270,9 @@ h5 {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 0.625rem;
+  padding: 0 0.625rem;
   background: rgba(217, 198, 169, 0.15);
+  height: 2.5rem;
 }
 
 .s-open-days-form .timepad__calendar-item:hover {
@@ -604,6 +605,10 @@ h5 {
 
   .s-open-days-form .timepad__calendar {
     margin-bottom: 3.75rem;
+  }
+
+  .s-open-days-form .timepad__calendar-item {
+    height: 3.25rem;
   }
 
   .s-open-days-form .timepad-form__table-row {

@@ -14,8 +14,13 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: rem(10);
+        padding: 0 rem(10);
         background: rgba(217, 198, 169, 0.15);
+        height: rem(40);
+
+        @media (min-width: 768px) {
+          height: rem(52);
+        }
 
         &:hover {
           opacity: .9;

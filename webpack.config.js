@@ -29,6 +29,7 @@ module.exports = {
     page_explore: './src/js/page_explore.js',
     page_article: './src/js/page_article.js',
     page_universal: './src/js/page_universal.js',
+    page_open_days: './src/js/page_open_days.js',
   },
 
   output: {

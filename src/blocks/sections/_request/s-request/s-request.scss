@@ -121,8 +121,7 @@
       width: max-content;
       height: rem(30);
       margin: 0 auto;
-      padding-right: rem(24);
-      padding-left: rem(24);
+      padding: 0 rem(24);
       font-size: rem(10);
       line-height: rem(14);
       text-transform: uppercase;
@@ -130,6 +129,7 @@
       border: 0;
       transition: opacity 0.2s ease-out;
       outline: none;
+      cursor: pointer;
 
       @media (min-width: 768px) {
         height: rem(40);

@@ -1,0 +1,80 @@
++section('s-open-days-form', '', '', '', false)
+  .timepad
+    .timepad__calendar
+      .m-section__headline
+        .m-section__title.font-h1 Выберите
+        .m-section__subtitle.font-h1-didona Дату и время
+      .timepad__calendar-item.font-text-s
+        .timepad__calendar-date(data-regdate="") 5 июня, среда, 14:00
+        .timepad__calendar-price бесплатно
+      .timepad__calendar-item.font-text-s
+        .timepad__calendar-date 18 июня, вторник, 14:00
+        .timepad__calendar-price бесплатно
+
+    .timepad-form
+      .m-section__headline
+        .m-section__title.font-h1 Ваш пригласительный билет
+        .m-section__subtitle.font-h1-didona в академию la berёzka
+      .timepad-form__regdate
+        .timepad-form__regdate-regtext
+        .timepad-form__regdate-rechange Выбрать другую дату
+      label.timepad-form__label
+      .timepad-form__table
+        .timepad-form__table-row.timepad-form__table-row-header.font-h2
+          .timepad-form__table-col Тип билета
+          .timepad-form__table-col Цена
+          .timepad-form__table-col Кол-во
+        .timepad-form__table-row.font-text-s
+          .timepad-form__table-col Входной билет
+          .timepad-form__table-col Бесплатно
+          .timepad-form__table-col
+            .timepad-form__counter
+              button.minus -
+              span.count.font-text-s 1
+              button.plus +
+        .timepad-form__table-row.font-text-s
+          .timepad-form__table-col Выбрано билетов: <span class="timepad-form__counter-result">1</span>
+    form.timepad-form__form
+      .timepad-form__control
+        label.timepad-form__label.font-h2 Имя
+          span *
+        input.timepad-form__input(type="text" name="name", placeholder=".....")
+      .timepad-form__control
+        label.timepad-form__label.font-h2 Фамилия
+          span *
+        input.timepad-form__input(type="text" name="surname", placeholder=".....")
+      .timepad-form__control
+        label.timepad-form__label.font-h2 Номер телефона
+          span *
+        input.timepad-form__input(type="tel" name="phone" placeholder="+7 (495) 000-00-00")
+      .timepad-form__control
+        label.timepad-form__label.font-h2 E-mail
+          span *
+        input.timepad-form__input(type="email" name="email", placeholder=".....")
+      label.timepad-form__label.font-h2 Вы будете на мероприятии с ребенком?
+      .timepad-form__radio-group.font-text-s
+        label.timepad-form__radio
+          input(type="radio" name="with_child" value="Предпочитаю не указывать")
+          | Предпочитаю не указывать
+        label.timepad-form__radio
+          input(type="radio" name="with_child" value="Да")
+          | Да
+        label.timepad-form__radio
+          input(type="radio" name="with_child" value="Нет")
+          | Нет
+      .timepad-form__control
+        label.timepad-form__label.font-h2 Возраст вашего ребенка
+        input.timepad-form__input(type="text" name="age_child", placeholder=".....")
+      //- .timepad-form__control
+      //-     label.timepad-form__label Номер вашего автомобиля
+      //-     input(type="text" name="car_num")
+      //-     span.timepad-form__note Марка и номер автомобиля нужны для оформления пропуска на школьную парковку
+      .timepad-form__control.timepad-form__agreement.font-text-s
+          input(type="checkbox" name="agreement" value="1" required)
+          | Я подтверждаю свое согласие с условиями <a target="_blank" class="timepad-form__link" href="[[~178]]">Пользовательского соглашения</a> и <a target="_blank" class="timepad-form__link" href="[[~178]]">Договором оказания услуг по организации мероприятия и политикой возвратов</a>
+          span *
+
+      input(type="hidden" name="regdate" value="")
+      input(type="hidden" name="ticket_counter" value="1")
+
+      input.timepad-form__submit(type="submit" name="" value="Зарегистрироваться")

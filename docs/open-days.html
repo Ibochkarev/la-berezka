@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Executive Leadership</title>
+    <title></title>
     <meta name="theme-color" content="#fff">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -29,8 +29,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
-    <link rel="stylesheet" href="styles/global.css?v=1717648972820">
-    <link rel="stylesheet" href="./styles/page_employee.css">
+    <link rel="stylesheet" href="styles/global.css?v=1717648973416">
+    <link rel="stylesheet" href="./styles/page_open_days.css">
   </head>
   <body>
     <div class="l-main">
@@ -69,10 +69,10 @@
       </header>
       <main class="l-main__content">
         <div class="backdrop"></div>
-        <section class="m-section s-employee-info">
+        <section class="m-section s-open-days-intro">
           <div class="l-container">
-            <div class="m-section__wrapper s-employee-info__wrapper">
-              <div class="s-employee-info__top">
+            <div class="m-section__wrapper s-open-days-intro__wrapper">
+              <div class="s-open-days-intro__info">
                 <div class="m-breadcrumbs">
                   <div class="l-wide">
                     <ul class="m-breadcrumbs__list" itemscope="itemscope" itemtype="https://schema.org/BreadcrumbList">
@@ -87,81 +87,162 @@
                     </ul>
                   </div>
                 </div>
-              </div>
-              <div class="s-employee-info__columns">
-                <div class="s-employee-info__about">
-                  <div class="s-employee-info__about-title">Read about other Leadership Members</div>
-                  <ul class="s-employee-info__about-list">
-                    <li class="s-employee-info__about-item"><a class="s-employee-info__about-link" href="">Alain Roland, Head of Academy</a></li>
-                    <li class="s-employee-info__about-item"><a class="s-employee-info__about-link" href="">Ildar Nafikov, President of Strategic Development</a></li>
-                    <li class="s-employee-info__about-item"><a class="s-employee-info__about-link" href="">Elena Antonova, Head of Admissions</a></li>
-                  </ul>
+                <h1 class="s-open-days-intro__title">La Berezka’s<span>Дни открытых дверей</span></h1>
+                <div class="s-open-days-intro__text">
+                  <p>Приглашаем вас на дни открытых дверей в Международной Академии La Berezka 30 мая, а также 13 и 27 июня в 19:00. Вы сможете узнать о преимуществах обучения у нас, встретиться с командой педагогов и задать все интересующие вас вопросы.</p>
+                  <p>Вас ждет увлекательная экскурсия по историческому зданию академии, посещение детской научной лаборатории и художественной студии. Вы увидите, как проходят занятия в детском саду и начальной школе.</p>
+                  <p><b>Программа мероприятия:</b>
+                    <ul>
+                      <li>Приветственный кофе</li>
+                      <li>Презентация академии</li>
+                      <li>Экскурсия по академии</li>
+                      <li>Сессия вопросов и ответов</li>
+                    </ul>
+                  </p>
+                  <p>Для участия, пожалуйста, заполните регистрационную форму ниже для каждого участника мероприятия. Не забывайте с собой паспорт, так как в Академии действует строгий пропускной режим.</p>
                 </div>
-                <div class="s-employee-info__content">
-                  <div class="s-employee-info__photo"><img src="./img/s-employee-info/photo.jpg" alt=""></div>
-                  <div class="s-employee-info__headline">
-                    <div class="s-employee-info__col">
-                      <div class="s-employee-info__name">Nicolas Mathieu</div>
-                      <div class="s-employee-info__position">Co-founder</div>
+              </div>
+              <div class="s-open-days-intro__image"><img src="./img/s-open-days-intro/savva.jpg" alt=""></div>
+            </div>
+          </div>
+        </section>
+        <section class="m-section s-open-days-form">
+          <div class="l-container">
+            <div class="m-section__wrapper s-open-days-form__wrapper">
+              <div class="timepad">
+                <div class="timepad__calendar">
+                  <div class="m-section__headline">
+                    <div class="m-section__title font-h1">Выберите</div>
+                    <div class="m-section__subtitle font-h1-didona">Дату и время</div>
+                  </div>
+                  <div class="timepad__calendar-item font-text-s">
+                    <div class="timepad__calendar-date" data-regdate="">5 июня, среда, 14:00</div>
+                    <div class="timepad__calendar-price">бесплатно</div>
+                  </div>
+                  <div class="timepad__calendar-item font-text-s">
+                    <div class="timepad__calendar-date">18 июня, вторник, 14:00</div>
+                    <div class="timepad__calendar-price">бесплатно</div>
+                  </div>
+                </div>
+                <div class="timepad-form">
+                  <div class="m-section__headline">
+                    <div class="m-section__title font-h1">Ваш пригласительный билет</div>
+                    <div class="m-section__subtitle font-h1-didona">в академию la berёzka</div>
+                  </div>
+                  <div class="timepad-form__regdate">
+                    <div class="timepad-form__regdate-regtext"></div>
+                    <div class="timepad-form__regdate-rechange">Выбрать другую дату</div>
+                  </div>
+                  <label class="timepad-form__label"></label>
+                  <div class="timepad-form__table">
+                    <div class="timepad-form__table-row timepad-form__table-row-header font-h2">
+                      <div class="timepad-form__table-col">Тип билета</div>
+                      <div class="timepad-form__table-col">Цена</div>
+                      <div class="timepad-form__table-col">Кол-во</div>
                     </div>
-                    <div class="s-employee-info__col">
-                      <div class="s-employee-info__connect">
-                        <div class="s-employee-info__connect-title">Connect</div>
-                        <div class="s-employee-info__connect-list"><a class="s-employee-info__connect-item" href="" target="_blank">
-                            <svg class="ico ico-mono-ic-linkedin">
-                              <use xlink:href="./img/sprite-mono.svg#ico-mono-ic-linkedin"></use>
-                            </svg></a><a class="s-employee-info__connect-item" href="" target="_blank">
-                            <svg class="ico ico-mono-ic-email">
-                              <use xlink:href="./img/sprite-mono.svg#ico-mono-ic-email"></use>
-                            </svg></a></div>
+                    <div class="timepad-form__table-row font-text-s">
+                      <div class="timepad-form__table-col">Входной билет</div>
+                      <div class="timepad-form__table-col">Бесплатно</div>
+                      <div class="timepad-form__table-col">
+                        <div class="timepad-form__counter">
+                          <button class="minus">-</button><span class="count font-text-s">1</span>
+                          <button class="plus">+</button>
+                        </div>
                       </div>
                     </div>
+                    <div class="timepad-form__table-row font-text-s">
+                      <div class="timepad-form__table-col">Выбрано билетов: <span class="timepad-form__counter-result">1</span></div>
+                    </div>
                   </div>
-                  <div class="s-employee-info__text">More than 10 years in education. Experience in opening La preschool des Batignolles in Paris, Exupéry International School in Riga, French kindergarten in Lapino, Moscow.More than 10 years in education. Experience in opening La preschool des Batignolles in Paris, Exupéry International School in Riga, French kindergarten in Lapino, Moscow.More than 10 years in education. Experience in opening La preschool des Batignolles in Paris, Exupéry International School in Riga, French kindergarten in Lapino, Moscow.</div>
                 </div>
+                <form class="timepad-form__form">
+                  <div class="timepad-form__control">
+                    <label class="timepad-form__label font-h2">Имя<span>*</span></label>
+                    <input class="timepad-form__input" type="text" name="name" placeholder=".....">
+                  </div>
+                  <div class="timepad-form__control">
+                    <label class="timepad-form__label font-h2">Фамилия<span>*</span></label>
+                    <input class="timepad-form__input" type="text" name="surname" placeholder=".....">
+                  </div>
+                  <div class="timepad-form__control">
+                    <label class="timepad-form__label font-h2">Номер телефона<span>*</span></label>
+                    <input class="timepad-form__input" type="tel" name="phone" placeholder="+7 (495) 000-00-00">
+                  </div>
+                  <div class="timepad-form__control">
+                    <label class="timepad-form__label font-h2">E-mail<span>*</span></label>
+                    <input class="timepad-form__input" type="email" name="email" placeholder=".....">
+                  </div>
+                  <label class="timepad-form__label font-h2">Вы будете на мероприятии с ребенком?</label>
+                  <div class="timepad-form__radio-group font-text-s">
+                    <label class="timepad-form__radio">
+                      <input type="radio" name="with_child" value="Предпочитаю не указывать">Предпочитаю не указывать
+                    </label>
+                    <label class="timepad-form__radio">
+                      <input type="radio" name="with_child" value="Да">Да
+                    </label>
+                    <label class="timepad-form__radio">
+                      <input type="radio" name="with_child" value="Нет">Нет
+                    </label>
+                  </div>
+                  <div class="timepad-form__control">
+                    <label class="timepad-form__label font-h2">Возраст вашего ребенка</label>
+                    <input class="timepad-form__input" type="text" name="age_child" placeholder=".....">
+                  </div>
+                  <div class="timepad-form__control timepad-form__agreement font-text-s">
+                    <input type="checkbox" name="agreement" value="1" required>Я подтверждаю свое согласие с условиями <a target="_blank" class="timepad-form__link" href="[[~178]]">Пользовательского соглашения</a> и <a target="_blank" class="timepad-form__link" href="[[~178]]">Договором оказания услуг по организации мероприятия и политикой возвратов</a><span>*</span>
+                  </div>
+                  <input type="hidden" name="regdate" value="">
+                  <input type="hidden" name="ticket_counter" value="1">
+                  <input class="timepad-form__submit" type="submit" name="" value="Зарегистрироваться">
+                </form>
               </div>
             </div>
           </div>
         </section>
-        <section class="m-section s-universal-text-block">
+        <section class="m-section s-open-days-location">
           <div class="l-container">
-            <div class="m-section__wrapper s-universal-text-block__wrapper">
-              <div class="s-universal-text-block__content">Stepping into an art classroom, you get into an art atelier in Montmartre, opening the door to a laboratory — to the moon or Silicon Valley, where you start studying robotics, 3D modeling and programming"</div>
-            </div>
-          </div>
-        </section>
-        <section class="m-section s-see-all-articles">
-          <div class="l-container">
-            <div class="m-section__wrapper s-see-all-articles__wrapper">
-              <div class="m-section__headline">
-                <h1 class="m-section__title font-h1">See all articles</h1>
-                <p class="m-section__subtitle font-h1-didona">by nicolas mathieu</p>
-              </div>
-              <div class="s-see-all-articles__items">
-                <div class="s-see-all-articles__card"><a class="s-see-all-articles__card-image" href="#"><img src="./img/s-see-all-articles/1.jpg" alt=""></a>
-                  <div class="s-see-all-articles__card-info">
-                    <div class="s-see-all-articles__card-title">BEST art SCHOOLS</div>
-                    <div class="s-see-all-articles__card-text">More than 10 years in education. Experience in opening La preschool des Batignolles in Paris, Exupéry International School in Riga, French kindergarten in Lapino, Moscow.</div>
-                    <div class="s-see-all-articles__card-author">by Nicolas Mathieu,</div>
-                    <div class="s-see-all-articles__card-date">22 ноября 2023</div>
+            <div class="m-section__wrapper s-open-days-location__wrapper">
+              <div class="s-open-days-location__wrap">
+                <div class="s-open-days-location__info">
+                  <div class="m-section__headline">
+                    <div class="m-section__title font-h1">Где находится</div>
+                    <div class="m-section__subtitle font-h1-didona">Академия</div>
                   </div>
+                  <div class="s-open-days-location__address">Москва, ул. 2-ая Звенигородская, 12 стр. 26</div>
+                  <div class="s-open-days-location__work-clock"><span>Время работы:</span><span>Будние дни с 08:30 до 18:00</span></div><a class="s-open-days-location__email" href="mailto:welcome@laberezka.com">welcome@laberezka.com</a>
+                  <div class="s-open-days-location__socials"><a class="s-open-days-location__socials-item" href="" target="_blank"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="15" cy="15" r="14.5" stroke="#1F1E20"/>
+<path d="M21.5976 9.26098C21.5099 9.6569 21.4194 10.0524 21.3349 10.4491C20.6909 13.4649 20.0485 16.4807 19.4053 19.4965C19.3581 19.7172 19.318 19.9395 19.2602 20.1571C19.0702 20.8747 18.5466 21.057 17.9451 20.6171C16.9156 19.8641 15.8869 19.1096 14.8583 18.3554C14.6579 18.2085 14.4695 18.2193 14.293 18.3876C13.7926 18.8657 13.2914 19.3433 12.7926 19.8229C12.6298 19.9792 12.4433 20.0715 12.1911 20.0691C12.2053 19.8574 12.2179 19.6497 12.2328 19.4423C12.2981 18.522 12.3623 17.6013 12.4339 16.6814C12.4394 16.6095 12.4866 16.5243 12.5412 16.4752C14.6195 14.6024 16.7008 12.7332 18.7818 10.8631C18.7999 10.8466 18.8247 10.8341 18.8361 10.814C18.8766 10.7418 18.9124 10.6671 18.9498 10.5933C18.8601 10.5756 18.7665 10.5332 18.6819 10.5466C18.5847 10.5623 18.4899 10.6184 18.4038 10.6726C15.8216 12.287 13.2399 13.9021 10.6605 15.5215C10.5386 15.5981 10.4378 15.6162 10.297 15.5714C9.22781 15.2313 8.15506 14.9033 7.08546 14.5647C6.94306 14.5195 6.80144 14.4516 6.68068 14.3644C6.4773 14.2179 6.45448 14.0077 6.6378 13.8373C6.78178 13.7033 6.95486 13.5831 7.1366 13.5113C8.14287 13.1122 9.15543 12.7288 10.1664 12.342C13.6258 11.0159 17.0844 9.69186 20.5438 8.36937C20.6433 8.33127 20.7495 8.29906 20.8549 8.28924C21.2349 8.25389 21.4721 8.4271 21.5685 8.79593C21.576 8.82381 21.5878 8.85092 21.5976 8.87841V9.26137V9.26098Z" fill="#1F1E20"/>
+</svg></a><a class="s-open-days-location__socials-item" href="" target="_blank"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="15" cy="15" r="14.5" stroke="#1F1E20"/>
+<path d="M6.37744 11.2679C6.47118 11.1141 6.6105 11.0356 6.78568 11.0309C7.16165 11.021 7.53813 11.0153 7.91461 11.0117C8.31209 11.0075 8.71009 11.008 9.10757 11.006C9.46202 11.0039 9.69457 11.1629 9.85233 11.4961C10.2642 12.3672 10.6903 13.232 11.1293 14.0896C11.3122 14.4471 11.5462 14.7777 11.8648 15.0318C11.9386 15.0911 12.0216 15.1446 12.1087 15.1795C12.3038 15.2574 12.4539 15.1914 12.5563 15.0059C12.7095 14.7288 12.7213 14.4201 12.7561 14.1171C12.837 13.4134 12.8273 12.7133 12.6859 12.0153C12.6014 11.5985 12.3535 11.3734 11.955 11.2913C11.7516 11.2492 11.7383 11.1978 11.8812 11.0398C12.0482 10.8552 12.2536 10.7347 12.4969 10.6978C13.4143 10.5585 14.3332 10.5387 15.2516 10.6848C15.7075 10.7575 15.876 10.9171 15.9175 11.4587C15.9493 11.875 15.9144 12.297 15.9098 12.7164C15.9037 13.2757 15.8899 13.8354 15.8965 14.3941C15.8986 14.5625 15.937 14.7377 15.9954 14.8957C16.085 15.1363 16.3237 15.3063 16.6249 15.0396C17.0444 14.6686 17.3384 14.2049 17.6329 13.7387C18.0801 13.0309 18.4453 12.2804 18.7537 11.5002C18.789 11.4108 18.83 11.3225 18.8787 11.2398C18.9545 11.1115 19.0682 11.0423 19.2198 11.0403C20.1741 11.0299 21.1283 11.0112 22.0826 11.0096C22.6015 11.0086 22.7684 11.2528 22.5999 11.7471C22.3909 12.3588 22.0257 12.8838 21.6554 13.4009C21.2415 13.9794 20.8097 14.5454 20.3897 15.1197C20.2919 15.2533 20.2002 15.3925 20.1213 15.5381C19.9492 15.8551 19.9779 16.1316 20.2191 16.3972C20.4276 16.6264 20.6473 16.8447 20.8697 17.0604C21.4597 17.6337 22.0488 18.208 22.477 18.9242C22.5364 19.0234 22.5851 19.1341 22.6148 19.2464C22.7259 19.6627 22.5441 19.9241 22.12 19.9486C21.7604 19.9693 21.3998 19.9735 21.0397 19.9829C20.5787 19.9948 20.1177 20.0125 19.6567 20.0125C19.2608 20.0125 18.9002 19.8675 18.6082 19.6092C18.286 19.3244 18.0002 18.9964 17.6995 18.6866C17.4803 18.4611 17.2657 18.2308 17.0418 18.0099C16.9753 17.9439 16.8882 17.8951 16.8031 17.854C16.6346 17.7724 16.4815 17.7922 16.336 17.9257C16.0471 18.1918 15.9703 18.5453 15.9252 18.9117C15.9047 19.077 15.9063 19.2443 15.896 19.4106C15.875 19.7391 15.7208 19.9257 15.3992 19.9522C13.9998 20.0681 12.6741 19.8981 11.4715 19.0557C10.6668 18.4917 10.0178 17.7979 9.43846 17.0136C8.21119 15.3515 7.26819 13.5283 6.44352 11.6364C6.42252 11.5886 6.40049 11.5413 6.37898 11.494V11.2679H6.37744Z" fill="#1F1E20"/>
+</svg></a><a class="s-open-days-location__socials-item" href="" target="_blank"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="15" cy="15" r="14.5" stroke="#1F1E20"/>
+<g clip-path="url(#clip0_2265_2621)">
+<path d="M15.6895 20.4334C14.2137 20.4334 12.7371 20.4405 11.2613 20.4313C9.86337 20.4227 8.79817 19.5999 8.49579 18.3033C8.44599 18.0885 8.42362 17.863 8.4229 17.6425C8.4164 16.0762 8.41352 14.5099 8.42073 12.9435C8.42795 11.5328 9.34953 10.4346 10.7222 10.1905C10.9156 10.1563 11.1162 10.1534 11.3139 10.1534C14.2389 10.1505 17.1639 10.1491 20.0888 10.1527C21.5279 10.1548 22.601 10.9662 22.9084 12.2813C22.9582 12.4961 22.9813 12.7216 22.9821 12.9421C22.9878 14.5085 22.9914 16.0748 22.9835 17.6411C22.9763 19.0547 22.0561 20.1508 20.6821 20.3934C20.4713 20.4306 20.2519 20.4313 20.0369 20.432C18.5878 20.4348 17.1386 20.4334 15.6902 20.4334H15.6895ZM17.6221 15.2977C16.3246 14.5498 15.0761 13.8305 13.8016 13.0963V17.4891C15.0789 16.757 16.326 16.042 17.6221 15.2977Z" fill="#1F1E20"/>
+<path d="M17.6223 15.2977C16.3255 16.0412 15.0784 16.7563 13.8018 17.4891V13.0962C15.077 13.8305 16.3255 14.5498 17.6223 15.2977Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_2265_2621">
+<rect width="14.5714" height="10.2857" fill="white" transform="translate(8.4165 10.1505)"/>
+</clipPath>
+</defs>
+</svg></a><a class="s-open-days-location__socials-item" href="" target="_blank"><svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="15" cy="15" r="14.5" stroke="#1F1E20"/>
+<g clip-path="url(#clip0_2265_2626)">
+<path d="M21.4286 13.8201V14.9237C21.4179 14.9237 21.4071 14.9239 21.3964 14.9235C21.0237 14.9097 20.6509 14.8974 20.2782 14.8815C19.9806 14.8687 19.6825 14.8596 19.3859 14.834C19.0455 14.8046 18.7058 14.7646 18.3673 14.7185C17.9824 14.666 17.6069 14.5718 17.2475 14.4206C16.5124 14.1112 15.9716 13.5976 15.6319 12.8754C15.3807 12.3416 15.281 11.7695 15.2157 11.1897C15.1913 10.9737 15.1739 10.7569 15.1593 10.5401C15.1391 10.2393 15.1226 9.9382 15.1085 9.6371C15.0956 9.36076 15.0874 9.08421 15.0784 8.80766C15.0758 8.73003 15.078 8.65218 15.078 8.57079C15.1033 8.57079 15.1244 8.57068 15.1457 8.57079C15.5777 8.57347 16.0099 8.5739 16.442 8.57926C17.1973 8.58859 17.9519 8.61057 18.6997 8.73121C19.0988 8.79565 19.4886 8.89345 19.8578 9.06362C20.2931 9.26436 20.6348 9.5645 20.8579 9.99364C20.9726 10.2145 21.0614 10.4452 21.128 10.6847C21.2914 11.2729 21.3528 11.8761 21.383 12.4826C21.4041 12.9069 21.4093 13.332 21.4219 13.7567C21.4226 13.7778 21.4264 13.7989 21.4288 13.82L21.4286 13.8201Z" fill="#1F1E20"/>
+<path d="M14.9244 21.4279H13.8099C13.7762 21.4255 13.7427 21.4213 13.709 21.4209C12.9039 21.4104 12.099 21.3942 11.3015 21.2661C10.9005 21.2017 10.5092 21.1032 10.1385 20.9324C9.67949 20.721 9.33107 20.3968 9.10769 19.9395C8.92109 19.5574 8.81439 19.1522 8.74286 18.736C8.64795 18.1842 8.60849 17.6269 8.59519 17.0683C8.57975 16.424 8.57868 15.7793 8.57138 15.1348C8.57117 15.1158 8.57138 15.0968 8.57138 15.0743C8.59573 15.0743 8.61331 15.0737 8.63079 15.0743C8.83241 15.081 9.03401 15.0863 9.23541 15.0951C9.61504 15.1116 9.99477 15.129 10.3743 15.1483C10.7767 15.1686 11.1773 15.206 11.5758 15.2665C11.9334 15.3209 12.2854 15.3981 12.625 15.5251C13.0744 15.6931 13.4712 15.9432 13.8031 16.291C14.1865 16.693 14.433 17.1716 14.5805 17.7041C14.6753 18.0461 14.7369 18.3943 14.7737 18.7467C14.8007 19.0055 14.827 19.2643 14.8457 19.5237C14.8634 19.7692 14.8727 20.0154 14.8824 20.2614C14.8978 20.6501 14.9104 21.0389 14.9242 21.4277L14.9244 21.4279Z" fill="#1F1E20"/>
+<path d="M16.1887 21.4279H15.0742C15.0884 21.0303 15.1007 20.6327 15.1173 20.2352C15.1293 19.9465 15.1381 19.6573 15.1644 19.3699C15.1978 19.0048 15.2395 18.6403 15.292 18.2775C15.341 17.9393 15.4286 17.609 15.5577 17.2913C15.758 16.7982 16.0555 16.3762 16.4702 16.0384C16.8816 15.7033 17.3531 15.4926 17.8662 15.3775C18.1587 15.3119 18.4564 15.2663 18.7537 15.2257C19.0129 15.1903 19.2745 15.1704 19.5356 15.1515C19.7792 15.1339 20.0236 15.125 20.2677 15.1153C20.6545 15.1001 21.0414 15.0874 21.4284 15.0735V16.1771C21.4256 16.225 21.4209 16.2728 21.4202 16.3207C21.4099 17.1061 21.3899 17.8909 21.2663 18.6687C21.2021 19.073 21.1057 19.4686 20.9359 19.8436C20.7531 20.2474 20.488 20.579 20.1001 20.8048C19.9004 20.9211 19.6907 21.0135 19.471 21.0844C18.9548 21.2509 18.4216 21.3259 17.8834 21.3595C17.3849 21.3907 16.885 21.4001 16.3858 21.4192C16.32 21.4216 16.2543 21.4248 16.1885 21.4277L16.1887 21.4279Z" fill="#1F1E20"/>
+<path d="M8.57085 14.9232C8.57085 14.9017 8.57074 14.8861 8.57085 14.8704C8.57814 14.2205 8.57921 13.5705 8.59476 12.9209C8.60806 12.3658 8.64763 11.8121 8.74179 11.2638C8.81299 10.8494 8.91895 10.446 9.10372 10.065C9.32753 9.60333 9.67777 9.27649 10.1407 9.06396C10.5101 8.89442 10.8997 8.79609 11.2988 8.73186C12.0928 8.60404 12.8941 8.58624 13.6957 8.57734C14.0832 8.57305 14.4706 8.57284 14.8581 8.5708C14.8775 8.5708 14.8968 8.5708 14.9205 8.5708C14.9205 8.64854 14.9226 8.72285 14.9201 8.79695C14.9112 9.05559 14.9026 9.31424 14.8904 9.57277C14.8752 9.89168 14.859 10.2107 14.8385 10.5293C14.8244 10.7462 14.8066 10.963 14.7827 11.1791C14.7212 11.7339 14.628 12.2822 14.4011 12.7978C14.0408 13.6165 13.4333 14.1729 12.5968 14.4822C12.267 14.6043 11.9257 14.6845 11.5776 14.7287C11.2119 14.7751 10.8452 14.8146 10.4778 14.8443C10.165 14.8695 9.85075 14.8778 9.53697 14.8909C9.23563 14.9035 8.93407 14.9126 8.63273 14.9231C8.61492 14.9237 8.59712 14.9231 8.57096 14.9231L8.57085 14.9232Z" fill="#1F1E20"/>
+</g>
+<defs>
+<clipPath id="clip0_2265_2626">
+<rect width="12.8571" height="12.8571" fill="white" transform="translate(8.57129 8.5708)"/>
+</clipPath>
+</defs>
+</svg></a></div>
                 </div>
-                <div class="s-see-all-articles__card"><a class="s-see-all-articles__card-image" href="#"><img src="./img/s-see-all-articles/2.jpg" alt=""></a>
-                  <div class="s-see-all-articles__card-info">
-                    <div class="s-see-all-articles__card-title">BEST art SCHOOL Sand studios</div>
-                    <div class="s-see-all-articles__card-text">More than 10 years in education. Experience in opening La preschool des Batignolles in Paris, Exupéry International School in Riga, French kindergarten in Lapino, Moscow.</div>
-                    <div class="s-see-all-articles__card-author">by Nicolas Mathieu,</div>
-                    <div class="s-see-all-articles__card-date">22 ноября 2023</div>
-                  </div>
-                </div>
-                <div class="s-see-all-articles__card"><a class="s-see-all-articles__card-image" href="#"><img src="./img/s-see-all-articles/3.jpg" alt=""></a>
-                  <div class="s-see-all-articles__card-info">
-                    <div class="s-see-all-articles__card-title">BEST art SCHOOLS</div>
-                    <div class="s-see-all-articles__card-text">More than 10 years in education. Experience in opening La preschool des Batignolles in Paris, Exupéry International School in Riga, French kindergarten in Lapino, Moscow.</div>
-                    <div class="s-see-all-articles__card-author">by Nicolas Mathieu,</div>
-                    <div class="s-see-all-articles__card-date">22 ноября 2023</div>
-                  </div>
-                </div>
+                <div class="s-open-days-location__map" id="map"></div>
               </div>
             </div>
           </div>
@@ -256,8 +337,10 @@
 </svg>
       </button>
     </div>
-    <script defer src="./js/main.js?v=1717648972821"></script>
+    <script defer src="./js/main.js?v=1717648973417"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
-    <script defer src="./js/vendor.js?v=1717648972821"></script>
+    <script defer src="./js/vendor.js?v=1717648973417"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;amp;apikey=1fb28fa2-95c1-4ccf-a695-f9ae8003521a"></script>
+    <script defer src="./js/page_open_days.js"></script>
   </body>
 </html>

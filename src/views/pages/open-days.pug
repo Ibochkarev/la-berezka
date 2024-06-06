@@ -1,0 +1,15 @@
+extends ../layouts/default
+
+block variables
+
+block append head
+  link(rel="stylesheet" href="./styles/page_open_days.css")
+
+block content
+  include ../../blocks/sections/_open_days/s-open-days-intro/s-open-days-intro.pug
+  include ../../blocks/sections/_open_days/s-open-days-form/s-open-days-form.pug
+  include ../../blocks/sections/_open_days/s-open-days-location/s-open-days-location.pug
+
+block append scripts
+  script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=1fb28fa2-95c1-4ccf-a695-f9ae8003521a")
+  script(defer src="./js/page_open_days.js")

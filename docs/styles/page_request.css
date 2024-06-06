@@ -303,8 +303,7 @@ h5 {
   width: max-content;
   height: 1.875rem;
   margin: 0 auto;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
+  padding: 0 1.5rem;
   font-size: 0.625rem;
   line-height: 0.875rem;
   text-transform: uppercase;
@@ -314,6 +313,7 @@ h5 {
   -o-transition: opacity 0.2s ease-out;
   transition: opacity 0.2s ease-out;
   outline: none;
+  cursor: pointer;
 }
 
 .s-request__form-button:hover {

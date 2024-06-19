@@ -1,0 +1,35 @@
+.s-quote {
+  &__content {
+    padding-top: rem(24);
+    padding-bottom: rem(24);
+    border-top: rem(1) solid #1F1E20;
+    border-bottom: rem(1) solid #1F1E20;
+
+    @media (min-width: 1024px) {
+      padding-top: rem(58);
+      padding-bottom: rem(58);
+    }
+  }
+
+  &__text {
+    z-index: 1;
+    position: relative;
+    max-width: rem(1045);
+    margin: 0 auto;
+    font-family: "Playfair Display", sans-serif;
+    font-size: rem(15);
+    font-weight: 400;
+    line-height: rem(22);
+    text-align: center;
+    font-style: normal;
+    letter-spacing: rem(0.15);
+
+    @media (min-width: 768px) {
+      font-size: rem(30);
+      font-weight: 400;
+      line-height: rem(45);
+      font-style: normal;
+      letter-spacing: rem(0.3);
+    }
+  }
+}

@@ -9,6 +9,10 @@ block append head
 block content
   include ../../blocks/sections/_primary_school/features-training/features-training.pug
   include ../../blocks/sections/_primary_school/subjects-studied/subjects-studied.pug
+  +section("s-universal-video", "Cторителлинг", "и иммерсивное обучение", "Наша интегрированная учебная программа сочетает академические стандарты российской и международной программ. Эта синергия создает многогранное и сбалансированное образование, которое способствует развитию критического мышления, коммуникативных навыков и самостоятельности у детей.", false)
+    .s-universal-video__content
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/-CTlz5PJRZs?si=WQ2A4LZlrGXXOyFd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 
 //- block append scripts
 //-   script(defer src="./js/page_primary_school.js")

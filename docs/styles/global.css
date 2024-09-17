@@ -1773,6 +1773,10 @@ section {
   margin-bottom: 3.125rem;
 }
 
+.m-section__introtext p:not(:last-child) {
+  margin-bottom: 0.625rem;
+}
+
 .m-section--full .m-section__wrapper {
   max-width: 100%;
   margin: 0;

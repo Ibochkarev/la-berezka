@@ -1,0 +1,46 @@
+-
+  const advantages = [
+    {
+      image: "./img/s-explore-advantages/4.jpg",
+      alt: "",
+      isLink: false,
+      title: "Российская<br> программа",
+      text: "Обучение по двум программам – академически амбициозная задача. Англоязычная программа основана на стандартах English National Curriculum, а российская программа следует строгим стандартам ФГОС. В нашей Академии мы превращаем этот вызов в увлекательное путешествие в мир интеллектуальных открытий.",
+    },
+    {
+      image: "./img/s-explore-advantages/5.jpg",
+      alt: "",
+      title: "международная<br>программа",
+      text: "In the realm of Culture, we strive to broaden learners' perspectives, deepening their understanding of history, literature, and societies, while fostering intercultural appreciation and embracing the world's diverse cultural heritage.",
+    },
+    {
+      image: "./img/s-explore-advantages/6.jpg",
+      alt: "",
+      title: "обучение<br>в формате игры",
+      text: "Процесс обучения переходит в игры и творчество: ученики проводят научные эксперименты в лаборатории, решают математические задачи на площадке, программируют роботов и ставят спектакли.",
+    },
+  ]
+
++section("s-explore-advantages", "Объединяя лучшее", "из двух миров", "Наша интегрированная учебная программа сочетает академические стандарты российской и международной программ. Эта синергия создает многогранное и сбалансированное образование, которое способствует развитию критического мышления, коммуникативных навыков и самостоятельности у детей.", false)
+  .s-explore-advantages__slider.swiper-container
+    button.s-explore-advantages__button.s-explore-advantages__button-prev(type="button")
+      <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M18 6.96606L9.5 6.96606L1 6.96606M1 6.96606L7.5 13.4661M1 6.96606L7.5 0.466064" stroke="#1F1E20"/>
+      </svg>
+    button.s-explore-advantages__button.s-explore-advantages__button-next(type="button")
+      <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M-5.68248e-07 6.96606L8.5 6.96607L17 6.96607M17 6.96607L10.5 0.466065M17 6.96607L10.5 13.4661" stroke="#1F1E20"/>
+      </svg>
+    .swiper-wrapper
+      each advantage in advantages
+        .swiper-slide.s-explore-advantages__slide
+          .s-explore-advantages__item
+            .s-explore-advantages__item-image
+              img(src=advantage.image, alt="")
+            if advantage.alt
+              .s-explore-advantages__item-alt=advantage.alt
+            if advantage.isLink === true
+              a.s-explore-advantages__item-title.s-explore-advantages__item-link(href="")!=advantage.title
+            else
+              .s-explore-advantages__item-title!=advantage.title
+            .s-explore-advantages__item-text=advantage.text

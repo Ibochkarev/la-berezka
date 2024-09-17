@@ -3,10 +3,18 @@
 @import "../blocks/sections/_primary_school/features-training/features-training";
 @import "../blocks/sections/_primary_school/subjects-studied/subjects-studied";
 @import "../blocks/sections/s_universal_video/s_universal_video";
-
+@import "../blocks/sections/_blog/s_articles_inspiration/s_articles_inspiration";
+@import "../blocks/sections/_primary_school/international-team/international-team";
+@import "../blocks/sections/_primary_school/s_explore_advantages/s_explore_advantages";
 
 .s-universal-video {
   .m-section__introtext {
     max-width: rem(803);
+  }
+}
+
+.s-articles-inspiration {
+  .m-section__introtext {
+    max-width: rem(770);
   }
 }

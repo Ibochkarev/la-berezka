@@ -30,6 +30,12 @@
   &__introtext {
     max-width: rem(655);
     margin-bottom: rem(50);
+
+    p {
+      &:not(:last-child) {
+        margin-bottom: rem(10);
+      }
+    }
   }
 
   &--full &__wrapper {

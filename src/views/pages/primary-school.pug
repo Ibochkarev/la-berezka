@@ -7,12 +7,23 @@ block append head
   link(rel="stylesheet" href="./styles/page_primary_school.css")
 
 block content
+  include ../../blocks/sections/_primary_school/s_explore_advantages/s_explore_advantages.pug
+  include ../../blocks/sections/_primary_school/international-team/international-team.pug
   include ../../blocks/sections/_primary_school/features-training/features-training.pug
   include ../../blocks/sections/_primary_school/subjects-studied/subjects-studied.pug
   +section("s-universal-video", "Cторителлинг", "и иммерсивное обучение", "Наша интегрированная учебная программа сочетает академические стандарты российской и международной программ. Эта синергия создает многогранное и сбалансированное образование, которое способствует развитию критического мышления, коммуникативных навыков и самостоятельности у детей.", false)
     .s-universal-video__content
       <iframe width="560" height="315" src="https://www.youtube.com/embed/-CTlz5PJRZs?si=WQ2A4LZlrGXXOyFd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  +section("s-articles-inspiration", 'Где рождаются', 'истории', '<p>Начальная школа располагается на втором этаже исторического здания Академии. В распоряжении студентов просторные классы, научная лаборатория, художественное ателье, открытая библиотека, оборудованный спортзал и площадка для игр на крыше.</p><p>Образовательная концепция Академии базируется на сторителлинге, когда дети погружаются в истории, проживают их и включаются иммерсивно в обучение. Поэтому детей окружают максимально нейтральное пространство, в котором они могут реализовать свои идеи.</p>', false)
+    .s-articles-inspiration__items
+      each item in inspiration
+        if item.text
+          .s-articles-inspiration__card.s-articles-inspiration__card--text
+            .s-articles-inspiration__card-text=item.text
+        else
+          .s-articles-inspiration__card.s-articles-inspiration__card--image
+            img.s-articles-inspiration__card-image(src=item.image, alt="")
 
 
-//- block append scripts
-//-   script(defer src="./js/page_primary_school.js")
+block append scripts
+  script(defer src="./js/page_primary_school.js")

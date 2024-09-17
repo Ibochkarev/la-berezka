@@ -30,6 +30,7 @@ module.exports = {
     page_article: './src/js/page_article.js',
     page_universal: './src/js/page_universal.js',
     page_open_days: './src/js/page_open_days.js',
+    page_primary_school: './src/js/page_primary_school.js',
   },
 
   output: {

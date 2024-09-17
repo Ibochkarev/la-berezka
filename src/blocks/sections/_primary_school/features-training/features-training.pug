@@ -22,7 +22,7 @@
     },
     {
       icon: './img/s-features-training/6.svg',
-      title: 'Возраст от 2 до 7 лет,<br> до 14 детей в классе',
+      title: 'Возраст от 2 до 7 лет, до 14 детей в классе',
     },
     {
       icon: './img/s-features-training/7.svg',
@@ -34,11 +34,11 @@
     }
   ]
 
-+section('s-features-training', 'Особенности обучения', 'в академии', 'Наша интегрированная учебная программа сочетает академические стандарты российской и международной программ. Эта синергия создает многогранное и сбалансированное образование, которое способствует развитию критического мышления, коммуникативных навыков и самостоятельности у детей.', false)
-  .s-features-training__cards
++section('features-training', 'Особенности обучения', 'в академии', 'Наша интегрированная учебная программа сочетает академические стандарты российской и международной программ. Эта синергия создает многогранное и сбалансированное образование, которое способствует развитию критического мышления, коммуникативных навыков и самостоятельности у детей.', false)
+  .features-training__cards
     each card in featuresTraining
-      .s-features-training__card
-        .s-features-training__card-wrapper
-          .s-features-training__card-icon
+      .features-training__card
+        .features-training__card-wrapper
+          .features-training__card-icon
             img(src=card.icon, alt="")
-          .s-features-training__card-title.font-text-s!=card.title
+          .features-training__card-title!=card.title

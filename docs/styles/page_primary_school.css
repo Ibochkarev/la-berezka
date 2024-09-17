@@ -155,7 +155,7 @@ h5 {
   line-height: 1.25rem;
 }
 
-.s-features-training__cards {
+.features-training__cards {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -163,45 +163,151 @@ h5 {
   gap: 0.875rem;
 }
 
-.s-features-training__card {
+.features-training__card {
   background: rgba(255, 249, 240, 0.8);
   border-radius: 0.625rem;
   -webkit-box-shadow: 0rem 0.0625rem 0.9375rem rgba(34, 34, 34, 0.03);
   box-shadow: 0rem 0.0625rem 0.9375rem rgba(34, 34, 34, 0.03);
 }
 
-.s-features-training__card-wrapper {
+.features-training__card-wrapper {
   padding: 0.625rem;
 }
 
-.s-features-training__card-icon {
+.features-training__card-icon {
   width: 3.4375rem;
   height: 3.4375rem;
   margin-bottom: 0.3125rem;
 }
 
-.s-features-training__card-icon img {
+.features-training__card-icon img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
   object-fit: contain;
 }
 
-@media (min-width: 1024px) {
-  .s-features-training__cards {
-    gap: 1.875rem 3.3125rem;
-    -ms-grid-columns: (1fr)[4];
-    grid-template-columns: repeat(4, 1fr);
+.features-training__card-title {
+  font-family: "Roboto Light", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 300;
+  line-height: 1.125rem;
+}
+
+.subjects-studied {
+  background-color: #FFFAF3;
+}
+
+.subjects-studied .m-section__introtext {
+  max-width: 45.375rem;
+}
+
+.subjects-studied__cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.875rem;
+}
+
+.subjects-studied__card {
+  overflow: hidden;
+  background: var(--color-white);
+  border-radius: 1.5rem;
+}
+
+.subjects-studied__card-image {
+  height: 9rem;
+}
+
+.subjects-studied__card-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+
+.subjects-studied__card-info {
+  padding: 0.625rem;
+}
+
+.subjects-studied__card-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-bottom: 0.3125rem;
+}
+
+.subjects-studied__card-icon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.subjects-studied__card-title {
+  margin-bottom: 0.3125rem;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.4375rem;
+}
+
+.subjects-studied__card-text {
+  font-family: "Roboto Light", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 300;
+  line-height: 1.125rem;
+}
+
+@media (min-width: 768px) {
+  .features-training__cards {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
   }
 
-  .s-features-training__card-wrapper {
+  .subjects-studied__cards {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .features-training__card-wrapper {
     padding: 0.625rem 1.5rem;
   }
 
-  .s-features-training__card-icon {
+  .features-training__card-icon {
     width: 4.375rem;
     height: 4.375rem;
     margin-bottom: 0.625rem;
+  }
+
+  .subjects-studied__card-info {
+    padding: 2rem;
+  }
+
+  .subjects-studied__card-icon {
+    width: 3.4375rem;
+    height: 3.4375rem;
+    margin-bottom: 0.625rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .features-training__card-title {
+    font-size: 1.125rem;
+    line-height: 1.5625rem;
+  }
+
+  .subjects-studied__card-title {
+    font-size: 1.375rem;
+    line-height: 1.75rem;
+  }
+
+  .subjects-studied__card-text {
+    font-size: 1.125rem;
+    line-height: 1.5625rem;
   }
 }
 
@@ -236,6 +342,20 @@ h5 {
   .font-button {
     font-size: 1.125rem;
     line-height: 1.625rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .features-training__cards {
+    gap: 1.875rem 3.3125rem;
+    -ms-grid-columns: (1fr)[4];
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .subjects-studied__cards {
+    gap: 3.3125rem 1.0625rem;
+    -ms-grid-columns: (1fr)[4];
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 

@@ -1,0 +1,55 @@
+-
+  const subjectsStudied = [
+    {
+      icon: './img/subjects-studied/1.svg',
+      title: 'Английский язык',
+      text: 'Небольшой текст про то, как мы изучаем английский язык. Вот примерно столько слов'
+    },
+    {
+      icon: './img/subjects-studied/2.svg',
+      title: 'Математика',
+      text: 'Небольшой текст про то, как мы изучаем английский язык. Вот примерно столько слов'
+    },
+    {
+      icon: './img/subjects-studied/3.svg',
+      title: 'Наука',
+      text: 'Небольшой текст про то, как мы изучаем английский язык. Вот примерно столько слов'
+    },
+    {
+      icon: './img/subjects-studied/4.svg',
+      title: 'Глобальные перспективы',
+      text: 'Небольшой текст про то, как мы изучаем английский язык. Вот примерно столько слов'
+    },
+    {
+      icon: './img/subjects-studied/5.svg',
+      title: 'Цифровая грамотность',
+      text: 'Небольшой текст про то, как мы изучаем английский язык. Вот примерно столько слов'
+    },
+    {
+      icon: './img/subjects-studied/6.svg',
+      title: 'Физическая культура',
+      text: 'Небольшой текст про то, как мы изучаем английский язык. Вот примерно столько слов'
+    },
+    {
+      icon: './img/subjects-studied/7.svg',
+      title: 'Музыка',
+      text: 'Небольшой текст про то, как мы изучаем английский язык. Вот примерно столько слов'
+    },
+    {
+      icon: './img/subjects-studied/8.svg',
+      title: 'Искусство и дизайн',
+      text: 'Небольшой текст про то, как мы изучаем английский язык. Вот примерно столько слов'
+    }
+  ]
+
++section('subjects-studied', 'Предметы, изучаемые', 'в начальной школе академии', 'Обучение по двум программам – академически амбициозная задача. Англоязычная программа основана на стандартах English National Curriculum, а российская программа следует строгим стандартам ФГОС. В нашей Академии мы превращаем этот вызов в увлекательное путешествие в мир интеллектуальных открытий.', false)
+  .subjects-studied__cards
+    each card in subjectsStudied
+      .subjects-studied__card
+        .subjects-studied__card-image
+          img(src="./img/subjects-studied/bg.jpg", alt="")
+        .subjects-studied__card-info
+          .subjects-studied__card-icon
+            img(src=card.icon, alt="")
+          .subjects-studied__card-title!=card.title
+          .subjects-studied__card-text.font-text-s!=card.text

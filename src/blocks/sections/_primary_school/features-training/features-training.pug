@@ -1,0 +1,44 @@
+-
+  const featuresTraining = [
+    {
+      icon: './img/s-features-training/1.svg',
+      title: 'Поддержка логопеда, психолога, медицинского работника',
+    },
+    {
+      icon: './img/s-features-training/2.svg',
+      title: 'Безопасная охраняемая территория',
+    },
+    {
+      icon: './img/s-features-training/3.svg',
+      title: 'Комфортная и<br> вдохновляющая<br> обстановка',
+    },
+    {
+      icon: './img/s-features-training/4.svg',
+      title: 'Пятиразовое<br> сбалансированное<br> питание',
+    },
+    {
+      icon: './img/s-features-training/5.svg',
+      title: 'Два учителя и один<br> ассистент на группу',
+    },
+    {
+      icon: './img/s-features-training/6.svg',
+      title: 'Возраст от 2 до 7 лет,<br> до 14 детей в классе',
+    },
+    {
+      icon: './img/s-features-training/7.svg',
+      title: 'Авторские международные и росссийские программы',
+    },
+    {
+      icon: './img/s-features-training/8.svg',
+      title: 'Учебный день<br> с 8:30 до 18:00',
+    }
+  ]
+
++section('s-features-training', 'Особенности обучения', 'в академии', 'Наша интегрированная учебная программа сочетает академические стандарты российской и международной программ. Эта синергия создает многогранное и сбалансированное образование, которое способствует развитию критического мышления, коммуникативных навыков и самостоятельности у детей.', false)
+  .s-features-training__cards
+    each card in featuresTraining
+      .s-features-training__card
+        .s-features-training__card-wrapper
+          .s-features-training__card-icon
+            img(src=card.icon, alt="")
+          .s-features-training__card-title.font-text-s!=card.title

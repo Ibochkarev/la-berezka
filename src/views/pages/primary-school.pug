@@ -1,0 +1,13 @@
+extends ../layouts/default
+
+block variables
+  - const title = "Начальная школа"
+
+block append head
+  link(rel="stylesheet" href="./styles/page_primary_school.css")
+
+block content
+  include ../../blocks/sections/_primary_school/features-training/features-training.pug
+
+//- block append scripts
+//-   script(defer src="./js/page_primary_school.js")

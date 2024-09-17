@@ -35,3 +35,5 @@ PageList:
     ready: 100
   - file: request.html
     ready: 100
+  - file: primary-school.html
+    ready: 100

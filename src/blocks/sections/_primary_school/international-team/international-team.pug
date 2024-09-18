@@ -1,0 +1,32 @@
+-
+  const employees = [
+    {
+      name: "мс аИса",
+      position: "Академический координатор",
+      text: 'More than 10 years in education. Experience in opening La preschool des Batignolles in Paris, Exupéry International School in Riga, French kindergarten in Lapino, Moscow.',
+      photo: "./img/s-international-team/1.jpg",
+    },
+    {
+      name: "Мр Бенжамин",
+      position: "Учитель класса Year 2",
+      text: 'More than 10 years in education. Experience in opening La preschool des Batignolles in Paris, Exupéry International School in Riga, French kindergarten in Lapino, Moscow.',
+      photo: "./img/s-international-team/2.jpg",
+    },
+    {
+      name: "мс олеся",
+      position: "Психолог",
+      text: 'More than 10 years in education. Experience in opening La preschool des Batignolles in Paris, Exupéry International School in Riga, French kindergarten in Lapino, Moscow.',
+      photo: "./img/s-international-team/3.jpg",
+    },
+  ]
+
++section('international-team', 'Международная команда', 'Педагогов', 'Наши преподаватели, которые приезжают из самых разных уголков мира, – команда настоящих профессионалов. Именно их энтузиазм, преданность делу и профессионализм делает нашу Академию таким уникальным местом.', false)
+  .international-team__items
+    each item in employees
+      a.international-team__card(href="")
+        .international-team__card-info
+          .international-team__card-name=item.name
+          .international-team__card-position=item.position
+          .international-team__card-text=item.text
+        .international-team__card-photo
+          img(src=item.photo, alt=item.name)

@@ -323,6 +323,77 @@ h5 {
   object-fit: cover;
 }
 
+.international-team .m-section__introtext {
+  max-width: 46.25rem;
+}
+
+.international-team__items {
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+  -ms-grid-columns: (1fr)[1];
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.international-team__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+  border-top: 0.0625rem solid var(--color-middle-grey);
+}
+
+.international-team__card:hover .s-our-leaders__card-photo img {
+  scale: 1.05;
+}
+
+.international-team__card-photo {
+  overflow: hidden;
+  position: relative;
+  margin-left: 0.9375rem;
+  -webkit-box-flex: 0;
+  -ms-flex: none;
+  flex: none;
+}
+
+.international-team__card-photo img {
+  width: 100%;
+  height: auto;
+  max-width: 9.375rem;
+  -webkit-transition: scale .75s ease-in-out;
+  -o-transition: scale .75s ease-in-out;
+  transition: scale .75s ease-in-out;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.international-team__card-name {
+  margin-bottom: 0.25rem;
+  font-family: 'Didona', sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 130%;
+  text-transform: uppercase;
+  font-style: normal;
+  letter-spacing: 0.00813rem;
+}
+
+.international-team__card-position {
+  font-size: 0.75rem;
+  font-weight: 300;
+  line-height: 1.25rem;
+  color: var(--color-grey);
+  font-style: normal;
+  letter-spacing: 0.0075rem;
+}
+
+.international-team__card-text {
+  display: none;
+}
+
 .s-explore-advantages .m-section__introtext {
   max-width: 55.125rem;
 }
@@ -520,6 +591,58 @@ h5 {
     font-size: 0.75rem;
     line-height: 1.25rem;
     letter-spacing: 0.0075rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .international-team__items {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.875rem 4.0625rem;
+  }
+
+  .international-team__card {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: 0;
+    border: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+
+  .international-team__card-photo {
+    margin-bottom: 1.875rem;
+    margin-left: 0;
+  }
+
+  .international-team__card-photo img {
+    max-width: 100%;
+  }
+
+  .international-team__card-name {
+    margin-bottom: 0.4375rem;
+    font-size: 1.625rem;
+    line-height: 1.3;
+    letter-spacing: 0.0325rem;
+  }
+
+  .international-team__card-position {
+    margin-bottom: 1.5625rem;
+    font-size: 1.0625rem;
+    line-height: 1.5625rem;
+    letter-spacing: 0.01063rem;
+  }
+
+  .international-team__card-text {
+    display: block;
+    font-family: "Roboto Light", sans-serif;
+    font-size: 1.0625rem;
+    font-weight: 300;
+    line-height: 1.5625rem;
+    letter-spacing: 0.01063rem;
   }
 }
 

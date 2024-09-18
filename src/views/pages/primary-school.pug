@@ -7,8 +7,8 @@ block append head
   link(rel="stylesheet" href="./styles/page_primary_school.css")
 
 block content
+  include ../../blocks/sections/_primary_school/invite-academy/invite-academy.pug
   include ../../blocks/sections/_primary_school/s_explore_advantages/s_explore_advantages.pug
-  include ../../blocks/sections/_primary_school/international-team/international-team.pug
   include ../../blocks/sections/_primary_school/features-training/features-training.pug
   include ../../blocks/sections/_primary_school/subjects-studied/subjects-studied.pug
   +section("s-universal-video", "Cторителлинг", "и иммерсивное обучение", "Наша интегрированная учебная программа сочетает академические стандарты российской и международной программ. Эта синергия создает многогранное и сбалансированное образование, которое способствует развитию критического мышления, коммуникативных навыков и самостоятельности у детей.", false)
@@ -23,8 +23,7 @@ block content
         else
           .s-articles-inspiration__card.s-articles-inspiration__card--image
             img.s-articles-inspiration__card-image(src=item.image, alt="")
-  src/blocks/sections/_primary_school/international-team/international-team.pug
-
+  include ../../blocks/sections/_primary_school/international-team/international-team.pug
 
 block append scripts
   script(defer src="./js/page_primary_school.js")

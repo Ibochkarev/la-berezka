@@ -1,0 +1,31 @@
++section("invite-academy", "", "", "", false)
+  .invite-academy__wrap
+    .invite-academy__col
+      .m-section__headline
+        h1.m-section__title.font-h1 Приглашаем вас
+        .m-section__subtitle.font-h1-didona в академию
+      .m-section__introtext.font-text-s Приглашаем вас на индивидуальную экскурсию в Академию La Berёzka. Вас ждёт экскурсия по историческому зданию Академии, посещение научной лаборатории и Ателье.
+      .invite-academy__image
+        img(src="./img/s-invite-academy/image.jpg", alt="")
+      form.invite-academy__form(action="")
+        .invite-academy__form-item
+          label.invite-academy__form-label.font-text-s(for="") The pleasure of La Berёzka team is requested by
+          input.invite-academy__form-input(type="text", placeholder="Put here")
+        .invite-academy__form-item
+          label.invite-academy__form-label(for="") Phone number
+          input.invite-academy__form-input(type="tel", placeholder="Put here")
+        .invite-academy__form-item
+          label.invite-academy__form-label(for="") Your e-mail
+          input.invite-academy__form-input(type="email", placeholder="Put here")
+        .invite-academy__form-item
+          label.invite-academy__form-label(for="") Your child's age
+          input.invite-academy__form-input(type="text", placeholder="Put here")
+        .invite-academy__form-item--checkbox(for="")
+          input.invite-academy__form-input.invite-academy__form-input--checkbox(type="checkbox")
+          span Я даю своё согласие на условия обработки персональных данных и получение информационных рассылок в соответствии с политикой <a href="">конфиденциальности</a>.
+        button.invite-academy__form-button(type="submit") Отправить
+
+    .invite-academy__col.invite-academy__col--media
+      .invite-academy__media
+        img.invite-academy__media-image(src="./img/s-invite-academy/image.jpg", alt="")
+        img.invite-academy__media-image.invite-academy__media-image--2(src="./img/s-invite-academy/image-2.png", alt="")

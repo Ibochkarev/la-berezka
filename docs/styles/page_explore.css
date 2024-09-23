@@ -721,11 +721,6 @@ h5 {
     margin-bottom: 1.25rem;
   }
 
-  .s-explore-advantages__item-title {
-    font-size: 1.625rem;
-    line-height: 2.0625rem;
-  }
-
   .s-explore-advantages__item-text {
     font-size: 0.75rem;
     line-height: 1.25rem;
@@ -857,6 +852,11 @@ h5 {
 
   .s-explore-advantages__slider {
     margin: 0;
+  }
+
+  .s-explore-advantages__item-title {
+    font-size: 1.625rem;
+    line-height: 2.0625rem;
   }
 
   .s-explore-storytellers__card {

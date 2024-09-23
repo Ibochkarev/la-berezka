@@ -7,7 +7,7 @@ block append head
   link(rel="stylesheet" href="./styles/page_primary_school.css")
 
 block content
-  include ../../blocks/sections/_primary_school/invite-academy/invite-academy.pug
+  include ../../blocks/sections/_primary_school/s_primary_school_intro/s_primary_school_intro.pug
   include ../../blocks/sections/_primary_school/s_explore_advantages/s_explore_advantages.pug
   include ../../blocks/sections/_primary_school/features-training/features-training.pug
   include ../../blocks/sections/_primary_school/subjects-studied/subjects-studied.pug
@@ -24,6 +24,7 @@ block content
           .s-articles-inspiration__card.s-articles-inspiration__card--image
             img.s-articles-inspiration__card-image(src=item.image, alt="")
   include ../../blocks/sections/_primary_school/international-team/international-team.pug
+  include ../../blocks/sections/_primary_school/invite-academy/invite-academy.pug
 
 block append scripts
   script(defer src="./js/page_primary_school.js")

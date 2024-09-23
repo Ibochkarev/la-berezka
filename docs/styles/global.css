@@ -2030,6 +2030,7 @@ section {
 }
 
 .m-breadcrumbs__link-current {
+  font-family: "Roboto Light", sans-serif;
   font-weight: 300;
   color: var(--color-grey);
 }

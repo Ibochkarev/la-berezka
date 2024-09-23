@@ -29,7 +29,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
-    <link rel="stylesheet" href="styles/global.css?v=1726629832654">
+    <link rel="stylesheet" href="styles/global.css?v=1726635791709">
     <link rel="stylesheet" href="./styles/page_primary_school.css">
   </head>
   <body>
@@ -69,44 +69,47 @@
       </header>
       <main class="l-main__content">
         <div class="backdrop"></div>
-        <section class="m-section invite-academy">
+        <section class="m-section s-primary-school-intro">
           <div class="l-container">
-            <div class="m-section__wrapper invite-academy__wrapper">
-              <div class="invite-academy__wrap">
-                <div class="invite-academy__col">
-                  <div class="m-section__headline">
-                    <h1 class="m-section__title font-h1">Приглашаем вас</h1>
-                    <div class="m-section__subtitle font-h1-didona">в академию</div>
+            <div class="m-section__wrapper s-primary-school-intro__wrapper">
+              <div class="s-primary-school-intro__wrap">
+                <div class="s-primary-school-intro__info">
+                  <div class="m-breadcrumbs">
+                    <div class="l-wide">
+                      <ul class="m-breadcrumbs__list" itemscope="itemscope" itemtype="https://schema.org/BreadcrumbList">
+                        <li class="m-breadcrumbs__item" itemscope="itemscope" itemprop="itemListElement" itemtype="https://schema.org/ListItem"><span class="m-breadcrumbs__link font-l" itemprop="name">State of Mind</span>
+                          <meta itemprop="position" content="0"/>
+                          <meta itemprop="item" content="#"/>
+                        </li>
+                        <li class="m-breadcrumbs__item"><span class="m-breadcrumbs__link-current font-l" itemprop="name">Начальная школа</span>
+                          <meta itemprop="item" content="#"/>
+                          <meta itemprop="position" content=""/>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-                  <div class="m-section__introtext font-text-s">Приглашаем вас на индивидуальную экскурсию в Академию La Berёzka. Вас ждёт экскурсия по историческому зданию Академии, посещение научной лаборатории и Ателье.</div>
-                  <div class="invite-academy__image"><img src="./img/s-invite-academy/image.jpg" alt=""></div>
-                  <form class="invite-academy__form" action="">
-                    <div class="invite-academy__form-item">
-                      <label class="invite-academy__form-label font-text-s" for="">The pleasure of La Berёzka team is requested by</label>
-                      <input class="invite-academy__form-input" type="text" placeholder="Put here">
-                    </div>
-                    <div class="invite-academy__form-item">
-                      <label class="invite-academy__form-label" for="">Phone number</label>
-                      <input class="invite-academy__form-input" type="tel" placeholder="Put here">
-                    </div>
-                    <div class="invite-academy__form-item">
-                      <label class="invite-academy__form-label" for="">Your e-mail</label>
-                      <input class="invite-academy__form-input" type="email" placeholder="Put here">
-                    </div>
-                    <div class="invite-academy__form-item">
-                      <label class="invite-academy__form-label" for="">Your child's age</label>
-                      <input class="invite-academy__form-input" type="text" placeholder="Put here">
-                    </div>
-                    <div class="invite-academy__form-item--checkbox" for="">
-                      <input class="invite-academy__form-input invite-academy__form-input--checkbox" type="checkbox"><span>Я даю своё согласие на условия обработки персональных данных и получение информационных рассылок в соответствии с политикой <a href="">конфиденциальности</a>.</span>
-                    </div>
-                    <button class="invite-academy__form-button" type="submit">Отправить</button>
-                  </form>
+                  <h1 class="s-primary-school-intro__title">Начальная школа<span>Международной академии</span></h1>
+                  <div class="s-primary-school-intro__text">
+                    <p>Начальная школа Международной Академии — это пространство, где традиции и инновации гармонично сосуществуют, создавая идеальные условия для развития учеников. Наша миссия – воспитывать любознательных, уверенных в себе и эмпатичных людей, готовых открывать новые горизонты и вносить свой вклад в будущее.</p>
+                  </div>
                 </div>
-                <div class="invite-academy__col invite-academy__col--media">
-                  <div class="invite-academy__media"><img class="invite-academy__media-image" src="./img/s-invite-academy/image.jpg" alt=""><img class="invite-academy__media-image invite-academy__media-image--2" src="./img/s-invite-academy/image-2.png" alt=""></div>
+                <div class="s-primary-school-intro__image">
+                  <figure>
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="./img/s-primary-school-intro/desktop.jpg"><img src="./img/s-primary-school-intro/mobile.jpg" alt="">
+                    </picture>
+                    <figcaption>La Berёzka Books with the author's curriculum and illustrations</figcaption>
+                  </figure>
                 </div>
               </div>
+              <div class="s-primary-school-intro__bottom-image"><img src="./img/s-primary-school-intro/bottom.jpg" alt=""></div>
+            </div>
+          </div>
+        </section>
+        <section class="m-section s-primary-school-quote">
+          <div class="l-container">
+            <div class="m-section__wrapper s-primary-school-quote__wrapper">
+              <div class="s-primary-school-quote__text">Для нас подготовить детей к их будущему, к взрослой жизни — значит дать им сейчас те навыки, которые будут для них актуальны вне зависимости от того, как изменится мир в ближайшие 10, 20, 30 лет</div>
             </div>
           </div>
         </section>
@@ -367,6 +370,47 @@
             </div>
           </div>
         </section>
+        <section class="m-section invite-academy">
+          <div class="l-container">
+            <div class="m-section__wrapper invite-academy__wrapper">
+              <div class="invite-academy__wrap">
+                <div class="invite-academy__col">
+                  <div class="m-section__headline">
+                    <h1 class="m-section__title font-h1">Приглашаем вас</h1>
+                    <div class="m-section__subtitle font-h1-didona">в академию</div>
+                  </div>
+                  <div class="m-section__introtext font-text-s">Приглашаем вас на индивидуальную экскурсию в Академию La Berёzka. Вас ждёт экскурсия по историческому зданию Академии, посещение научной лаборатории и Ателье.</div>
+                  <div class="invite-academy__image"><img src="./img/s-invite-academy/image.jpg" alt=""></div>
+                  <form class="invite-academy__form" action="">
+                    <div class="invite-academy__form-item">
+                      <label class="invite-academy__form-label font-text-s" for="">The pleasure of La Berёzka team is requested by</label>
+                      <input class="invite-academy__form-input" type="text" placeholder="Put here">
+                    </div>
+                    <div class="invite-academy__form-item">
+                      <label class="invite-academy__form-label" for="">Phone number</label>
+                      <input class="invite-academy__form-input" type="tel" placeholder="Put here">
+                    </div>
+                    <div class="invite-academy__form-item">
+                      <label class="invite-academy__form-label" for="">Your e-mail</label>
+                      <input class="invite-academy__form-input" type="email" placeholder="Put here">
+                    </div>
+                    <div class="invite-academy__form-item">
+                      <label class="invite-academy__form-label" for="">Your child's age</label>
+                      <input class="invite-academy__form-input" type="text" placeholder="Put here">
+                    </div>
+                    <div class="invite-academy__form-item--checkbox" for="">
+                      <input class="invite-academy__form-input invite-academy__form-input--checkbox" type="checkbox"><span>Я даю своё согласие на условия обработки персональных данных и получение информационных рассылок в соответствии с политикой <a href="">конфиденциальности</a>.</span>
+                    </div>
+                    <button class="invite-academy__form-button" type="submit">Отправить</button>
+                  </form>
+                </div>
+                <div class="invite-academy__col invite-academy__col--media">
+                  <div class="invite-academy__media"><img class="invite-academy__media-image" src="./img/s-invite-academy/image.jpg" alt=""><img class="invite-academy__media-image invite-academy__media-image--2" src="./img/s-invite-academy/image-2.png" alt=""></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       <footer class="s-footer">
         <div class="l-container">
@@ -457,9 +501,9 @@
 </svg>
       </button>
     </div>
-    <script defer src="./js/main.js?v=1726629832655"></script>
+    <script defer src="./js/main.js?v=1726635791714"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
-    <script defer src="./js/vendor.js?v=1726629832655"></script>
+    <script defer src="./js/vendor.js?v=1726635791714"></script>
     <script defer src="./js/page_primary_school.js"></script>
   </body>
 </html>

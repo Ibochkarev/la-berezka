@@ -1,0 +1,17 @@
+extends ../layouts/default
+
+block variables
+  - const title = "Начальная школа"
+
+block append head
+  link(rel="stylesheet" href="./styles/page_admission.css")
+
+block content
+  //- include ../../blocks/sections/_admission/s_admission_intro/s_admission_intro.pug
+  //- include ../../blocks/sections/_admission/admission_process/admission_process.pug
+  include ../../blocks/sections/_admission/s_universal_table/s_universal_table.pug
+  include ../../blocks/sections/_admission/admission_contact/admission_contact.pug
+
+block append scripts
+  script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=1fb28fa2-95c1-4ccf-a695-f9ae8003521a")
+  script(defer src="./js/page_admission.js")

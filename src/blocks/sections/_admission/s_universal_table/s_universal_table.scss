@@ -1,0 +1,122 @@
+.s-universal-table {
+  table {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 rem(1) rem(15) rgba(34, 34, 34, 0.03);
+    border-collapse: collapse;
+    background-color: #fff;
+
+    th {
+      color: #ffffff;
+      background-color: #D9C6A9;
+    }
+
+    td {
+      padding: rem(15);
+      font-family: "Roboto Light", sans-serif;
+      font-size: rem(14);
+      font-weight: 300;
+      line-height: rem(21);
+      color: var(--color-dark);
+      border: rem(1) solid rgba(255, 249, 240, 0.8);
+      white-space: pre-wrap;
+      vertical-align: middle;
+      font-style: normal;
+
+      @media (min-width: 768px) {
+        padding: rem(20);
+        font-size: rem(17);
+        line-height: rem(25);
+        letter-spacing: rem(0.17);
+      }
+    }
+
+    th {
+      padding: rem(15);
+      font-size: 13px;
+      font-weight: 400;
+      line-height: rem(18);
+      text-transform: uppercase;
+      border: rem(1) solid rgba(255, 249, 240, 0.8);
+      white-space: nowrap;
+      font-style: normal;
+      letter-spacing: rem(0.13);
+      vertical-align: middle;
+
+      @media (min-width: 768px) {
+        padding: rem(40);
+        font-size: rem(17);
+        font-weight: 400;
+        line-height: rem(26);
+        letter-spacing: rem(0.18);
+      }
+    }
+  }
+
+  &__content {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+}
+
+.included-in-price {
+  &__list {
+    display: grid;
+    margin-bottom: rem(40);
+    border: rem(1) solid rgba(255, 249, 240, 0.8);
+    border-radius: rem(20);
+    box-shadow: 0 rem(1) rem(15) rgba(34, 34, 34, 0.03);
+    grid-template-columns: repeat(1, 1fr);
+
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: rem(10) rem(30);
+
+    @media (min-width: 1024px) {
+      padding: rem(12) rem(60);
+    }
+
+    &:not(:last-child) {
+      border-bottom: rem(1) solid rgba(255, 249, 240, 0.8);
+    }
+
+    &-icon {
+      display: flex;
+      align-items: center;
+      margin-right: rem(30);
+
+      @media (min-width: 1024px) {
+        margin-right: rem(40);
+      }
+
+      img {
+        width: rem(40);
+        height: auto;
+
+        @media (min-width: 1024px) {
+          width: rem(48);
+        }
+      }
+    }
+
+    &-text {
+      font-family: "Roboto", sans-serif;
+      font-size: rem(14);
+      font-weight: 300;
+      line-height: rem(21);
+
+      @media (min-width: 1024px) {
+        font-size: rem(17);
+        line-height: rem(25);
+      }
+    }
+  }
+}

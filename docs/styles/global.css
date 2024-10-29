@@ -2841,6 +2841,15 @@ section {
   color: var(--color-light-grey);
 }
 
+.s-footer__information {
+  margin-bottom: 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.375rem;
+  color: var(--color-grey);
+  text-align: center;
+}
+
 .s-footer__links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2876,7 +2885,7 @@ section {
   font-weight: 300;
   line-height: 1.375rem;
   text-align: center;
-  color: var(--color-grey);
+  color: #F5F5F5;
 }
 
 .s-main-contact__content {
@@ -3174,6 +3183,9 @@ section {
   text-align: center;
   text-decoration: none;
   border-collapse: collapse;
+  -webkit-box-shadow: 0 0.0625rem 0.9375rem rgba(34, 34, 34, 0.03);
+  box-shadow: 0 0.0625rem 0.9375rem rgba(34, 34, 34, 0.03);
+  background-color: #fff;
 }
 
 .s-universal-table table th {
@@ -3381,11 +3393,18 @@ section {
     margin-bottom: 0;
   }
 
+  .s-footer__information {
+    margin-bottom: 2.875rem;
+    font-size: 1.0625rem;
+    line-height: 1.5625rem;
+    text-align: left;
+  }
+
   .s-footer__links {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    margin-bottom: 2.875rem;
+    margin-bottom: 1.375rem;
     font-size: 1.0625rem;
     line-height: 1.5625rem;
     -webkit-box-orient: horizontal;

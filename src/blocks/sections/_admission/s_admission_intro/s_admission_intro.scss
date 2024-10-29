@@ -1,0 +1,121 @@
+.s-admission-intro {
+  .m-breadcrumbs  {
+    display: none;
+
+    @media (min-width: 1024px) {
+      display: flex;
+      margin-bottom: rem(38);
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    @media (min-width: 768px) {
+      padding: rem(90) 0;
+    }
+
+    @media (min-width: 1440px) {
+      padding: rem(107) 0 rem(60);
+    }
+  }
+
+  &__info {
+    position: relative;
+    max-width: rem(670);
+    margin-right: rem(15);
+  }
+
+  &__title {
+    margin: 0 0 rem(5);
+    font-size: rem(22);
+    font-weight: 100;
+    line-height: rem(34);
+
+    @media (min-width: 992px) {
+      font-size: rem(42);
+      line-height: rem(54);
+    }
+
+    span {
+      display: block;
+      margin: 0 0 rem(24);
+      font-family: 'Didona', sans-serif;
+      font-size: rem(20);
+      font-weight: 400;
+      line-height: rem(28);
+      text-transform: uppercase;
+
+      @media (min-width: 992px) {
+        margin: 0 0 rem(40);
+        font-size: rem(40);
+        line-height: rem(50);
+        letter-spacing: rem(0.42);
+      }
+    }
+  }
+
+  &__text {
+    font-size: rem(12);
+    font-weight: 300;
+    line-height: rem(20);
+
+    @media (min-width: 1024px) {
+      display: block;
+      font-size: rem(17);
+      line-height: rem(25);
+    }
+  }
+
+  &__image {
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+    padding-top: rem(50);
+    border-radius: rem(10);
+    flex: none;
+
+    @media (min-width: 768px) {
+      padding-top: rem(30);
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      max-width: rem(135);
+
+      @media (min-width: 768px) {
+        max-width: rem(300);
+      }
+
+      @media (min-width: 1024px) {
+        max-width: rem(400);
+      }
+    }
+  }
+
+  &__button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    height: rem(44);
+    margin-top: rem(40);
+    padding-right: rem(16);
+    padding-left: rem(16);
+    font-family: 'Playfair Display', serif;
+    font-size: rem(17);
+    font-weight: 600;
+    color: var(--color-white);
+    border: 0;
+    background-color: var(--color-sand);
+    letter-spacing: 1%;
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+}

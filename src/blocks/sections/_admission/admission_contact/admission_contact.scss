@@ -1,0 +1,226 @@
+.ymaps-2-1-79-ground-pane {
+  filter: grayscale(1) brightness(1) invert(1);
+}
+
+#map {
+  display: none;
+  width: rem(482);
+  height: rem(810);
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: 1200px) {
+    display: block;
+  }
+
+  .ymaps-2-1-79-map {
+    height: rem(810) !important;
+  }
+}
+
+.admission-contacts {
+  &__wrapper {
+    overflow: visible;
+    display: grid;
+    gap: rem(20);
+    grid-template-columns: repeat(1, 1fr);
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 1200px) {
+      padding-bottom: 0;
+      gap: rem(40);
+    }
+  }
+
+  &__title {
+    margin-bottom: rem(15);
+    font-size: rem(13);
+    font-weight: 300;
+    line-height: rem(26);
+    font-style: normal;
+    letter-spacing: rem(0.13);
+
+    @media (min-width: 768px) {
+      font-size: rem(16);
+      line-height: rem(30);
+    }
+  }
+
+  &__address,
+  &__work-clock,
+  &__email {
+    margin-bottom: rem(15);
+    font-family: "Playfair Display", sans-serif;
+    font-size: rem(18);
+    line-height: rem(30);
+    font-style: normal;
+
+    @media (min-width: 768px) {
+      margin-bottom: rem(35);
+      font-size: rem(22);
+      line-height: rem(35);
+    }
+  }
+
+  &__address {
+    margin-bottom: rem(15);
+
+    @media (min-width: 768px) {
+      margin-bottom: rem(35);
+    }
+  }
+
+  &__work-clock {
+    margin-bottom: rem(10);
+
+    @media (min-width: 768px) {
+      margin-bottom: rem(100);
+    }
+
+    span {
+      display: block;
+    }
+  }
+
+  &__email {
+    display: block;
+    margin-bottom: rem(20);
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+
+    &-item {
+      display: block;
+      transition: transform 0.5s ease 0s;
+
+      &:not(:last-child) {
+        margin-right: rem(10);
+
+        @media (min-width: 768px) {
+          margin-right: rem(15);
+        }
+      }
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  &__info {
+    @media (min-width: 1200px) {
+      padding-top: 0;
+    }
+  }
+
+  &__request {
+    @media (min-width: 1200px) {
+      padding-top: rem(77);
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    &-label {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      width: -webkit-fill-available;
+      margin-bottom: rem(15);
+
+      &::last-child {
+        margin-bottom: rem(20);
+      }
+
+      span {
+        font-size: rem(12);
+        font-weight: 300;
+        line-height: rem(18);
+        a {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    &-input {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: rem(40);
+      font-size: rem(12);
+      font-weight: 300;
+      line-height: rem(20);
+      color: var(--color-dark);
+      border: 0;
+      outline: none;
+      border-bottom: rem(1) solid #E5E5E5;
+      letter-spacing: rem(0.12);
+
+      @media (min-width: 768px) {
+        font-size: rem(14);
+      }
+
+      &.error {
+        border-bottom: rem(1) solid red;
+      }
+
+      &::placeholder {
+        font-weight: 300;
+        line-height: rem(20);
+        color: var(--color-grey);
+        letter-spacing: rem(0.12);
+
+        @media (min-width: 768px) {
+          font-size: rem(14);
+        }
+      }
+
+      &--checkbox {
+        width: rem(15);
+        height: rem(15);
+        margin-right: rem(15);
+      }
+    }
+
+    &-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: max-content;
+      height: rem(30);
+      padding-right: rem(24);
+      padding-left: rem(24);
+      font-size: rem(10);
+      line-height: rem(14);
+      text-transform: uppercase;
+      background: var(--color-sand);
+      border: 0;
+      transition: opacity 0.2s ease-out;
+      outline: none;
+
+      @media (min-width: 768px) {
+        height: rem(40);
+        font-size: rem(12);
+        line-height: rem(14);
+      }
+
+      &:hover {
+        opacity: .8;
+      }
+    }
+  }
+}
+
+
+.s-footer {
+  @media (min-width: 1200px) {
+    margin-top: 0;
+  }
+}

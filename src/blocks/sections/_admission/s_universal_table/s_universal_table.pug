@@ -1,0 +1,83 @@
+-
+  const included = [
+    {
+      icon: './img/included-in-price/graduation-hat.svg',
+      text: 'Международная программа',
+    },
+    {
+      icon: './img/included-in-price/book.svg',
+      text: 'Российская программа',
+    },
+    {
+      icon: './img/included-in-price/teacher.svg',
+      text: 'Два учителя и один ассистент',
+    },
+    {
+      icon: './img/included-in-price/tray.svg',
+      text: 'Пятиразовое питание',
+    },
+    {
+      icon: './img/included-in-price/clock.svg',
+      text: 'Учебный день 08:30-18:00 ',
+    },
+    {
+      icon: './img/included-in-price/heart-handshake.svg',
+      text: 'Городские экскурсии',
+    },
+    {
+      icon: './img/included-in-price/exhibition.svg',
+      text: 'Поддержка психолога и логопеда',
+    },
+    {
+      icon: './img/included-in-price/cctv-camera.svg',
+      text: 'Закрытая охраняемая территория',
+    },
+  ]
+
++section("s-universal-table", "Стоимость", "Обучения", "<p>В учебном году 2024-2025 стоимость обучения составит 2 500 000 рублей в год за полный год обучения. При оплате за несколько лет обучения предусмотрены скидки. Пожалуйста обратитесь в отдел по приему учащихся для уточнения информации</p><p>Также предусмотрен единоразовый вступительный взнос за ребенка в размере 400 000 рублей. Этот взнос обеспечивает возможность использования всех ресурсов и возможностей, которые предлагает Академия. </p>", false)
+  .included-in-price
+    .m-section__headline
+      h2.m-section__title.font-h1 Включено
+      p.m-section__subtitle.font-h1-didona в стоимость
+
+    .included-in-price__list
+      each item in included
+        .included-in-price__item
+          .included-in-price__item-icon
+            img(src=item.icon, alt="")
+          .included-in-price__item-text=item.text
+
+  .s-universal-table__content
+    table.s-universal-table__table
+      thead
+        tr
+          th Возраст
+          th Класс
+          th Международная программа
+          th Российская программа
+      tbody
+        tr
+          td 2 - 3 года
+          td Pre-Nursery
+          td(rowspan="3") Early Years Foundation Stage
+          td(rowspan="5") Дошкольное образование
+        tr
+          td 3 - 4 года
+          td Nursery
+        tr
+          td 4 - 5 года
+          td Reception
+        tr
+          td 5 - 6 года
+          td Year 1
+          td(rowspan="4") Primary School
+        tr
+          td 6 - 7 года
+          td Year 2
+        tr
+          td 7 - 8 года
+          td Year 3
+          td(rowspan="2") Подготовка к школе
+        tr
+          td 8 - 9 года
+          td Year 4

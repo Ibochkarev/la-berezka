@@ -5,18 +5,21 @@ if (document.querySelector('.s-our-team__slider')) {
   window.addEventListener(
     'load',
     () => {
-      const ourTeamItemsSlider = new Swiper(`.s-our-team__slider`, {
+      const ourTeamItemsSlider = new Swiper('.s-our-team__slider', {
         slidesPerView: 1,
         resistance: true,
         resistanceRatio: 1,
         spaceBetween: 0,
         autoHeight: true,
+        loop: true,
       })
-      const ourTeamItemsSliderBottom = new Swiper(`.s-our-team__bottom`, {
+
+      const ourTeamItemsSliderBottom = new Swiper('.s-our-team__bottom', {
         slidesPerView: 1,
         resistance: true,
         resistanceRatio: 1,
         spaceBetween: 0,
+        loop: true,
         navigation: {
           nextEl: '.s-our-team__button-next',
           prevEl: '.s-our-team__button-prev',
@@ -32,8 +35,24 @@ if (document.querySelector('.s-our-team__slider')) {
         },
       })
 
-      ourTeamItemsSlider.controller.control = ourTeamItemsSliderBottom
-      ourTeamItemsSliderBottom.controller.control = ourTeamItemsSlider
+      // Используем метод on для инициализации контроллера
+      ourTeamItemsSlider.on('init', () => {
+        if (ourTeamItemsSlider.controller && ourTeamItemsSliderBottom.controller) {
+          ourTeamItemsSlider.controller.control = ourTeamItemsSliderBottom
+          ourTeamItemsSliderBottom.controller.control = ourTeamItemsSlider
+        } else {
+          console.error('Swiper controller property is not available')
+        }
+      })
+
+      ourTeamItemsSliderBottom.on('init', () => {
+        if (ourTeamItemsSlider.controller && ourTeamItemsSliderBottom.controller) {
+          ourTeamItemsSlider.controller.control = ourTeamItemsSliderBottom
+          ourTeamItemsSliderBottom.controller.control = ourTeamItemsSlider
+        } else {
+          console.error('Swiper controller property is not available')
+        }
+      })
     },
     false,
   )

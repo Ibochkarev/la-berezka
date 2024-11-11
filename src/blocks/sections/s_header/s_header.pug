@@ -1,6 +1,10 @@
 -
-  var headerMenu = [
-    { title: 'State of Mind', link: '#', active: true },
+  const headerMenu = [
+    { title: 'State of Mind', link: '#', active: true, submenu: [
+      { title: 'Детский сад', link: '#' },
+      { title: 'Начальная школа', link: '#' },
+      { title: 'Поступление', link: '#' },
+    ] },
     { title: 'Explore', link: '#' },
     { title: 'Our Team', link: '#' },
   ]
@@ -16,6 +20,11 @@ header.s-header
           li.s-header__navigation-item
             a.s-header__navigation-link(href=itemMenu.link, aria-label=itemMenu.title, title=itemMenu.title, class={'is-active' : itemMenu.active})
               span= itemMenu.title
+            if itemMenu.submenu
+              ul
+                each item in itemMenu.submenu
+                  li
+                    a(href=item.link, aria-label=item.title)=item.title
         li.s-header__navigation-item
           a.s-header__navigation-link(href="#") SAVVA’s
             +svgMono("legacy")

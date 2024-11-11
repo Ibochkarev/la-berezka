@@ -101,9 +101,14 @@
     &-item {
       position: relative;
       margin-bottom: rem(10);
+      display: flex;
+      align-items: center;
+      flex-direction: column;
 
       @media (min-width: 1024px) {
+        flex-direction: row;
         margin-bottom: 0;
+        height: rem(80);
 
         &:not(:last-child) {
           margin-right: rem(54);
@@ -113,7 +118,7 @@
       &::before {
         @media (min-width: 1024px) {
           position: absolute;
-          bottom: rem(-26);
+          bottom: 0;
           width: 100%;
           height: rem(2);
           transition: background .3s;
@@ -132,6 +137,69 @@
       &--request {
         @media (min-width: 1024px) {
           display: none;
+        }
+      }
+
+      &:hover {
+        ul {
+          display: block;
+        }
+      }
+
+      ul {
+        font-size: rem(14);
+        font-weight: 300;
+        line-height: rem(21);
+        font-style: normal;
+        list-style-type: none;
+
+        @media (min-width: 1024px) {
+          position: absolute;
+          top: rem(40);
+          display: none;
+          font-size: rem(16);
+          line-height: rem(30);
+          letter-spacing: rem(0.16);
+          box-shadow: 0 rem(3) rem(14) 0 rgba(34, 34, 34, 0.02);
+        }
+
+        li {
+          display: flex;
+          align-items: center;
+          background-color: rgba(255, 255, 255, 1);
+          margin-bottom: rem(10);
+          justify-content: center;
+
+          @media (min-width: 1024px) {
+            padding: rem(6) rem(10);
+            justify-content: flex-start;
+            margin-bottom: 0;
+          }
+
+          &:first-child {
+            margin-top: rem(10);
+
+            @media (min-width: 1024px) {
+              margin-top: rem(58);
+            }
+          }
+
+          &:hover {
+            @media (min-width: 1024px) {
+              background-color:#eee9e1;
+            }
+          }
+
+          &.active {
+            @media (min-width: 1024px) {
+              background-color:#eee9e1;
+            }
+          }
+
+          a {
+            color: rgba(31, 30, 32, 1);
+            white-space: nowrap;
+          }
         }
       }
     }
